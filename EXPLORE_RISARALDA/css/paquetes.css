@@ -2,9 +2,10 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
     box-sizing: border-box;
 }
+
 header {
     width: 100%;
     background-color: #a8d5a1;
@@ -133,6 +134,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
 }
@@ -148,16 +150,68 @@ header {
     background-size: cover;
     width: 100%;
     margin: 40px 0px 0px 0px;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
     height: 200px;
 }
 
 .info-paquete{
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     border: 1px solid black;
+    border-top: none;
     width: 100%;
-    /* margin: 0px 65px; */
-    border-radius: 0px 0px 16px 16px;
-    padding: 20px;
+    margin: 0px;
+    border-radius: 0px 0px 12px 12px;
+    padding: 0px;
     background-color: white;
+    color:#5C4747 ;
+}
+
+.info-paquete h2{
+    margin: 0px 0px 0px 0px;
+    padding: 5px 20px;
+}
+
+.info-paquete h3{
+    padding: 0px 20px;
+    font-size:medium;
+    margin-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+
+.precio .descuento{
+    background-color:#a8d5a1;
+    padding: 10px;
+    border-radius: 3px;
+    color:#5C4747;
+    font-weight: 600;
+}
+
+.corazon{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.corazon i{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.corazon .agregar-carrito{
+    margin-right: 20px;
+    background-color: #59714B;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: white;
+    letter-spacing: 1px;
 }

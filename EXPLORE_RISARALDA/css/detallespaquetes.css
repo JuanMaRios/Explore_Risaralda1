@@ -1,0 +1,325 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #a8d5a1;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+  color: #5c4747;
+}
+
+/* barra superior  */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  font-weight: bold;
+  font-style: italic;
+}
+/* iconos */
+.nav-icons i,
+.nav-icons a {
+  margin-left: 10px;
+  cursor: pointer;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.nav-icons a {
+  text-decoration: none;
+  color: #5c4747;
+  font-weight: bold;
+}
+
+/* Segunda barra de paquetes y municipio */
+.nav-bar {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #ddd;
+}
+.nav-bar a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #5c4747;
+}
+.nav-bar a:hover {
+  color: #a8d5a1;
+}
+.nav-bar i {
+  cursor: pointer;
+}
+
+/* Sección de búsqueda */
+.search-bar {
+  display: flex;
+  background-color: rgba(193, 225, 193, 0.5);
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 30%;
+}
+
+.search-bar a {
+  text-decoration: none;
+  color: #5c4747;
+  cursor: pointer;
+}
+
+.search-bar i {
+  margin-right: 10px;
+  color: #555;
+}
+/* boton de la busqueda */
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.search-bar button i {
+  color: #555555;
+  font-size: 18px;
+}
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+/* galeria de detalles de paquetes  */
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  margin: 50px;
+}
+
+.item {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.item-0 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  height: 400px;
+}
+
+.item-1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.item-2 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .item-0 {
+    background-image: url(/Explore_Risaralda1/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+    background-size: cover;
+    border-radius: 12px 0px 0px 12px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .item-1 {
+    background-image: url(/Explore_Risaralda1/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+    background-size: cover;
+    border-radius: 0px 12px 0px 0px;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .item-2 {
+    background-image: url(/Explore_Risaralda1/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+    background-size: cover;
+    border-radius: 0px 0px 12px 0px;
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+
+/* informacion de detalle de paquetes  */
+
+.detalles {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  box-sizing: border-box;
+  height: 440px;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.detalles .titulo h3 {
+  color: #5c4747;
+  font-size: 35px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  margin: 0px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.detalles .parrafo {
+  color: #5c4747;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.detalles .calificacion {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.rantig i {
+  font-size: 35px;
+  padding: 5px;
+  color: rgb(249, 249, 36);
+}
+
+.calificacion a {
+  margin-left: 50px;
+  font-size: 20px;
+  color: #5c4747;
+  letter-spacing: 1px;
+}
+
+.calificacion .precio {
+  color: #5c4747;
+  font-size: 35px;
+  margin-left: 600px;
+  font-weight: 800;
+}
+
+.calificacion .descuento {
+  background-color: #a8d5a1;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 20px;
+  margin-left: 30px;
+  font-weight: 600;
+  color: #5c4747;
+}
+
+.detalles .detalles-opciones {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.detalles .detalles-opciones i {
+  padding: 20px;
+  background-color: rgba(171, 164, 164, 0.5);
+  margin-right: 15px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: #5c4747;
+}
+
+.detalles .detalles-opciones .botones {
+  display: flex;
+  margin-left: 700px;
+  border: none;
+}
+
+.detalles .detalles-opciones .botones .btn {
+  background-color: white;
+  margin-left: 30px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.fecha{
+  width: 30%;
+  color: #5c4747;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hora{
+    width: 30%;
+    color: #5c4747;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.personas{
+    width: 30%;
+    color: #5c4747;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inputs .fecha, .hora, .personas, input{
+  width: 90%;
+}
+
+.inputs input{
+    height: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.maps{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
