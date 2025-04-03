@@ -1,17 +1,23 @@
-body {
-    width: 100%;
-    margin: 0;
+*{
     padding: 0;
-    background-color: hsl(0, 0, 100%);
+    margin: 0;
     box-sizing: border-box;
 }
-
-header {
-    width: 100%;
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    min-height: 100vh
+}
+/* estilos del encabezado */
+header{
+    width:100%;
     background-color: #a8d5a1;
     text-align: center;
     border-radius: 0 0 50px 50px;
-    color: #5c4747;
+    color:#5c4747;
 }
 
 .barra-superior {
@@ -19,16 +25,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    height: 120px;
 }
 
 .barra-superior a {
     text-decoration: none;
     color: #5c4747;
+    font-size: 25px;
 }
 
 .logo {
     font-weight: bold;
     font-style: italic;
+    font-size: 45px;
 }
 
 .nav-icons i, .nav-icons a {
@@ -155,7 +164,10 @@ header {
     flex-grow: 1;
     font-size: 16px;
 }
-
+.complemento{
+    width:100%;
+    height: 100%;
+}
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
@@ -186,7 +198,7 @@ header {
 }
 
 .item-1, .item-2 {
-    height: 175px;
+    height: 196px;
 }
 
 @media (min-width: 768px) {
@@ -205,7 +217,7 @@ header {
     }
 
     .item-0 {
-        background-image: url(/Explore_Risaralda1/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/Elicoidal-Rutas-Magicas.jpg);
         background-size: cover;
         border-radius: 12px 0px 0px 12px;
         grid-column: 1 / span 2;
@@ -214,7 +226,7 @@ header {
     }
 
     .item-1 {
-        background-image: url(/Explore_Risaralda1/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/Dosquebradas__risalda.jpg);
         background-size: cover;
         border-radius: 0px 12px 0px 0px;
         grid-column: 3;
@@ -222,7 +234,7 @@ header {
     }
 
     .item-2 {
-        background-image: url(/Explore_Risaralda1/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg);
         background-size: cover;
         border-radius: 0px 0px 12px 0px;
         grid-column: 3;
@@ -255,25 +267,136 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 /* Lugar de informacion */
-.card {
-    width: 100%; 
-    max-width: 400px; 
-    height: auto; 
-    margin: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
+
+/* seccion de informacion de hotel, restaurante y aventura */
+.paquetes-vaciarcarrito{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-/* Tamaño de la imagen de la informacion */
-.card img {
+
+.paquetes-vaciarcarrito p{
+    color: #5c4747;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.paquetes-vaciarcarrito button{
+    height: 50px;
     width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: #5c4747;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.contenedor-carrito{
+    display: block;
+    width: 100%;
+    background-color: rgb(232, 236, 236);
+    padding: 30px 0px ;
+}
+
+.paquete-carrito{
+    display: flex;
+    width: 60%;
+    margin: 0px 50px 50px 50px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 1000px;   
+}
+
+.paquete-carrito img{
+    width:480px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.paquete-carrito p{
+    font-size: 20px;
+}
+
+.paquete-carrito .info-carrito{
+    margin: 0px 20px;
+    color: #5c4747;
+}
+
+.paquete-carrito .btn-personas{
+    display: flex;
+    align-items: center;
+}
+
+.paquete-carrito .btn-personas i{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    border: 1px solid gray;
+}
+
+.paquete-carrito .btn-personas p{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.paquete-carrito input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.paquete-carrito .botones{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.paquete-carrito .botones button{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #a8d5a1 ;
+    background-color: transparent;
+    color: #5c4747;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.paquete-carrito .detalle-compra{
+    color: #5c4747;
+    margin-left: 50px;
+}
+
+.paquete-carrito .detalle-compra button{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #a8d5a1 ;
+    background-color: transparent;
+    color: #5c4747;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 125px;
+}
+
+.paquete-carrito .detalle-compra .precio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.paquete-carrito .detalle-compra .precio p{
+    font-weight: 600;
 }
 /* Ajuste para dispositivos moviles  */
 @media (max-width: 600px) {
