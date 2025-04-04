@@ -328,6 +328,11 @@ header{
     margin: 0px 20px;
     color: #5c4747;
 }
+.info-carrito h2{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 .paquete-carrito .btn-personas{
     display: flex;
@@ -416,6 +421,7 @@ header{
     text-align: center;
     padding: 10px;
     display: flex;
-    position: relative;
+    position: fixed;
     justify-content: center;
+    bottom:0;
 }
