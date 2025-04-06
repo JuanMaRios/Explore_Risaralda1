@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('/EXPLORE_RISARALDA/img/pexels-samandgos-709552.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    
+}
+
+header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.355);
+    backdrop-filter: blur(1.5px);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+/* estilos encabezado */
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.encabezado h1{
+    color:white;
+    font-size: 50px;
+}
+/* estilos partes header */
+.partes_header{
+    display: flex;
+    gap:30px;
+}
+.partes_header a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.container-login {
+    background-color: rgba(255, 255, 255, 0.692);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 390px;
+    backdrop-filter: blur(2.5px);
+    
+}
+
+.container-login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.boton-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #019936;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #0056b3;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #019936;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.container-login p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-login p a {
+    text-decoration: none;
+    color: #019936;
+}
+
+.container-login p a:hover {
+    text-decoration: underline;
+}

@@ -9,6 +9,18 @@ abrir.addEventListener("click" ,() => {
 cerrar.addEventListener("click", ()=>{
     nav.classList.remove("visible");
 });
+// Funcionamiento botones de galeria 
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ir arriba
