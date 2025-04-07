@@ -167,6 +167,11 @@ header{
 .complemento{
     width:100%;
     height: 100%;
+    
+}
+.complemento h1{
+    text-align: center;
+    font-size: 40px;
 }
 .galeria {
     display: grid;
@@ -217,28 +222,34 @@ header{
     }
 
     .item-0 {
-        background-image: url(/EXPLORE_RISARALDA/img/Elicoidal-Rutas-Magicas.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/santarosa_vista1.jpg);
         background-size: cover;
         border-radius: 12px 0px 0px 12px;
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
         height: 400px;
+        background-position: center;
+        background-size: cover;
     }
 
     .item-1 {
-        background-image: url(/EXPLORE_RISARALDA/img/Dosquebradas__risalda.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/santarosa_vista2.jpg);
         background-size: cover;
         border-radius: 0px 12px 0px 0px;
         grid-column: 3;
         grid-row: 1;
+        background-position: center;
+        background-size: cover;
     }
 
     .item-2 {
-        background-image: url(/EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/santarosa_vista3.jpg);
         background-size: cover;
         border-radius: 0px 0px 12px 0px;
         grid-column: 3;
         grid-row: 2;
+        background-position: center;
+        background-size: cover;
     }
 }
 /* Estilos de botones  */

@@ -30,6 +30,10 @@ header{
     width: 100%;
     align-items: center;
 }
+.logo a{
+    text-decoration: none;
+    color:#000000;
+}
 /* estilos partes header */
 .partes_header{
     display: flex;
@@ -47,6 +51,61 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+.abrir-menu,
+    .cerrar-menu {
+        display: none;
+    }
+    
+    @media screen and (max-width: 904px) {
+        .abrir-menu,
+        .cerrar-menu {
+            display: block;
+            border: 0;
+            font-size: 1.25rem;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    
+        .partes_header {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+            position: fixed; /* Cambiado a fixed para mejor comportamiento en móviles */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #148a01;
+            padding: 2rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 99999999;
+            width: 80%; /* Ancho reducido para mejor visualización en móviles */
+        }
+    
+        .partes_header.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .nav-list {
+            flex-direction: column;
+            align-items: end;
+        }
+    
+        .nav-icons {
+            flex-direction: column; /* Apilar iconos en móviles */
+            align-items: flex-end; /* Alinear a la derecha */
+        }
+    
+        .nav-icons i,
+        .nav-icons a,
+        .nav-icons button {
+            font-size: 1rem; /* Tamaño de fuente ajustado para móviles */
+            margin: 5px 0; /* Margen vertical para apilar */
+        }
+    }
 /* estilos de la seccion de inicio */
 .inicio{
     background-color:rgba(0, 249, 249, 0);

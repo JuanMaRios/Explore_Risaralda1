@@ -195,10 +195,12 @@ header{
     grid-column: 1 / -1; 
     grid-row: 1;
     height: 300px; 
+    background-position: center;
 }
 
 .item-1, .item-2 {
     height: 196px;
+    background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -217,28 +219,31 @@ header{
     }
 
     .item-0 {
-        background-image: url(/EXPLORE_RISARALDA/img/Elicoidal-Rutas-Magicas.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/vista_pereira1.jpg);
         background-size: cover;
         border-radius: 12px 0px 0px 12px;
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
         height: 400px;
+        background-position: center;
     }
 
     .item-1 {
-        background-image: url(/EXPLORE_RISARALDA/img/Dosquebradas__risalda.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/vista_pereira2.jpg);
         background-size: cover;
         border-radius: 0px 12px 0px 0px;
         grid-column: 3;
         grid-row: 1;
+        background-position: center;
     }
 
     .item-2 {
-        background-image: url(/EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/vista_pereira3.jpg);
         background-size: cover;
         border-radius: 0px 0px 12px 0px;
         grid-column: 3;
         grid-row: 2;
+        background-position: center;
     }
 }
 /* Estilos de botones  */
