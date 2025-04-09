@@ -1,8 +1,10 @@
 /* estilos generales */
 body{
-    background-color: white;
+    background-color: #f1faf5;
     margin: 0;
 }
+
+/*---------------------------------------------------------------------------------*/
 
 /* estilos del encabezado */
 header{
@@ -10,78 +12,205 @@ header{
     height: 8vh;
     display: flex;
     justify-content: space-between;
-    background-color: #a8d5a1;
-    border: 1px solid black;
+    background-color: #0c4827;
+    border: 2.5px solid black;
     align-items: center;  
-    color: sienna; 
+    color: wheat; 
 }
 
 /* estilos de la navegacion */
 nav{
     display: flex;
     margin-right: 2rem;
-    gap: 10px;
+    gap: 0.6cm;
 }
- 
+
+/* estilos del boton de busqueda */
+#buscar{
+    border-radius: 40%;
+    cursor: pointer;
+    background: wheat;
+    color: black;
+}
+
 /*estilos del boton para crear paquetes */
 #crearpaquetes{
     cursor: pointer;
     font-weight: 600;
-}
-#crearpaquetes:hover{
-    box-shadow: 0 0 5px white;
+    background: wheat;
+    border: 1px solid black;
+    color: black;
 }
 
-#iconoempresa{
+#icono-mas{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+#crearpaquetes:hover{
+    box-shadow: 0 0 10px wheat;
+}
+
+/* estilos del icono de empresa */
+#iconoEmpresa{
     font-size: 25px;
     color: black;
     text-decoration: none;
+    color: wheat;
+}
+
+/* estilos del icono de notificación */
+#iconoNoti{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    color: wheat;
+}
+
+/*---------------------------------------------------- Main --------------------------------------------------------------*/
+/* estilos de la sección principal */
+main{
+    display: flex; 
 }
 
 /* Contenedor de opciones de navegación */
 .menu_opciones{
     width: 23%;
-    height: 70vh;
-    border: 2px solid black;
-    border-radius: 8%;
+    height: 90vh;
     text-align: center;
-    margin: 20px;
+    margin: 0;
     display: block;
     gap: 20px;
+    background: white;
 }
 
-/* Cada opcion seleccionable del menu de navegación */
-#opcion{
-    margin-top: 80px;
-    background-color: #a8d5a1;
-    width: 60%;
+/* estilos del contenedor del titulo ajustes*/
+#titulo-ajustes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estilos del titulo (parrafo) */
+#ajustes{
+    display: flex;
+    margin-left: 1cm;
+    font-size: 0.7cm;
+}
+
+/* estilos del icono para cerrar ventana */
+#icono-cerrar{
+    font-size: 0.8cm;
+    color: black;
+}
+#icono-cerrar:hover{
+    text-shadow: 0 0 15px red;
+}
+
+/*Estilos de la sección en la que nos encontramos en este momento (Datos de empresa)*/
+#datosEmpresa{
+    width: 100%;
     height: 3rem;
-    margin-left: 80px;
-    border: 1px solid black;
-    border-radius: 25%;
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 10px;
     cursor: pointer;
+    background: #0c4827;
+    color: white;
+    margin-top: 4rem;
+}
+/* estilos para su respectivo texto (datos de empresa) */
+#datosEmpresa a{
+    text-decoration: none;
+    color: white;
 }
 
-#opcion a{
+/* estilos para la opción de mis paquetes */
+#misPaquetes{
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: black; 
+    margin-top: 15px;
+}
+/* estilos para su respectivo texto (mis paquetes) */
+#misPaquetes a{
+    text-decoration: none;
+    color: black;   
+}
+
+#misPaquetes:hover{
+    background-color: #0c4827;
+    color: white;
+}
+
+/* estilos para la opción de Configurar Cuenta */
+#configurarCuenta{
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: black;
+    margin-top: 15px;
+}
+/* estilos para su respectivo texto (Configurar cuenta) */
+#configurarCuenta a{
     text-decoration: none;
     color: black;
 }
-
-
-/* boton de cerrar sesion */
-#sesion{
-    margin-top: 80px;
-    cursor: pointer;
-    
-}
-/* Efectos para cuando pongan el cursor encima */
-#sesion:hover{
-    background-color: brown;
+#configurarCuenta:hover{
+    background-color: #0c4827;
     color: white;
-    box-shadow: 0 0 15px brown;
 }
+
+/* estilos para la opción de Cerrar sesión */
+#cerrarSesion{
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: black;
+    margin-top: 15px;
+}
+/* estilos para su respectivo texto (Cerrar Sesión) */
+#cerrarSesion a{
+    text-decoration: none;
+    color: black;
+}
+#cerrarSesion:hover{
+    text-decoration: underline red;
+}
+
+/*--------------------------------------------------Contenido-------------------------------------*/
+
+/* estilos para el contenedor general del contenido */
+.contenido{
+    width: 77%;
+    padding: 4rem;
+    height: auto;
+}
+
+#info-empresa{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    border:  1px solid black;
+    border-radius: 2%;
+    padding: 20px;
+}
+
+
+
+
 
