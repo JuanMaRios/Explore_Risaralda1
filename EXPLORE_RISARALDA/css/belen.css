@@ -16,7 +16,6 @@ header{
     width:100%;
     background-color: #a8d5a1;
     text-align: center;
-    border-radius: 0 0 50px 50px;
     color:#5c4747;
 }
 
@@ -31,10 +30,52 @@ header{
 .barra-superior a {
     text-decoration: none;
     color: #5c4747;
-    font-size: 25px;
+    font-size: 18px;
+}
+.barra-superior input{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color:#000;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 1px solid #B3C38E;
+    transition: all .7s ease;
+}
+.btns{
+    position:absolute;
+    right: 595px;
+    top: 30px;
+    width: 60px;
+    height:60px;
+    background: #016725;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s; 
+}
+.btns i{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 80px;
+    transition: all .7s  ease;
+}
+.barra-superior:hover input{
+    width: 350px;
+}
+.barra-superior:hover i {
+    transform: rotate(-360deg);
+}
+.btns:hover{
+    background-color: #555555;
 }
 
-.logo {
+.logo { 
     font-weight: bold;
     font-style: italic;
     font-size: 45px;
@@ -57,7 +98,7 @@ header{
     display: none;
 }
 
-@media screen and (max-width: 904px) {
+@media screen and (max-width: 1009px) {
     .abrir-menu, .cerrar-menu {
         display: block;
         border: 0;
@@ -97,81 +138,16 @@ header{
         flex-direction: column;
         align-items: center;
     }
+    .btns{
+        right:20px;
+        top:70px;
+    }
 }
 
-.nav-bar {
-    width: 100%;
-    background-color: #fff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 2px solid #ddd;
-    flex-wrap: wrap; /* Añadido para responsividad */
-}
 
-.nav-bar a {
-    margin-left: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #5c4747;
-}
-
-.nav-bar a:hover {
-    color: #a8d5a1;
-}
-
-.nav-bar i {
-    cursor: pointer;
-}
-
-.search-bar {
-    display: flex;
-    background-color: rgba(193, 225, 193, 0.5);
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: 30%;
-    min-width: 200px; /* Añadido para responsividad */
-}
-
-.search-bar a {
-    text-decoration: none;
-    color: #5C4747;
-    cursor: pointer;
-}
-
-.search-bar i {
-    margin-right: 10px;
-    color: #555;
-}
-
-.search-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-}
-
-.search-bar button i {
-    color: #555555;
-    font-size: 18px;
-}
-
-.search-bar input {
-    border: none;
-    outline: none;
-    background: transparent;
-    flex-grow: 1;
-    font-size: 16px;
-}
 .complemento{
     width:100%;
     height: 100%;
-    
-}
-.complemento h1{
-    text-align: center;
-    font-size: 40px;
 }
 .galeria {
     display: grid;
@@ -200,10 +176,12 @@ header{
     grid-column: 1 / -1; 
     grid-row: 1;
     height: 300px; 
+    background-position: center;
 }
 
 .item-1, .item-2 {
     height: 196px;
+    background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -222,34 +200,31 @@ header{
     }
 
     .item-0 {
-        background-image: url(/EXPLORE_RISARALDA/img/vista_balboa1.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/vista_belen1.jpg);
         background-size: cover;
         border-radius: 12px 0px 0px 12px;
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
         height: 400px;
         background-position: center;
-        background-size: cover;
     }
 
     .item-1 {
-        background-image: url(/EXPLORE_RISARALDA/img/vista_balboa2.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/vista_belen2.jpg);
         background-size: cover;
         border-radius: 0px 12px 0px 0px;
         grid-column: 3;
         grid-row: 1;
         background-position: center;
-        background-size: cover;
     }
 
     .item-2 {
-        background-image: url(/EXPLORE_RISARALDA/img/vista_balboa3.jpg);
+        background-image: url(/EXPLORE_RISARALDA/img/vista_belen3.jpg);
         background-size: cover;
         border-radius: 0px 0px 12px 0px;
         grid-column: 3;
         grid-row: 2;
         background-position: center;
-        background-size: cover;
     }
 }
 /* Estilos de botones  */
@@ -259,6 +234,15 @@ header{
     gap: 20px;
     margin: 20px 0;
     flex-wrap: wrap; 
+}
+.complemento{
+    width:100%;
+    height: 100%;
+    
+}
+.complemento h1{
+    text-align: center;
+    font-size: 40px;
 }
 /* Botones de despliegue  */
 .boton-desple {

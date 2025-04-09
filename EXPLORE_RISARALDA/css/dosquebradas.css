@@ -14,7 +14,7 @@ body{
 /* estilos del encabezado */
 header{
     width:100%;
-    background-color: #a8d5a1;
+    background-color: #B3C38E;
     text-align: center;
     border-radius: 0 0 50px 50px;
     color:#5c4747;
@@ -75,7 +75,7 @@ header{
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: #a8d5a1;
+        background-color: #B3C38E;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
         opacity: 0;
@@ -248,18 +248,32 @@ header{
     gap: 20px;
     margin: 20px 0;
     flex-wrap: wrap; 
+    border-radius: 20px;;
+}
+.complemento{
+    width:100%;
+    height: 100%;
+    
+}
+.complemento h1{
+    text-align: center;
+    font-size: 40px;
 }
 /* Botones de despliegue  */
 .boton-desple {
     display: block;
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #B3C38E;
     color: white;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
     margin: 10px; 
-    width: 150px;
+    width: 250px;
+    border-radius: 20px;
+}
+.boton-desple:hover{
+    background-color: #a8d5a1;
 }
 /* Seccion oculta */
 .main {

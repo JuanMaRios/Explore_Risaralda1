@@ -264,13 +264,18 @@ header{
 .boton-desple {
     display: block;
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #B3C38E;
     color: white;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
     margin: 10px; 
-    width: 150px;
+    width: 250px;
+    border-radius: 20px;
+
+}
+.boton-desple:hover{
+    background-color: #a8d5a1;
 }
 /* Seccion oculta */
 .main {
