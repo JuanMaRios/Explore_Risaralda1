@@ -3,7 +3,6 @@ body{
     background-color: #f1faf5;
     margin: 0;
 }
-
 /*---------------------------------------------------------------------------------*/
 
 /* estilos del encabezado */
@@ -13,9 +12,13 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #0c4827;
-    border: 2.5px solid black;
+    border: 2px solid black;
     align-items: center;  
-    color: wheat; 
+    color: white; 
+}
+
+h1{
+    margin-left: 20px;
 }
 
 /* estilos de la navegacion */
@@ -29,15 +32,202 @@ nav{
 #buscar{
     border-radius: 40%;
     cursor: pointer;
-    background: wheat;
+    background: white;
     color: black;
 }
 
+
+/* --------------------------------------Estilos para el boton de crear paquetes y su ventana modal ----------------------------------------------- */ 
+.boton-modal label{
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+/* Ventana modal */
+#btn-modal{
+    display: none;
+
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+/* estilos de la ventana modal */
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f1faf5;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/* estilos del titulo de crear paquetes */
+.content-modal h2{
+    margin-bottom: 15px;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+
+/* estilos del contenedor donde esta el formulario de creacion  */
+#creacion{
+    display: block;
+}
+
+/* estilos para el contenedor donde esta el nombre */
+#casilla1-nombre{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan el nombre */
+#nombrePaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde esta la actividad */
+#casilla2-actividad{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan la actividad*/
+#actividadPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde esta el precio */
+#casilla3-precio{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan el precio*/
+#precioPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde esta la ubicacion */
+#casilla4-ubicacion{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan el precio*/
+#ubicacionPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde estan los terminos */
+#casilla5-terminos{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan los terminos*/
+#terminosPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+
+#casilla6-fotos{
+    display: block;
+    color: black;
+}
+/* estilos para el contenedor donde estan las imagenes */
+#imagenes{
+    display: flex;
+    height: 6rem;
+    justify-content: space-evenly;
+}
+/* Estilos para la imagen1 */
+#imagen1{
+    display: flex;
+    width: 4rem;
+    height: 5rem;
+    border: 2px dashed black;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+/* Estilos para la imagen1 */
+#imagen2{
+    display: flex;
+    width: 4rem;
+    height: 5rem;
+    border: 2px dashed black;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+/* Estilos para la imagen1 */
+#imagen3{
+    display: flex;
+    width: 4rem;
+    height: 5rem;
+    border: 2px dashed black;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+/*Estilos para el cierre de la ventana nodal*/
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Media Query para el "responsive" */
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+
 /*estilos del boton para crear paquetes */
-#crearpaquetes{
+/* #crearpaquetes{
     cursor: pointer;
     font-weight: 600;
-    background: wheat;
+    background: white;
     border: 1px solid black;
     color: black;
 }
@@ -48,15 +238,16 @@ nav{
     font-weight: 600;
 }
 #crearpaquetes:hover{
-    box-shadow: 0 0 10px wheat;
-}
+    box-shadow: 0 0 10px white;
+} */
+
 
 /* estilos del icono de empresa */
 #iconoEmpresa{
     font-size: 25px;
     color: black;
     text-decoration: none;
-    color: wheat;
+    color: white;
 }
 
 /* estilos del icono de notificación */
@@ -64,7 +255,7 @@ nav{
     font-size: 25px;
     color: black;
     text-decoration: none;
-    color: wheat;
+    color: white;
 }
 
 /*---------------------------------------------------- Main --------------------------------------------------------------*/
@@ -189,7 +380,8 @@ main{
     color: black;
 }
 #cerrarSesion:hover{
-    text-decoration: underline red;
+    background-color: indianred;
+    color: black;
 }
 
 /*--------------------------------------------------Contenido-------------------------------------*/
@@ -201,16 +393,133 @@ main{
     height: auto;
 }
 
+/* estilos del contenedor donde van los espacios de informacion de empresa */
 #info-empresa{
-    display: flex;
     width: 100%;
     height: 60vh;
-    border:  1px solid black;
-    border-radius: 2%;
+    border:  3px solid black;
+    border-radius: 1%;
     padding: 20px;
+    background: white;
 }
 
+/* seccion de nombre y direccion */
+#nombre-direccion{
+    display: flex;
+    width: 100%;
+    gap: 20rem;
+}
+/* estilos del contenedor donde esta el nombre y su espacio correspondiente */
+#nombre{
+    display: block;
+    font-size: 1.2rem;
+}
+/* estilos del espacio donde aparece el nombre de la entidad */
+#espacio-nombre{
+    background: #f1faf5;
+    width: 18rem;
+    height: 1.4rem;
+    border-bottom: 2px solid black;
+}
+/* estilos del contenedor donde estan la direccion y su espacio correspondiente */
+#direccion{
+    display: block;
+    font-size: 1.2rem;
+}
+/* estilos del espacio donde aparece la direccion */
+#espacio-direccion{
+    background: #f1faf5;
+    width: 18rem;
+    height: 1.4rem;
+    border-bottom: 2px solid black; 
+}
+/* seccion de RUT y Contacto */
+#rut-contacto{
+    display: flex;
+    width: 100%;
+    gap: 20rem;
+    margin-top: 3rem;
+}
+/* estilos del contenedor donde estan el RUT y su espacio correspondiente */
+#rut{
+    display: block;
+    font-size: 1.2rem;
+}
+/* estilos del espacio donde aparece el RUT */
+#espacio-rut{
+    background: #f1faf5;
+    width: 18rem;
+    height: 1.4rem;
+    border-bottom: 2px solid black; 
+}
+/* estilos del contenedor donde estan el contacto y su espacio correspondiente */
+#contacto{
+    display: block;
+    font-size: 1.2rem;
+}
+/* estilos del espacio donde aparece el contacto */
+#espacio-contacto{
+    background: #f1faf5;
+    width: 18rem;
+    height: 1.4rem;
+    border-bottom: 2px solid black; 
+}
+/* seccion del correo y la ID del dueño */
+#correo-id{
+    display: flex;
+    width: 100%;
+    gap: 20rem;
+    margin-top: 3rem;
+}
+/* estilos del contenedor donde estan el correo y su espacio correspondiente */
+#correo{
+    display: block;
+    font-size: 1.2rem;
+}
+/* estilos del espacio donde aparece el correo */
+#espacio-correo{
+    background: #f1faf5;
+    width: 18rem;
+    height: 1.4rem;
+    border-bottom: 2px solid black; 
+}
+/* estilos del contenedor donde estan la ID del dueño y su espacio correspondiente */
+#id-dueño{
+    display: block;
+    font-size: 1.2rem;
+}
+/* estilos del espacio donde aparece la identificación del dueño */
+#espacio-id{
+    background: #f1faf5;
+    width: 18rem;
+    height: 1.4rem;
+    border-bottom: 2px solid black; 
+}
+/* Estilos del contenedor donde esta el boton de editar*/
+#editar{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: end;
+    margin-top: 3rem;   
+}
+/* Estilos del boton de editar */
+#boton-editar{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    background: #f1faf5;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10%;
+    align-items: center;
+    cursor: pointer;
+}
 
+/* Estilos del icono al interior del boton */
+#boton-editar i{
+    font-size: 30px;
+}
 
 
 
