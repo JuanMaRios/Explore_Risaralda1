@@ -11,10 +11,10 @@ header{
     height: 8vh;
     display: flex;
     justify-content: space-between;
-    background-color: #0c4827;
+    background-color: #B3C38E;
     border: 2px solid black;
     align-items: center;  
-    color: white; 
+    color: #5c4747; 
 }
 
 h1{

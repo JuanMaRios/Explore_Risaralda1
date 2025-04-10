@@ -47,11 +47,11 @@ header{
 }
 .btns{
     position:absolute;
-    right: 468px;
+    right: 495px;
     top: 25px;
     width: 40px;
     height:40px;
-    background: #016725;
+    background: #B3C38E;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ header{
 }
 .btns i{
     font-size: 20px;
-    color: #ffffff;
+    color: #000;
     line-height: 80px;
     transition: all .7s  ease;
 }
@@ -146,6 +146,7 @@ header{
 }
 
 
+
 .contenido{
     background-image: url('/EXPLORE_RISARALDA/img/Elicoidal-Rutas-Magicas.jpg');
     height: 85vh;
@@ -184,8 +185,8 @@ header{
 
 }
 .join-button {
-    background-color: #5cf969;
-    color: rgb(255, 255, 255);
+    background-color:white;
+    color: #000;
     padding: 15px 30px;
     border: none;
     border-radius: 25px;
