@@ -151,6 +151,7 @@ header{
     width:100%;
     height: 100%;
 }
+
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
@@ -158,7 +159,33 @@ header{
     gap: 15px;
     margin: 50px;
 }
-
+.textos{
+    display: flex;
+    align-items: left;
+    text-align: left;
+    flex-direction: column;
+    justify-content: left;
+}
+.textos h1{
+    display: flex;
+}
+.textos p{
+    font-size: 18px;
+}
+.selector select{
+    display: flex;
+    position: relative;
+    left:1200px;
+    background-color: #B3C38E;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.selector{
+    width: 100px;
+    bottom:80px;
+}
 .item {
     background-color: #444;
     color: #fff;
