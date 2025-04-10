@@ -6,97 +6,138 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    width: 100%;
-    background-color: #a8d5a1;
+header{
+    width:100%;
+    background-color: #B3C38E;
     text-align: center;
-    border-radius: 0 0 50px 50px;
-    color: #5C4747;
+    color:#5c4747;
+    height: 100px;
+
 }
 
-/* barra superior  */
 .barra-superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    height: 90px;
 }
-.logo {
+
+.barra-superior a {
+    text-decoration: none;
+    color: #5c4747;
+    font-size: 18px;
+}
+.barra-superior input{
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+    width: 0;
+    padding: 0 20px;
+    color:#000;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 1px solid #B3C38E;
+    transition: all .7s ease;
+}
+.btns{
+    position:absolute;
+    right: 468px;
+    top: 25px;
+    width: 40px;
+    height:40px;
+    background: #016725;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s; 
+}
+.btns i{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 80px;
+    transition: all .7s  ease;
+}
+.barra-superior:hover input{
+    width: 350px;
+}
+.barra-superior:hover i {
+    transform: rotate(-360deg);
+}
+.btns:hover{
+    background-color: #555555;
+}
+
+.logo { 
     font-weight: bold;
     font-style: italic;
+    font-size: 45px;
 }
-/* iconos */
+
 .nav-icons i, .nav-icons a {
     margin-left: 10px;
     cursor: pointer;
     margin-right: 15px;
     font-weight: bold;
 }
-.nav-icons a{
+
+.nav-icons a {
     text-decoration: none;
-    color: #5C4747;
+    color: #5c4747;
     font-weight: bold;
 }
 
-/* Segunda barra de paquetes y municipio */
-.nav-bar {
-    width: 100%;
-    background-color: #fff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 2px solid #ddd;
-}
-.nav-bar a {
-    margin-left: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #5C4747;
-}
-.nav-bar a:hover {
-    color: #a8d5a1;
-}
-.nav-bar i{
-    cursor: pointer;
+.abrir-menu, .cerrar-menu {
+    display: none;
 }
 
-/* Sección de búsqueda */
-.search-bar {
-    display: flex;
-    background-color: rgba(193, 225, 193,0.5);
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: 30%;
-}
+@media screen and (max-width: 1009px) {
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
 
-.search-bar a{
-    text-decoration: none;
-    color: #5C4747;
-    cursor: pointer;
-}
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #a8d5a1;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 99999999;
+    }
 
-.search-bar i {
-    margin-right: 10px;
-    color: #555;
-}
-/* boton de la busqueda */
-.search-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-}
-.search-bar button i {
-    color: #555555;
-    font-size: 18px;
-}
-.search-bar input {
-    border: none;
-    outline: none;
-    background: transparent;
-    flex-grow: 1;
-    font-size:16px;
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-icons i, .nav-icons a, .nav-icons button {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btns{
+        right:20px;
+        top:70px;
+    }
 }
 
 /* filtro de paquetes */
@@ -145,7 +186,7 @@ header {
 } 
 
 .paquete .imagen{
-    background-image: url(/Explore_Risaralda1/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+    background-image: url(/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
     box-sizing: border-box;
     background-size: cover;
     width: 100%;

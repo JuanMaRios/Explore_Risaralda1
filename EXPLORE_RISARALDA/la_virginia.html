@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La virginia</title>
+    <link rel="stylesheet" href="css/virginia.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <!-- primera parte del header -->
+        <div class="barra-superior">
+            <a href="#"><h1 class="logo">ExploreRisaralda</h1></a>
+            <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+            <nav class="nav-icons nav visible" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <input type="text" placeholder="Search...">
+                <div class="btns"> <i class="bi bi-search"></i> </div>
+                <a href="#">Municipios</a>
+                <a href="#">Paquetes</a>          
+                <i class="bi bi-bell"></i>
+                <i class="bi bi-heart"></i>
+                <a><i class="bi bi-cart"></i></a>
+                <a href="#"><i class="bi bi-person-circle"></i></a>
+            </nav>
+        </div>
+        <!-- Segunda parte del header -->
+          
+    </header>
+    
+    <!-- complemento de información -->
+    <section class="complemento">
+        <div class="textos">
+            <h1>La Virginia</h1> 
+            <p>Conoce La Virginia, Uno de nuestros municipios</p>
+        </div>
+        <div class="selector">
+            <select name="municipio" id="municipio">
+                <option value="" disabled selected>Seleccione un municipio</option>
+                <option value="Apia">Apia</option>
+                <option value="Balboa">Balboa</option>
+                <option value="Belalcazar">Belalcázar</option>
+                <option value="Dosquebradas">Dosquebradas</option>
+                <option value="Guatica">Guática</option>
+                <option value="LaCelia">La Celia</option>
+                <option value="LaVirginia">La Virginia</option>
+                <option value="Marsella">Marsella</option>
+                <option value="Mistrato">Mistrató</option>
+                <option value="Pereira">Pereira</option>
+                <option value="PuebloRico">Pueblo Rico</option>
+                <option value="Quinchia">Quinchía</option>
+                <option value="SantaRosaDeCabal">Santa Rosa de Cabal</option>
+                <option value="Santuario">Santuario</option>
+              </select>
+        </div>
+        <div class="galeria">
+            <div class="item item-0"></div>
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+        </div>
+    </section>
+    <section>
+        <div class="botones">
+            <a href="#" id="boton-desple" class="boton-desple">Hoteles</a>
+            <a href="#" id="boton-desple1" class="boton-desple">Aventura</a>
+            <a href="#" id="boton-desple2" class="boton-desple">Restaurantes</a>
+        </div>
+        
+        <!-- Clase oculta de hoteles -->
+        <div class="main" id="main-desplegable">
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/hotel_virginia1.png" alt="Ecohotel La Casona">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>El Paraiso Hotel Campestre</h2>
+                        <p>La virginia</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Siempre abierto</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Km 3 Vía La Virginia-Viterbo (Risaralda), La Virginia, Risaralda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hotel dos -->
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/hotel_virginia2.png" alt="Hotel Campestre Sueño del Abuelo">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Hotel Aparta Suites y Alojamientos Torre Osadia</h2>
+                        <p>La virginia</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Siempre abierto</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Barrio Restrepo, Cra. 9 #10-85, La Virginia, Risaralda</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>               
+        <!-- seccion oculta de actividades   -->
+        <div class="main" id="main-desplegable1">
+
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/actividad_balboa1.jpg" alt="Tour alto del nudo">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Avistamiento de aves</h2>
+                        <p>Balboa</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <!-- <i class="bi bi-star-fill"></i> -->
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura 8:00 am <br> clausura 5:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>La virginia,  Risaralda, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--segundo tour  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/actividad_balboa2.jpg" alt="Dos Cosechas Cafe">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>Senderismo</h2>
+                            <p>Balboa</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Apertura 7:00 am <br> clausura 5:00 pm</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p>Balboa, Risaralda, Colombia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--tercer tour--> 
+             
+        </div>
+        <!-- seccion oculta de restaurantes -->
+        <div class="main" id="main-desplegable2">
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/restaurante_pereira1.jpg" alt="La Galería Campestre">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Los Paisanitos la Virginia</h2>
+                        <p>La virginia</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <!-- <i class="bi bi-star-fill"></i> -->
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 4:00 pm <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>pio Xll, calle 15 # 11-69, La Virginia, Risaralda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--segundo tour  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/restaurante_pereira2.jpg" alt="Dos Cosechas Cafe">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>El Olivo Campestre</h2>
+                            <p>Pereira</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Apertura: 12:00 m <br> Cierre: 10:00 pm</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p> Junto a la entrada del Club Campestre, CERRITOS, Pereira</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--tercer tour--> 
+             <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/restaurante_pereira3.jpg" alt="Tours y boletos de Café Orgánico Arabi">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Mirador El Limonar</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <!-- <i class="bi bi-star-fill"></i> -->
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 3:00 pm <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p> Q7P4+94, Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    
+    </section>
+    
+    <!-- seccion de detalles -->
+     
+    <!-- footer -->
+
+    <footer class="footer"> &copy; ExploreRisaralda 
+        || 2025 todos los derechos reservados || 
+        Luisa Fernanda Jimenez Coy - Sebastian Castellanos - Juan Manuel Rios </footer>
+
+    <script type="text/javascript"  src="js/dosquebradas.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('/EXPLORE_RISARALDA/img/pexels-samandgos-709552.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    
+}
+
+header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color:  #B3C38E;
+    backdrop-filter: blur(1.5px);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+/* estilos encabezado */
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.encabezado h1{
+    color:#5c4747;
+    font-size: 50px;
+}
+/* estilos partes header */
+.partes_header{
+    display: flex;
+    gap:30px;
+}
+.partes_header a{
+    color:#5c4747;
+    text-decoration: none;
+
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 750px;
+}
+
+.login-forma h2 {
+    text-align: left;
+    margin-bottom: 25px;
+    color: #333;
+    
+}
+
+.inicial {
+    margin-bottom: 15px;
+    display: flex; 
+    align-items: center; 
+}
+
+.inicial label[for="email"] {
+    color: #555;
+    font-size: 0.9em;
+    margin-right: 15px; 
+    width: 20%; 
+}
+.inicial label[for="password"] {
+    color: #555;
+    font-size: 0.9em;
+    margin-right: 20px; 
+    width: 19%; 
+}
+.inicial label[for="text"] {
+    color: #555;
+    font-size: 0.9em;
+    margin-right: 15px; 
+    width: 20%; 
+}
+.inicial label[for="text"] {
+    color: #555;
+    font-size: 0.9em;
+    margin-right: 20px; 
+    width: 19%; 
+}
+.inicial input[type="text"],
+.inicial input[type="email"],
+.inicial input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    flex-grow: 1; 
+}
+
+.required {
+    color: #ff0000;
+    font-size: 0.8em;
+    float: right;
+    margin-top: 5px;
+}
+
+.boton_inicio{
+    background-color: #4CAF50; 
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.boton_inicio:hover {
+    background-color: #e7f6e8;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+}
+
+.opciones input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.opciones a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.opciones a:hover {
+    text-decoration: underline;
+}
+
+.registro {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.registro a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.registro a:hover {
+    text-decoration: underline;
+}

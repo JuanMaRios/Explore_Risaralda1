@@ -15,26 +15,46 @@
             <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
             <nav class="nav-icons nav visible" id="nav">
                 <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <input type="text" placeholder="Search...">
+                <div class="btns"> <i class="bi bi-search"></i> </div>
+                <a href="#">Municipios</a>
+                <a href="#">Paquetes</a>          
                 <i class="bi bi-bell"></i>
                 <i class="bi bi-heart"></i>
-                <a href="#">Inicio</a>
-                <a href="#">Iniciar sesion</a>
+                <a><i class="bi bi-cart"></i></a>
+                <a href="#"><i class="bi bi-person-circle"></i></a>
             </nav>
         </div>
         <!-- Segunda parte del header -->
-        <div class="nav-bar">
-            <a href="#">Paquetes</a>
-            <a href="#">Municipios</a>
-            <a><i class="bi bi-cart"></i></a>
-            <div class="search-bar">
-                <button type="submit"><i class="bi bi-search"></i></i></button>
-                <input type="text" placeholder="Search...">
-            </div>
-        </div>  
+          
     </header>
     
     <!-- complemento de información -->
     <section class="complemento"> 
+        <div class="textos">
+            <h1>Dosquebradas</h1> 
+
+            <p>Conoce Dosquebradas, Uno de nuestros municipios</p>
+        </div>
+        <div class="selector">
+            <select name="municipio" id="municipio">
+                <option value="" disabled selected>Seleccione un municipio</option>
+                <option value="Apia">Apia</option>
+                <option value="Balboa">Balboa</option>
+                <option value="Belalcazar">Belalcázar</option>
+                <option value="Dosquebradas">Dosquebradas</option>
+                <option value="Guatica">Guática</option>
+                <option value="LaCelia">La Celia</option>
+                <option value="LaVirginia">La Virginia</option>
+                <option value="Marsella">Marsella</option>
+                <option value="Mistrato">Mistrató</option>
+                <option value="Pereira">Pereira</option>
+                <option value="PuebloRico">Pueblo Rico</option>
+                <option value="Quinchia">Quinchía</option>
+                <option value="SantaRosaDeCabal">Santa Rosa de Cabal</option>
+                <option value="Santuario">Santuario</option>
+              </select>
+        </div>
         <div class="galeria">
             <div class="item item-0"></div>
             <div class="item item-1"></div>
@@ -51,319 +71,334 @@
         <!-- Clase oculta de hoteles -->
         <div class="main" id="main-desplegable">
             <div class="paquete-carrito">
-                <img src="./img/ecohotel1.png" alt="imagen casacada santa helena">
-                <div class="info-carrito">
-                    <h2>Eco hotel parador de Rapi </h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
-                        <h3>Calificación</h3>
-                        <div>
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>   
-                    </div>
+                <div class="imagen-container">
+                    <img src="./img/ecohotel1.png" alt="Imagen Eco hotel parador de Rapi">
                 </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        2 Dosquebradas-Santa Rosa De Cabal, Risaralda  <br>
-                    </div>
-                </div>
-            </div>
-            <div class="paquete-carrito">
-                <img src="./img/la_milagrosa.png" alt="imagen casacada santa helena">
                 <div class="info-carrito">
-                    <h2>Eco Hotel la Milagrosa</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
+                    <div class="info-header">
+                        <h2>Eco hotel parador de Rapi</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
                         <h3>Calificación</h3>
-                        <div>
+                        <div class="estrellas">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                       
-                        
                     </div>
-                </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Via variante Romelia - el pollo  <br>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>2 Dosquebradas-Santa Rosa De Cabal, Risaralda</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- hotel dos -->
             <div class="paquete-carrito">
-                <img src="./img/hotel_pacha.png" alt="imagen casacada santa helena">
+                <div class="imagen-container">
+                    <img src="./img/la_milagrosa.png" alt="imagen casacada santa helena">
+                </div>
                 <div class="info-carrito">
-                    <h2>Eco Hotel Pachamama</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
+                    <div class="info-header">
+                        <h2>Eco Hotel la Milagrosa</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
                         <h3>Calificación</h3>
-                        <div>
+                        <div class="estrellas">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                       
-                        
                     </div>
-                </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Vereda la Esperanza, Dosquebradas, Risaralda  <br>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Via variante Romelia - el pollo</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="paquete-carrito">
-                <img src="./img/la_milagrosa.png" alt="imagen casacada santa helena">
+                <!--Hptel 3  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/la_milagrosa.png" alt="imagen casacada santa helena">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>Eco Hotel Pachamama</h2>
+                            <p>Dosquebradas</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Apertura: 8:00 am <br> Cierre: 10:00 pm</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p>Vereda la Esperanza, Dosquebradas, Risaralda </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--hotel 4--> 
+             <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/hotel_pacha.png" alt="imagen casacada santa helena">
+                </div>
                 <div class="info-carrito">
-                    <h2>Eco Hotel la Milagrosa</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
+                    <div class="info-header">
+                        <h2>Eco Hotel Pachamama</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
                         <h3>Calificación</h3>
-                        <div>
+                        <div class="estrellas">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                       
-                        
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Vereda la Esperanza, Dosquebradas, Risaralda </p>
+                        </div>
                     </div>
                 </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Via variante Romelia - el pollo  <br>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </div>   
+        </div>               
+                   
+            
+            
+            
+          
         <!-- seccion oculta de restaurantes    -->
         <div class="main" id="main-desplegable1">
+
             <div class="paquete-carrito">
-                <img src="./img/mirador-de-las-hortensias.jpg" alt="imagen casacada santa helena">
-                <div class="info-carrito">
-                    <h2>Tour alto del nudo </h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
-                        <h3>Calificación</h3>
-                        <div>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>   
-                    </div>
+                <div class="imagen-container">
+                    <img src="./img/mirador-de-las-hortensias.jpg" alt="Tour alto del nudo">
                 </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        <p>Disfruta de esta gran experiencia de senderismo.
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="paquete-carrito">
-                <img src="./img/paraiso_cafe.png" alt="imagen casacada santa helena">
                 <div class="info-carrito">
-                    <h2>Dos Cosechas Cafe</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
+                    <div class="info-header">
+                        <h2>Tour alto del nudo</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
                         <h3>Calificación</h3>
-                        <div>
+                        <div class="estrellas">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                       
-                        
                     </div>
-                </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Vereda Santana Alta | Finca la Trinidad, Dosquebradas, Colombia  <br>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 5:30 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Unnamed Road, Pereira, Risaralda</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="paquete-carrito">
-                <img src="./img/e8.jpg" alt="imagen casacada santa helena">
+                <!--segundo tour  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/paraiso_cafe.png" alt="Dos Cosechas Cafe">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>Dos Cosechas Cafe</h2>
+                            <p>Dosquebradas</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Apertura: 2:00 pm <br> Cierre: 10:00 pm</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p>Serranía Alto del Nudo, Dosquebradas, Risaralda </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--tercer tour--> 
+             <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/e8.jpg" alt="Tours y boletos de Café Orgánico Arabi">
+                </div>
                 <div class="info-carrito">
-                    <h2>Tours y boletos de Café Orgánico Arabi</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
+                    <div class="info-header">
+                        <h2>Tours y boletos de Café Orgánico Arabi</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
                         <h3>Calificación</h3>
-                        <div>
+                        <div class="estrellas">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                       
-                        
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p> Vereda la Palma, Dosquebradas </p>
+                        </div>
                     </div>
                 </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Vereda la Esperanza, Dosquebradas, Risaralda  <br>
-                    </div>
-                </div>
-            </div>
-            
+            </div>  
         </div>
-        <!-- seccion oculta de lugares -->
+        <!-- seccion oculta de restaurantes -->
         <div class="main" id="main-desplegable2">
             <div class="paquete-carrito">
-                <img src="./img/mirador-de-las-hortensias.jpg" alt="imagen casacada santa helena">
-                <div class="info-carrito">
-                    <h2>Tour alto del nudo </h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
-                        <h3>Calificación</h3>
-                        <div>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>   
-                    </div>
+                <div class="imagen-container">
+                    <img src="./img/restaurante_dosque1.jpg" alt="Tour alto del nudo">
                 </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        <p>Disfruta de esta gran experiencia de senderismo.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="paquete-carrito">
-                <img src="./img/la_milagrosa.png" alt="imagen casacada santa helena">
                 <div class="info-carrito">
-                    <h2>Eco Hotel la Milagrosa</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
+                    <div class="info-header">
+                        <h2>El Cubo</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
                         <h3>Calificación</h3>
-                        <div>
+                        <div class="estrellas">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                       
-                        
                     </div>
-                </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Via variante Romelia - el pollo  <br>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 5:30 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Alto El Chaquiro Zona Rural, Dosquebradas Colombia</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="paquete-carrito">
-                <img src="./img/hotel_pacha.png" alt="imagen casacada santa helena">
+                <!--segundo tour  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/restaurante_dosque2.jpg" alt="Dos Cosechas Cafe">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>Mirador de las Aromas restaurante café Bar</h2>
+                            <p>Dosquebradas</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Apertura: 4:30 pm <br> Cierre: 12:00 am</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p> Calle de Las Aromas, Dosquebradas, Risaralda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--tercer tour--> 
+             <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/restaurante_dosque3.jpg" alt="Tours y boletos de Café Orgánico Arabi">
+                </div>
                 <div class="info-carrito">
-                    <h2>Eco Hotel Pachamama</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
+                    <div class="info-header">
+                        <h2>KAMMARATA CAFE</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
                         <h3>Calificación</h3>
-                        <div>
+                        <div class="estrellas">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                       
-                        
                     </div>
-                </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Vereda la Esperanza, Dosquebradas, Risaralda  <br>
-                    </div>
-                </div>
-            </div>
-            <div class="paquete-carrito">
-                <img src="./img/la_milagrosa.png" alt="imagen casacada santa helena">
-                <div class="info-carrito">
-                    <h2>Eco Hotel la Milagrosa</h2>
-                    <p>Dosquebradas</p>
-                    <div class="botones">              
-                        <h3>Calificación</h3>
-                        <div>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 11:00 am <br> Cierre: 10:00 pm</p>
                         </div>
-                       
-                        
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Cra. 21 #3886, Dosquebradas, Risaralda</p>
+                        </div>
                     </div>
                 </div>
-                <div class="detalle-compra">
-                    <h2>Horario de atención</h2>
-                    <br>
-                    <div class="precio">
-                        Apertura: 8:00 am <br> <br>
-                        Cierre: 10:00 pm <br> <br>
-                        Dirección: <br> <br>
-                        Via variante Romelia - el pollo  <br>
-                    </div>
-                </div>
-            </div>
+            </div>  
         </div>
     
     </section>

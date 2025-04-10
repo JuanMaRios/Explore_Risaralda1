@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsella</title>
+    <link rel="stylesheet" href="css/marsella.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <!-- primera parte del header -->
+        <div class="barra-superior">
+            <a href="#"><h1 class="logo">ExploreRisaralda</h1></a>
+            <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+            <nav class="nav-icons nav visible" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <input type="text" placeholder="Search...">
+                <div class="btns"> <i class="bi bi-search"></i> </div>
+                <a href="#">Municipios</a>
+                <a href="#">Paquetes</a>          
+                <i class="bi bi-bell"></i>
+                <i class="bi bi-heart"></i>
+                <a><i class="bi bi-cart"></i></a>
+                <a href="#"><i class="bi bi-person-circle"></i></a>
+            </nav>
+        </div>
+        <!-- Segunda parte del header -->
+          
+    </header>
+    
+    <!-- complemento de información -->
+    <section class="complemento">
+        <div class="textos">
+            <h1>Marsella</h1> 
+            <p>Conoce Marsella, Uno de nuestros municipios</p>
+        </div>
+        <div class="selector">
+            <select name="municipio" id="municipio">
+                <option value="" disabled selected>Seleccione un municipio</option>
+                <option value="Apia">Apia</option>
+                <option value="Balboa">Balboa</option>
+                <option value="Belalcazar">Belalcázar</option>
+                <option value="Dosquebradas">Dosquebradas</option>
+                <option value="Guatica">Guática</option>
+                <option value="LaCelia">La Celia</option>
+                <option value="LaVirginia">La Virginia</option>
+                <option value="Marsella">Marsella</option>
+                <option value="Mistrato">Mistrató</option>
+                <option value="Pereira">Pereira</option>
+                <option value="PuebloRico">Pueblo Rico</option>
+                <option value="Quinchia">Quinchía</option>
+                <option value="SantaRosaDeCabal">Santa Rosa de Cabal</option>
+                <option value="Santuario">Santuario</option>
+              </select>
+        </div> 
+        <div class="galeria">
+            <div class="item item-0"></div>
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+        </div>
+    </section>
+    <section>
+        <div class="botones">
+            <a href="#" id="boton-desple" class="boton-desple">Hoteles</a>
+            <a href="#" id="boton-desple1" class="boton-desple">Aventura</a>
+            <a href="#" id="boton-desple2" class="boton-desple">Restaurantes</a>
+        </div>
+        
+        <!-- Clase oculta de hoteles -->
+        <div class="main" id="main-desplegable">
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/hotel_pereira1.jpg" alt="Ecohotel La Casona">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Ecohotel La Casona</h2>
+                        <p>Pereira</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Siempre abierto</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Sector, Armenia - Pereira #Km 6, TRIBUNAS, LA YE, Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hotel dos -->
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/hotel_pereira2.jpg" alt="Hotel Campestre Sueño del Abuelo">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Hotel Campestre Sueño del Abuelo</h2>
+                        <p>Pereira</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Siempre abierto</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Avenida Condina - Vereda La Gramínea, Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--Hptel 3  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/hotel_pereira3.jpg" alt="La Selecta Eco Hotel">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>La Selecta Eco Hotel</h2>
+                            <p>Pereira</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <!-- <i class="bi bi-star-fill"></i> -->
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Siempre abierto</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p> Kilometro 5 Via, Altagracia, San Joaquin, Pereira </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--hotel 4--> 
+             <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/hotel_pereira4.jpg" alt="Yanuba Hotel Camprestre">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Yanuba Hotel Camprestre</h2>
+                        <p>Pereira</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Paraje morelia 1 km hacia el plan, FRASCATE, Pereira </p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>               
+                   
+            
+            
+            
+          
+        <!-- seccion oculta de actividades   -->
+        <div class="main" id="main-desplegable1">
+
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/actividad_pereira1.jpg" alt="Tour alto del nudo">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Senderismo la florida</h2>
+                        <p>Pereira</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Disponible a toda hora</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Pereira-La Florida, Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--segundo tour  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/actividades_pereira2.jpg" alt="Dos Cosechas Cafe">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>Senderismo Altagracia-Arabia</h2>
+                            <p>Pereira</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Disponible a toda hora</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p>Carrera 4 #25435, Pereira, Risaralda </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--tercer tour--> 
+             <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/actividad_pereira3.jpg" alt="Tours y boletos de Café Orgánico Arabi">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>El Abanico Lodge</h2>
+                        <p>Pereira</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 8:00 am <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Pereira, a 19 km de Ukumari Zoo y a 12 km de Villa Olímpica de Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- 4ta actividad -->
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/actividad_pereira4.jpg" alt="Tours y boletos de Café Orgánico Arabi">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Bioparque Ukumari</h2>
+                        <p>Pereira</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 9:00 am <br> Cierre: 3:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>vía Cerritos ingreso por la estación de servicio de Santa Barbara, km 14, Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- seccion oculta de restaurantes -->
+        <div class="main" id="main-desplegable2">
+            <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/restaurante_pereira1.jpg" alt="La Galería Campestre">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>La Galería Campestre </h2>
+                        <p>Pereira</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <!-- <i class="bi bi-star-fill"></i> -->
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 12:00 m <br> Cierre: 9:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p>Vía Altagracia, Altagracia, Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--segundo tour  -->
+                <div class="paquete-carrito">
+                    <div class="imagen-container">
+                        <img src="./img/restaurante_pereira2.jpg" alt="Dos Cosechas Cafe">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="info-header">
+                            <h2>El Olivo Campestre</h2>
+                            <p>Pereira</p>
+                        </div>
+                        <div class="calificacion">
+                            <h3>Calificación</h3>
+                            <div class="estrellas">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                        <div class="horario-direccion">
+                            <div class="horario">
+                                <h2>Horario de atención</h2>
+                                <p>Apertura: 12:00 m <br> Cierre: 10:00 pm</p>
+                            </div>
+                            <div class="direccion">
+                                <h2>Dirección</h2>
+                                <p> Junto a la entrada del Club Campestre, CERRITOS, Pereira</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+             <!--tercer tour--> 
+             <div class="paquete-carrito">
+                <div class="imagen-container">
+                    <img src="./img/restaurante_pereira3.jpg" alt="Tours y boletos de Café Orgánico Arabi">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-header">
+                        <h2>Mirador El Limonar</h2>
+                        <p>Dosquebradas</p>
+                    </div>
+                    <div class="calificacion">
+                        <h3>Calificación</h3>
+                        <div class="estrellas">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <!-- <i class="bi bi-star-fill"></i> -->
+                        </div>
+                    </div>
+                    <div class="horario-direccion">
+                        <div class="horario">
+                            <h2>Horario de atención</h2>
+                            <p>Apertura: 3:00 pm <br> Cierre: 10:00 pm</p>
+                        </div>
+                        <div class="direccion">
+                            <h2>Dirección</h2>
+                            <p> Q7P4+94, Pereira</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    
+    </section>
+    
+    <!-- seccion de detalles -->
+     
+    <!-- footer -->
+
+    <footer class="footer"> &copy; ExploreRisaralda 
+        || 2025 todos los derechos reservados || 
+        Luisa Fernanda Jimenez Coy - Sebastian Castellanos - Juan Manuel Rios </footer>
+
+    <script type="text/javascript"  src="js/dosquebradas.js"></script>
+</body>
+</html>
