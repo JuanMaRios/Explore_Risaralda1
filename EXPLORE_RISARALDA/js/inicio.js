@@ -29,6 +29,23 @@ productContainer.forEach((item, i) => {
   });
 });
 
+const productContainer1 = [...document.querySelectorAll(".contenedor1")];
+const nextBtn1 = [...document.querySelectorAll(".next-btn1")];
+const preBtn1 = [...document.querySelectorAll(".pre-btn1")];
+
+productContainer1.forEach((item, i) => {
+  let dimensiones = item.getBoundingClientRect();
+  let cWidth = dimensiones.width;
+
+  nextBtn1[i].addEventListener("click", () => {
+    item.scrollLeft += cWidth;
+  });
+
+  preBtn1[i].addEventListener("click", () => {
+    item.scrollLeft -= cWidth;
+  });
+});
+
 
 
 

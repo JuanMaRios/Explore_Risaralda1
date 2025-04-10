@@ -9,20 +9,24 @@
 </head>
 <body>
     <header>
-        <div class="encabezado">
-            <h1 class="logo"><a href="#">ExploreRisaralda </a></h1>
+        <!-- primera parte del header -->
+        <div class="barra-superior">
+            <a href="#"><h1 class="logo">ExploreRisaralda</h1></a>
             <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
-            <nav class="nav-icons partes_header visible" id="nav">
+            <nav class="nav-icons nav visible" id="nav">
                 <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-                <a href="#">Inicio</a>
+                <input type="text" placeholder="Search...">
+                <div class="btns"> <i class="bi bi-search"></i> </div>
                 <a href="#">Municipios</a>
-                <a href="#">Paquetes</a>
-                <a href="#"><i class="bi bi-bell"></i></a>    
-                <a href="#"><i class="bi bi-heart"></i></a>
-                <a href="#"><i class="bi bi-cart"></i></a>
+                <a href="#">Paquetes</a>          
+                <i class="bi bi-bell"></i>
+                <i class="bi bi-heart"></i>
+                <a><i class="bi bi-cart"></i></a>
                 <a href="#"><i class="bi bi-person-circle"></i></a>
             </nav>
         </div>
+        <!-- Segunda parte del header -->
+          
     </header>
 
 
@@ -35,20 +39,20 @@
                     <h2>Bienvenido a ExploreRisaralda</h2>   
                     <p>Explora los mejores destinos turísticos de Risaralda. 
                         <br>Descubre la belleza natural, la cultura y la gastronomía de esta región colombiana </p>
+                    <a href="/EXPLORE_RISARALDA/login.html" ><button class="join-button">JOIN NOW</button></a>
                     
-                    <button class="join-button">JOIN NOW</button>
                 </div>    
             </div>
    
         </div>
-        <div class="busqueda">
+        <!-- <div class="busqueda">
             <input type="text" placeholder="¿Qué deseas buscar?">
             <button class="search-button">Buscar</button>
-        </div>
+        </div> -->
         <section class="conteiner_general">
             <!-- Botones de carrucel -->
-             <div class="conteiner">
-                <h1 class="titulo_muni">Risaralda</h1>
+            <div class="conteiner">
+                
                 <section class="secion1">
                     <div class="slider">
                         <input type="radio" name="slider" id="slider1" checked>
@@ -81,7 +85,8 @@
                             <label for="slider13"></label>
                             <label for="slider14"></label>
                         </div>
-                        <div class="content">
+                        <h1 class="titulo_muni">Risaralda</h1>
+                        <div class="content">                                     
                             <div class="primerslide">
                                 <div class="card">
                                     <img src="/EXPLORE_RISARALDA/img/DOSQUEBRADAS.jpg" alt="Dosquebradas">
@@ -214,7 +219,7 @@
                         </div>    
                     </div>
                 </section>
-             </div>
+            </div>
         </section>
         <h1 class="destacados1">Tenemos para ofrecer</h1>
         <section class="espacio_ofer">
@@ -241,35 +246,82 @@
             
         </section>
         <!-- Seccion destacados -->
-        <h1 class="destacados">Paquetes destacados</h1>
-        <section class="espacio_gen">
-            
-            <div class="destaca">
-                
-                <br>
-                <div class="desta">
-                    <img src="img/actividad_pereira4.jpg">
-                    <p>Ukumari <br><i class="bi bi-star-fill"></i> 5 </p>
-                </div>
-            
-                
-                <div class="desta">
-                    <img src="img/actividad_santarosa1.jpg">
-                    <p>Termales <br><i class="bi bi-star-fill"></i> 5 </p>
-                </div>
-                
-                <div class="desta">
-                    <img src="img/actividad_pereira3.jpg">
-                    <p>Finca Cafetera <br><i class="bi bi-star-fill"></i> 5 </p>
-                </div>
-                <div class="desta">
-                    <img src="img/actividad_pereira1.jpg">
-                    <p>Senderismo <br><i class="bi bi-star-fill"></i> 5 </p>
-                </div>
+        <h1 class="seccion-header1">Paquetes destacados</h1>
+        
+        <section class="testimonios1">
+            <!-- <div class="seccion-header">
+                <h2 class="titulo">testimonios</h2>
+            </div> -->
+            <button class="pre-btn1"><i class="bi bi-chevron-compact-left"></i></button>
+            <button class="next-btn1"><i class="bi bi-chevron-compact-right"></i></button>
+            <div class="contenedor1">
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira1.jpg" alt="foto-testimonio">
+                        </div>
+                        <p>Alto del Nudo</p>
+                        
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira4.jpg " alt="foto-testimonio">
+                        </div>
+                        <p>Ukumari</p>
+                        
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa1.jpg" alt="foto-testimonio">     
+                        </div>
+                        <p>Termales</p>
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira3.jpg" alt="foto-testimonio">
+                        </div>
+                        <p>Finca Cafetera</p>
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa2.jpg" alt="foto-testimonio">
+                        </div>
+                        <p>Eco hotel</p>
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira1.jpg" alt="foto-testimonio">
+                        </div>
+                        <p>Alto del Nudo</p>
+                        
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira4.jpg " alt="foto-testimonio">
+                        </div>
+                        <p>Ukumari</p>
+                        
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa1.jpg" alt="foto-testimonio">     
+                        </div>
+                        <p>Termales</p>
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira3.jpg" alt="foto-testimonio">
+                        </div>
+                        <p>Finca Cafetera</p>
+                    </div>
+                    <div class="testimonios-item1">
+                        <div class="info-testimonios1">
+                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa2.jpg" alt="foto-testimonio">
+                        </div>
+                        <p>Eco hotel</p>
+                    </div>
             </div>
-<br>
-<br>
         </section>
+        
         <!-- Seccion testimonios -->
          <h2 class="seccion-header">Testimonios</h2>
         <section class="testimonios">

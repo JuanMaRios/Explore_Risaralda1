@@ -24,7 +24,7 @@ header{
     left: 0;
     width: 100%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.355);
+    background-color:#a8d5a1;
     backdrop-filter: blur(1.5px);
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ header{
     align-items: center;
 }
 .encabezado h1{
-    color:white;
+    color: #5c4747;
     font-size: 50px;
 }
 /* estilos partes header */
@@ -47,7 +47,7 @@ header{
     gap:30px;
 }
 .partes_header a{
-    color:rgb(255, 255, 255);
+    color:#5c4747;
     text-decoration: none;
 
 }

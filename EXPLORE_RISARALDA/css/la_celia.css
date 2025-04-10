@@ -17,6 +17,8 @@ header{
     background-color: #a8d5a1;
     text-align: center;
     color:#5c4747;
+    height: 100px;
+
 }
 
 .barra-superior {
@@ -24,7 +26,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 120px;
+    height: 90px;
 }
 
 .barra-superior a {
@@ -35,7 +37,7 @@ header{
 .barra-superior input{
     outline: none;
     box-sizing: border-box;
-    height: 60px;
+    height: 40px;
     width: 0;
     padding: 0 20px;
     color:#000;
@@ -46,10 +48,10 @@ header{
 }
 .btns{
     position:absolute;
-    right: 595px;
-    top: 30px;
-    width: 60px;
-    height:60px;
+    right: 468px;
+    top: 25px;
+    width: 40px;
+    height:40px;
     background: #016725;
     border-radius: 50%;
     display: flex;
@@ -143,7 +145,6 @@ header{
         top:70px;
     }
 }
-
 
 .complemento{
     width:100%;
