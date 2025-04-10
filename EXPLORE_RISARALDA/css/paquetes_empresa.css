@@ -1,0 +1,475 @@
+/* estilos generales */
+body{
+    background-color: #f1faf5;
+    margin: 0;
+}
+/*---------------------------------------------------------------------------------*/
+
+/* estilos del encabezado */
+header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c4827;
+    border: 2px solid black;
+    align-items: center;  
+    color: white; 
+}
+
+h1{
+    margin-left: 20px;
+}
+
+/* estilos de la navegacion */
+nav{
+    display: flex;
+    margin-right: 2rem;
+    gap: 0.6cm;
+}
+
+/* estilos del boton de busqueda */
+#buscar{
+    border-radius: 40%;
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+
+/* --------------------------------------Estilos para el boton de crear paquetes y su ventana modal ----------------------------------------------- */ 
+.boton-modal label{
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+/* Ventana modal */
+#btn-modal{
+    display: none;
+
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+/* estilos de la ventana modal */
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f1faf5;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/* estilos del titulo de crear paquetes */
+.content-modal h2{
+    margin-bottom: 15px;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+
+/* estilos del contenedor donde esta el formulario de creacion  */
+#creacion{
+    display: block;
+}
+
+/* estilos para el contenedor donde esta el nombre */
+#casilla1-nombre{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan el nombre */
+#nombrePaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde esta la actividad */
+#casilla2-actividad{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan la actividad*/
+#actividadPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde esta el precio */
+#casilla3-precio{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan el precio*/
+#precioPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde esta la ubicacion */
+#casilla4-ubicacion{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan el precio*/
+#ubicacionPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+/* estilos para el contenedor donde estan los terminos */
+#casilla5-terminos{
+    display: flex;
+    color: black;
+    gap: 15px;
+    align-items: center;
+}
+/* Estilos para el input donde ingresan los terminos*/
+#terminosPaquete{
+    height: 1.7rem;
+    border-radius: 5px;
+}
+
+#casilla6-fotos{
+    display: block;
+    color: black;
+}
+/* estilos para el contenedor donde estan las imagenes */
+#imagenes{
+    display: flex;
+    height: 6rem;
+    justify-content: space-evenly;
+}
+/* Estilos para la imagen1 */
+#imagen1{
+    display: flex;
+    width: 4rem;
+    height: 5rem;
+    border: 2px dashed black;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+/* Estilos para la imagen1 */
+#imagen2{
+    display: flex;
+    width: 4rem;
+    height: 5rem;
+    border: 2px dashed black;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+/* Estilos para la imagen1 */
+#imagen3{
+    display: flex;
+    width: 4rem;
+    height: 5rem;
+    border: 2px dashed black;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+/*Estilos para el cierre de la ventana nodal*/
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Media Query para el "responsive" */
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+
+/*estilos del boton para crear paquetes */
+/* #crearpaquetes{
+    cursor: pointer;
+    font-weight: 600;
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+#icono-mas{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+#crearpaquetes:hover{
+    box-shadow: 0 0 10px white;
+} */
+
+
+/* estilos del icono de empresa */
+#iconoEmpresa{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    color: white;
+}
+
+/* estilos del icono de notificación */
+#iconoNoti{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    color: white;
+}
+
+/*---------------------------------------------------- Main --------------------------------------------------------------*/
+/* estilos de la sección principal */
+main{
+    display: flex; 
+}
+
+/* Contenedor de opciones de navegación */
+.menu_opciones{
+    width: 23%;
+    height: 90vh;
+    text-align: center;
+    margin: 0;
+    display: block;
+    gap: 20px;
+    background: white;
+}
+
+/* estilos del contenedor del titulo ajustes*/
+#titulo-ajustes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estilos del titulo (parrafo) */
+#ajustes{
+    display: flex;
+    margin-left: 1cm;
+    font-size: 0.7cm;
+}
+
+/* estilos del icono para cerrar ventana */
+#icono-cerrar{
+    font-size: 0.8cm;
+    color: black;
+}
+#icono-cerrar:hover{
+    text-shadow: 0 0 15px red;
+}
+
+/*Estilos de la sección en la que nos encontramos en este momento (Datos de empresa)*/
+#datosEmpresa{
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: black;
+    margin-top: 4rem;
+}
+/* estilos para su respectivo texto (datos de empresa) */
+#datosEmpresa a{
+    text-decoration: none;
+    color: black;
+}
+#datosEmpresa:hover{
+    background-color: #0c4827;
+    color: white;
+}
+
+/* estilos para la opción de mis paquetes */
+#misPaquetes{
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    background: #0c4827;
+    color: white; 
+    margin-top: 15px;
+}
+/* estilos para su respectivo texto (mis paquetes) */
+#misPaquetes a{
+    text-decoration: none;
+    color: white;   
+}
+
+/* estilos para la opción de Configurar Cuenta */
+#configurarCuenta{
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: black;
+    margin-top: 15px;
+}
+/* estilos para su respectivo texto (Configurar cuenta) */
+#configurarCuenta a{
+    text-decoration: none;
+    color: black;
+}
+#configurarCuenta:hover{
+    background-color: #0c4827;
+    color: white;
+}
+
+/* estilos para la opción de Cerrar sesión */
+#cerrarSesion{
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: black;
+    margin-top: 15px;
+}
+/* estilos para su respectivo texto (Cerrar Sesión) */
+#cerrarSesion a{
+    text-decoration: none;
+    color: black;
+}
+#cerrarSesion:hover{
+    background-color: indianred;
+    color: black;
+}
+
+/* estilos para el contenedor general del contenido */
+.contenido{
+    width: 77%;
+    padding: 4rem;
+    height: auto;
+    
+}
+
+img{
+    width: 225px;
+    height: 190px;
+}
+
+#primerosPaquetes{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#paquete1{
+   width: 21%;
+   height: 15rem;
+   display: block;
+   border: 1px solid black;
+   text-align: center;
+   background: white;
+}
+
+#paquete2{
+    width: 21%;
+    height: 15rem;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+}
+
+#paquete3{
+    width: 21%;
+    height: 15rem;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+}
+
+#paquete4{
+    width: 21%;
+    height: 15rem;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+}
+
+#segundosPaquetes{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+#paquete5{
+    width: 21%;
+    height: 15rem;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+}
+
+#paquete6{
+    width: 21%;
+    height: 15rem;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+}
+
+#paquete7{
+    width: 21%;
+    height: 15rem;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+}

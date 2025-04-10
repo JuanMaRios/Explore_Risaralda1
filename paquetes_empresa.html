@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis paquetes</title>
+    <link rel="stylesheet" href="./EXPLORE_RISARALDA/css/paquetes_empresa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <!-- nombre de la pagina -->
+        <h1> ExploreRisaralda </h1>
+        <nav>
+            <!-- boton de buscar -->
+            <button id="buscar"> <i class="bi bi-search"></i> </button>
+            
+            <!-- boton de crear paquetes -->
+            <div class="boton-modal"> 
+                <label for="btn-modal">
+                    Crear paquetes
+                </label>
+            </div>
+            <!-- fin del boton -->
+
+            <!-- ventana modal -->
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <h2> Crea tu paquete! </h2>
+                    
+                    <div id="creacion">
+                        <div id="casilla1-nombre">
+                            <p> Nombre: </p>
+                            <input type="text" id="nombrePaquete">
+                        </div>
+
+                        <div id="casilla2-actividad">
+                            <p> Actividad: </p>
+                            <input type="text" id="actividadPaquete">
+                        </div>
+
+                        <div id="casilla3-precio">
+                            <p> Precio: </p>
+                            <input type="number" id="precioPaquete" placeholder="$">
+                        </div>
+
+                        <div id="casilla4-ubicacion">
+                            <p> Ubicación: </p>
+                            <input type="text" id="ubicacionPaquete">
+                        </div>
+
+                        <div id="casilla5-terminos">
+                            <p> Terminos y condiciones: </p>
+                            <input type="text" id="terminosPaquete">
+                        </div>
+
+                        <div id="casilla6-fotos">
+                            <p> Adjuntar Imagenes: </p>
+                            <div id="imagenes">
+                                <div id="imagen1"> <i class="bi bi-file-earmark-image"></i> </div>
+                                <div id="imagen2"> <i class="bi bi-file-earmark-image"></i> </div>
+                                <div id="imagen3"> <i class="bi bi-file-earmark-image"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-cerrar">
+                        <label for="btn-modal"> Crear </label>
+                    </div>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
+            </div>
+
+            <!-- <button id="crearpaquetes"> <i id="icono-mas" class="bi bi-plus"></i> Crear paquetes </button> -->
+            
+            <!-- notificaciones -->
+            <a href="#"><i id="iconoNoti" class="bi bi-bell"> </i></a>
+            <!-- icono de empresa -->
+            <a href="#"><i id="iconoEmpresa" class="bi bi-building"></i></a>
+        </nav>
+    </header>
+
+    <!-- contenido principal de la pagina -->
+    <main>
+        <!-- Seccion de la izquierda (menu de navegación) -->
+        <div class="menu_opciones">
+            
+            <!-- Primera parte - titulo de ajustes y boton de cerrar -->
+            <div id="titulo-ajustes"> 
+                <h3 id="ajustes"> Ajustes </h3> 
+                <a href="#"> <i id="icono-cerrar" class="bi bi-file-excel"></i> </a> 
+            </div>
+            <hr>
+            
+            <!-- Segunda Parte - Opciones de navegación -->
+            <div id="datosEmpresa"> <i id="icono-datosEmpresa" class="bi bi-building"></i> <a href="#"> Datos de empresa </a> </div>
+            <div id="misPaquetes"> <i id="icono-paquetes" class="bi bi-calendar3-range"></i> <a href="#"> Mis Paquetes </a> </div>
+            <div id="configurarCuenta"> <i id="icono-configuracion" class="bi bi-gear"></i> <a href="#"> Configurar cuenta </a> </div>
+            <div id="cerrarSesion"> <i id="icono-cerrarSesion" class="bi bi-power"></i> <a href="#"> Cerrar sesión </a> </div>
+        </div>
+        
+        <div class="contenido"> 
+            <h2> Paquetes </h2>
+
+            <div id="primerosPaquetes">
+                <div id="paquete1">
+                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <p> La divisa de Don Juan </p>
+                </div>
+
+                <div id="paquete2">
+                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <p> Tambo el privilegio </p>
+                </div>
+
+                <div id="paquete3">
+                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <p> PaisaAdventure</p>
+                </div>
+
+                <div id="paquete4">
+                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <p> Universidad Tec </p>
+                </div>
+            </div>
+
+            <div id="segundosPaquetes">
+                <div id="paquete5">
+                    <img src="./EXPLORE_RISARALDA/img/aventura-starosa.jpg">
+                    <p> Los farallones </p>
+                </div>
+
+                <div id="paquete6">
+                    <img src="./EXPLORE_RISARALDA/img/ecohotel1.png">
+                    <p> Casa de la cultura </p>
+                </div>
+
+                <div id="paquete7">
+                    <img src="./EXPLORE_RISARALDA/img/la_virginia.jpg">
+                    <p> Valle del cocora </p>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+</body>
+</html>
