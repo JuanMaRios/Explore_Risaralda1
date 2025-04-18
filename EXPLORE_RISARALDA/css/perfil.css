@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    position: relative;
+    width:100%;
+    background-color: #B3C38E;
+    text-align: center;
+    color:#2E7D32;
+    height: 100px;
+    z-index: 1000;
+
+}
+
+/* PARTE SUPEIOR DEL HEADER  */
+
+.navigation-1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 32px;
+    height: 70px;
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-logo img {
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    width: auto;
+    
+}
+
+.nav-title{
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    
+}
+
+.nav{
+    width: 33%;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    
+}
+
+.nav-icons ion-icon{
+    color: #2E7D32;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nav-icons ion-icon:hover{
+    transform: scale(1.2);
+    background-color: #2E7D32;
+    border-radius: 50%;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+/* PARTE INFERIOR DEL HEADER  */
+
+.navigation-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #A5D6A7;
+    height: 40px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container ion-icon {
+    position: absolute;
+    left: 10px; /* Ajusta según sea necesario */
+    color: #888;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.input-container input {
+    padding-left: 35px; /* Espacio para el ícono */
+    padding-right: 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 30px;
+    background-color: #FAFAFA;
+}
+
+.nav-menu{
+    margin-left: 30px;
+}
+
+.nav-menu a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: 600;
+    font-size: 15px;
+    transition: font-size 0.3s ease;
+}
+
+.nav-menu a:hover{
+    font-size: 16px;
+}
+
+/* Menu Desplegable */
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 200px;
+}
+
+.dropdown-menu .a-perfil{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.dropdown-menu .a-perfil:hover {
+    background-color: #2E7D32;
+    color: #FAFAFA;
+}
+
+
+.menu-container.active .dropdown-menu {
+    display: block;
+}
+
+/* opciones de perfil */
+
+.container-perfil{
+    display: flex;
+    background-color: #F1F8E9;
+}
+
+
+.perfil{
+    width: 23%;
+    height:85vh ;
+    background-color:#FAFAFA ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.perfil a{
+    margin: 0px;
+    text-decoration: none;
+    color: #2E7D32;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.1s ease;
+}
+
+.perfil a:hover{
+    color: white;
+    background-color: #2E7D32;
+}
+
+.perfil ion-icon{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+/* parte derecha del perfil */
+
+.container-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.info-perfil{
+    margin-top: 30px;
+    display: flex;
+    gap: 70px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 40px;
+    height: 300px;
+    background-color: #FAFAFA;
+}
+
+.titulo h3 {
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+}
+
+.izquierda, .derecha{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-perfil input{
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #333;
+    cursor:not-allowed; /*indica que el texto no es editable*/
+    background-color: #FAFAFA;
+    margin-bottom: 20px;
+}
+
+.derecha ion-icon{
+    padding: 5px;
+    border: 2px solid #2E7D32;
+    border-radius: 5px;
+}
+
