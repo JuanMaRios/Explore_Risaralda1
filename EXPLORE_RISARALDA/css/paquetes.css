@@ -1,176 +1,385 @@
-body {
-    width: 100%;
+*{
     margin: 0;
     padding: 0;
-    background-color: #fff;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 header{
+    position: relative;
     width:100%;
-    background-color: #B3C38E;
+    background-color: #A5D6A7;
     text-align: center;
-    color:#5c4747;
+    color:#2E7D32;
     height: 100px;
-
+    z-index: 1000;
 }
 
-.barra-superior {
+main{
+    margin-top: 20px;
+}
+
+/* PARTE SUPEIOR DEL HEADER  */
+
+.navigation-1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 32px;
+    height: 60px;
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-logo img {
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    width: auto;
+    
+}
+
+.nav-title{
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    
+}
+
+.nav{
+    width: 33%;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    
+}
+
+.nav-icons ion-icon{
+    color: #2E7D32;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nav-icons ion-icon:hover{
+    transform: scale(1.2);
+    background-color: #2E7D32;
+    border-radius: 50%;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+/* PARTE INFERIOR DEL HEADER  */
+
+.navigation-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #A5D6A7;
+    height: 40px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container ion-icon {
+    position: absolute;
+    left: 10px; /* Ajusta según sea necesario */
+    color: #888;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.buscar {
+    padding-left: 35px; /* Espacio para el ícono */
+    padding-right: 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 30px;
+    background-color: #FAFAFA;
+}
+
+.nav-menu{
+    margin-left: 30px;
+}
+
+.nav-menu a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: 600;
+    font-size: 15px;
+    transition: font-size 0.3s ease;
+}
+
+.nav-menu a:hover{
+    font-size: 16px;
+}
+
+/* Menu Desplegable */
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 200px;
+}
+
+.dropdown-menu .a-perfil{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.dropdown-menu .a-perfil:hover {
+    background-color: #2E7D32;
+    color: #FAFAFA;
+}
+
+.menu-container.active .dropdown-menu {
+    display: block;
+}
+
+/* notificaciones desplegables */
+
+.noti-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-noti {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 400px;
+    height: 300px;
+}
+
+.controladores{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.controladores-izquierda{
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.controladores .settings-icon{
+    display: inline-flex;
+}
+
+.leidos{
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-noti{
+    display: flex;
+    padding: 10px ;
+    margin: 0;
+}
+
+.tarjeta-noti:hover{
+    background-color: #ddd;
+}
+
+.img-noti{
+    background-image: url(../img/santarosa.jpg);
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.info-noti h5{
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.info-noti p{
+    color: #888;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.btn-leidos{
+    position: relative;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc ;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-top: 95px;
+}
+
+.dropdown-noti .controladores, .dropdown-noti .leidos{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 90px;
-}
-
-.barra-superior a {
+    padding: 10px 15px;
     text-decoration: none;
-    color: #5c4747;
-    font-size: 18px;
-}
-.barra-superior input{
-    outline: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
     box-sizing: border-box;
-    height: 40px;
-    width: 0;
-    padding: 0 20px;
-    color:#000;
-    border-radius: 50px;
-    font-size: 18px;
-    border: 1px solid #B3C38E;
-    transition: all .7s ease;
-}
-.btns{
-    position:absolute;
-    right: 468px;
-    top: 25px;
-    width: 40px;
-    height:40px;
-    background: #016725;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    transition: .5s; 
-}
-.btns i{
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 80px;
-    transition: all .7s  ease;
-}
-.barra-superior:hover input{
-    width: 350px;
-}
-.barra-superior:hover i {
-    transform: rotate(-360deg);
-}
-.btns:hover{
-    background-color: #555555;
+    margin: 0;
 }
 
-.logo { 
-    font-weight: bold;
-    font-style: italic;
-    font-size: 45px;
+.noti-container.active .dropdown-noti {
+    display: block;
 }
 
-.nav-icons i, .nav-icons a {
+/* checkbox  */
+
+.toggle{
+    box-sizing: border-box;
+    display: inline-block;
     margin-left: 10px;
+    align-items: center;
+}
+
+.switch{
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd ;
+    border-radius: 40px;
     cursor: pointer;
+    border: gray;
     margin-right: 15px;
-    font-weight: bold;
 }
 
-.nav-icons a {
-    text-decoration: none;
-    color: #5c4747;
-    font-weight: bold;
+.switch::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    background-color: gray ;
+    left: 3px;
+    top: 3px;
+    transition: all 0.4s
 }
 
-.abrir-menu, .cerrar-menu {
-    display: none;
+/* el switch esta desactivo */
+
+
+input[type='checkbox']:checked + .switch::after{
+    transform: translateX(20px);
+    background-color: #ddd;
 }
 
-@media screen and (max-width: 1009px) {
-    .abrir-menu, .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #a8d5a1;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        z-index: 99999999;
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-icons i, .nav-icons a, .nav-icons button {
-        flex-direction: column;
-        align-items: center;
-    }
-    .btns{
-        right:20px;
-        top:70px;
-    }
+ /* ek switch esta activado  */
+input[type='checkbox']:checked + .switch{
+    background-color:#2E7D32;
 }
+
+.offscreen{
+    position: absolute;
+    left: -99999px;
+}
+
 
 /* filtro de paquetes */
-.filtro-paquetes{
-    width: 100%;
-    margin: 0 50px;
-    padding: 0 15px;
+.container-paquetes{
+    width: 55%;
+    margin: 0 auto;
+    padding: 15px;
     font-size: 15px;
-    color: #5C4747;
+    border-radius: 10px;
+    color: #FAFAFA;
+    background-color: #2E7D32;
+    margin-bottom: 20px;
 }
 
-.filtro-paquetes select{
-    height: 45px;
+.container-paquetes h2{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.filtros-paquetes{
+    display: flex;
+    gap: 15px;
+}
+
+.filtros-paquetes select{
+    height: 35px;
     width: 35%;
     margin-right: 15px;
     border-radius: 12px;
     padding: 0 15px;
-    font-size: 15px;
+    font-size: 14px;
     color: #5C4747;
 }
 
-.filtro-paquetes button{
-    height: 45px;
+.filtros-paquetes button{
+    position: relative;
+    height: 35px;
     width: 15%;
     border-radius: 12px;
     border: none;
-    background-color:#59714B ;
-    color: white;
-    font-weight: 500;
+    background-color:#A5D6A7 ;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
     letter-spacing: 1px;
+    margin-left: auto;
 }
 
+
 /* creacion de paquetes */
+.contenedor-general{
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F8E9;
+    padding-top: 20px;
+}
+
 .contenedor-paquetes{
     width: 100%;
     box-sizing: border-box;
@@ -180,26 +389,42 @@ header{
     justify-content: center;
 }
 
+.info-paquete h2{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 55px;
+    color: #333;
+}
+
+.section-title{
+    margin-left: 50px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
 .paquete{
-    width: 20%;
+    width: 18%;
     box-sizing: border-box;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
 } 
 
 .paquete .imagen{
-    background-image: url(/EXPLORE_RISARALDA/img/termales-santa-rosa-cabal_0.jpg);
+    background-image: url(../img/termales-santa-rosa-cabal_0.jpg);
     box-sizing: border-box;
     background-size: cover;
     width: 100%;
-    margin: 40px 0px 0px 0px;
     border-radius: 12px 12px 0px 0px;
     height: 200px;
+    
 }
 
 .info-paquete{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid #ddd;
     border-top: none;
     width: 100%;
     margin: 0px;
@@ -210,16 +435,19 @@ header{
 }
 
 .info-paquete h2{
-    margin: 0px 0px 0px 0px;
+    color: #333;
+    margin: 0;
     padding: 5px 20px;
 }
 
 .info-paquete h3{
     padding: 0px 20px;
-    font-size:medium;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
     margin-top: 5px;
     padding-bottom: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ddd;
 }
 
 .precio{
@@ -228,31 +456,39 @@ header{
     margin-right: 0px;
 }
 
+.precio h2{
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 .precio .descuento{
-    background-color:#a8d5a1;
-    padding: 10px;
+    background-color:#A5D6A7;
+    padding: 8px;
     border-radius: 3px;
-    color:#5C4747;
-    font-weight: 600;
+    color:#333;
+    font-weight: 700;
 }
 
 .corazon{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 20px 0px 15px;
 }
 
-.corazon i{
-    margin-left: 20px;
+.corazon ion-icon{
+    margin-left: 15px;
     font-size: 30px;
+    color: #333;
 }
 
 .corazon .agregar-carrito{
-    margin-right: 20px;
-    background-color: #59714B;
-    border: none;
+    margin-right: 15px;
+    background-color:#A5D6A7 ;
+    border: 1px solid #2E7D32;
     border-radius: 3px;
     padding: 10px 15px;
-    color: white;
+    color: #333;
     letter-spacing: 1px;
+    font-weight: 600;
 }

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notificaciones-ExploreRisaralda</title>
+    <link rel="stylesheet" href="css/notificaciones.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <!-- Header superior -->
+        <div class="navigation-1">
+                <div class="nav nav-logo">
+                    <img src="./img/logo-removebg-preview (1).png" alt="Logo">
+                </div>
+                <div class="nav nav-title">
+                    <h1>ExploreRisaralda</h1>
+                </div>
+                <div class="nav nav-icons">
+                    <div class="noti-container">
+                        <a><ion-icon name="notifications-outline" class="noti-icon"></ion-icon></a>
+                        <div class="dropdown-noti">
+                            <div class="controladores">
+                                <div class="controladores-izquierda">
+                                    <ion-icon name="notifications-outline"></ion-icon>
+                                    <div class="toggle">
+                                        <input type="checkbox" id="toggle" class="offscreen" />
+                                        <label for="toggle" class="switch"></label>
+                                    </div>
+                                </div>
+                                <div class="settings-icon"> 
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="leidos">
+                                <div class="tarjeta-noti">
+                                    <div class="img-noti"></div>
+                                    <div class="info-noti">
+                                        <h5>Disfruta el nuevo paquete en Termales de Santa Rosa</h5>
+                                        <p>hace 3 dias</p>
+                                    </div>
+                                </div>
+                                <button class="btn-leidos">Marcar como leído</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon></a>
+
+                    <!-- menu despegable -->
+                    <div class="menu-container">
+                        <a><ion-icon class="profile-icon" name="person-outline"></ion-icon></a>
+                        <div class="dropdown-menu">
+                            <a class="a-perfil" href="">Perfil</a>
+                            <a class="a-perfil" href="">Iniciar Sesion</a>
+                            <a class="a-perfil" href="">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- Header inferior -->
+        <div class="navigation-2">
+            <div class="input-container">
+                <ion-icon name="search-outline"></ion-icon>
+                <input class="buscar" type="text" placeholder="Buscar...">
+            </div>
+            <nav class="nav-menu">
+                <a href="">Municipios</a>
+                <a href="">Paquetes</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+      <div class="container-perfil">
+        <div class="perfil">
+          <a href="./perfil.html"
+            ><ion-icon name="person-outline"></ion-icon>Datos personales</a
+          >
+          <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
+          <a href="./configurar_cuenta.html"
+            ><ion-icon name="settings-outline"></ion-icon>Configurar Cuenta</a
+          >
+          <a href="./notificaciones.html"
+            ><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a
+          >
+          <a href="./inicio.html"><ion-icon name="power-outline"></ion-icon>Cerrar Sesion</a>
+        </div>
+
+        <!-- informacion de la derecha -->
+        <div class="container-container">
+          <div class="titulo">
+                <h3>Notificaciones</h3>
+                <p>Selecciona las notificaciones que deseas recibir</p>
+          </div>
+          <div class="contenedor-general1">
+              <div class="subtitulo">
+                    <h3>General</h3>
+                    <p>Administra tus notificaciones moviles y de escritorio</p>
+              </div>
+              <div class="contenedor">
+                  <div class="preferencias">
+                      <h3>Tus preferencias</h3>
+                  </div>
+                  <div class="tipo1">
+                      <div class="notificacion">
+                          <div class="toggle">
+                              <input type="checkbox" id="toggle" class="offscreen" />
+                              <label for="toggle" class="switch"></label>
+                          </div>
+                          <div class="info-notificacion">
+                              <h2>Paquetes recomendados</h2>
+                              <p>Notificame sobre paquetes nuevos en todos los municipios</p>
+                          </div>
+                      </div>
+                      <div class="notificacion">
+                          <div class="toggle">
+                              <input type="checkbox" id="toggle" class="offscreen" />
+                              <label for="toggle" class="switch"></label>
+                          </div>
+                          <div class="info-notificacion">
+                              <h2>Contenido y ofertas</h2>
+                              <p>Notificame sobre las ofertas, para los usuarios registrados</p>
+                          </div>
+                      </div>
+                      <div class="notificacion">
+                          <div class="toggle">
+                              <input type="checkbox" id="toggle" class="offscreen" />
+                              <label for="toggle" class="switch"></label>
+                          </div>
+                          <div class="info-notificacion">
+                              <h2>Paquetes recomendados</h2>
+                              <p>Notificame sobre las actividades que podrian gustarme segun lo que veo y compro</p>
+                          </div>
+                      </div>
+                </div>
+              </div>
+          </div>
+          <div class="contenedor-general1">
+              <div class="subtitulo">
+                    <h3>Notificaciones por correo electronico</h3>
+              </div>
+              <div class="contenedor">
+                  <div class="preferencias">
+                      <h3>Tus preferencias</h3>
+                  </div>
+                  <div class="tipo1">
+                      <div class="notificacion">
+                          <div class="toggle">
+                              <input type="checkbox" id="toggle" class="offscreen" />
+                              <label for="toggle" class="switch"></label>
+                          </div>
+                          <div class="info-notificacion">
+                              <h2>Actualizacion de paquetes e informacion</h2>
+                              <p>Anuncios y recomendaciones</p>
+                          </div>
+                      </div>
+                      <div class="notificacion">
+                          <div class="toggle">
+                              <input type="checkbox" id="toggle" class="offscreen" />
+                              <label for="toggle" class="switch"></label>
+                          </div>
+                          <div class="info-notificacion">
+                              <h2>Actualizacion de beneficios</h2>
+                              <p>Anuncios, actualizacion y recomendaciones a usuarios registrados</p>
+                          </div>
+                      </div>
+                      
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/header.js"></script>
+    <script
+      type="module"
+      src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js "
+    ></script>
+    <script
+      nomodule
+      src=" https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js "
+    ></script>
+  </body>
+</html>

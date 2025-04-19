@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -177,8 +174,8 @@ header{
 
 
 .perfil{
-    width: 23%;
-    height:85vh ;
+    width: 20%; 
+    height: calc(100vh - 110px);
     background-color:#FAFAFA ;
     display: flex;
     flex-direction: column;
@@ -206,6 +203,7 @@ header{
 /* parte derecha del perfil */
 
 .container-container{
+    margin: 0;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -217,16 +215,18 @@ header{
     display: flex;
     gap: 70px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid #ddd;
     padding: 40px;
     height: 300px;
     background-color: #FAFAFA;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .titulo h3 {
     margin-top: 15px;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
     color: #333;
 }
 
@@ -257,3 +257,166 @@ label{
     border-radius: 5px;
 }
 
+.imagen {
+    flex: 1;
+    background-image: url('../img/foto.jpeg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(74% 0, 100% 0, 100% 60%, 100% 100%, 71% 100%, 33% 58%, 47% 0);
+}
+
+/* notificaciones desplegables */
+
+.noti-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-noti {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 400px;
+    height: 300px;
+}
+
+.controladores{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.controladores-izquierda{
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.controladores .settings-icon{
+    display: inline-flex;
+}
+
+.leidos{
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-noti{
+    display: flex;
+    padding: 10px ;
+    margin: 0;
+}
+
+.tarjeta-noti:hover{
+    background-color: #ddd;
+}
+
+.img-noti{
+    background-image: url(../img/santarosa.jpg);
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.info-noti h5{
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.info-noti p{
+    color: #888;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.btn-leidos{
+    position: relative;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc ;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-top: 95px;
+}
+
+.dropdown-noti .controladores, .dropdown-noti .leidos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.noti-container.active .dropdown-noti {
+    display: block;
+}
+
+/* checkbox  */
+
+.toggle{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.switch{
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd ;
+    border-radius: 40px;
+    cursor: pointer;
+    border: gray;
+    margin-right: 15px;
+}
+
+.switch::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    background-color: gray ;
+    left: 3px;
+    top: 3px;
+    transition: all 0.4s
+}
+
+/* el switch esta desactivo */
+
+
+input[type='checkbox']:checked + .switch::after{
+    transform: translateX(20px);
+    background-color: #ddd;
+}
+
+ /* ek switch esta activado  */
+input[type='checkbox']:checked + .switch{
+    background-color:#2E7D32;
+}
+
+.offscreen{
+    position: absolute;
+    left: -99999px;
+}

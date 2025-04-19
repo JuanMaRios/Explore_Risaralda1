@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoritos-ExploreRisaralda</title>
     <link rel="stylesheet" href="css/favoritos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,11 +20,39 @@
                     <h1>ExploreRisaralda</h1>
                 </div>
                 <div class="nav nav-icons">
-                    <a href=""><ion-icon name="notifications-outline"></ion-icon></a>
-                    <a href=""><ion-icon name="heart-outline"></ion-icon></a>
+                    <div class="noti-container">
+                        <a><ion-icon name="notifications-outline" class="noti-icon"></ion-icon></a>
+                        <div class="dropdown-noti">
+                            <div class="controladores">
+                                <div class="controladores-izquierda">
+                                    <ion-icon name="notifications-outline"></ion-icon>
+                                    <div class="toggle">
+                                        <input type="checkbox" id="toggle" class="offscreen" />
+                                        <label for="toggle" class="switch"></label>
+                                    </div>
+                                </div>
+                                <div class="settings-icon"> 
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="leidos">
+                                <div class="tarjeta-noti">
+                                    <div class="img-noti"></div>
+                                    <div class="info-noti">
+                                        <h5>Disfruta el nuevo paquete en Termales de Santa Rosa</h5>
+                                        <p>hace 3 dias</p>
+                                    </div>
+                                </div>
+                                <button class="btn-leidos">Marcar como leído</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon></a>
+
                     <!-- menu despegable -->
                     <div class="menu-container">
-                        <a href=""><ion-icon class="profile-icon" name="person-outline"></ion-icon></a>
+                        <a><ion-icon class="profile-icon" name="person-outline"></ion-icon></a>
                         <div class="dropdown-menu">
                             <a class="a-perfil" href="">Perfil</a>
                             <a class="a-perfil" href="">Iniciar Sesion</a>
@@ -36,7 +67,7 @@
         <div class="navigation-2">
             <div class="input-container">
                 <ion-icon name="search-outline"></ion-icon>
-                <input type="text" placeholder="Buscar...">
+                <input class="buscar" type="text" placeholder="Buscar...">
             </div>
             <nav class="nav-menu">
                 <a href="">Municipios</a>
@@ -48,24 +79,81 @@
     <main>
         <div class="container-perfil">
             <div class="perfil">
-                <a href=""><ion-icon name="person-outline"></ion-icon>Datos personales</a>
-                <a href=""><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
-                <a href=""><ion-icon name="settings-outline"></ion-icon>Configurar Cuenta</a>
-                <a href=""><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a>
-                <a href=""><ion-icon name="power-outline"></ion-icon>Cerrar Sesion</a>
+                <a href="./perfil.html"><ion-icon name="person-outline"></ion-icon>Datos personales</a>
+                <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
+                <a href="./configurar_cuenta.html"><ion-icon name="settings-outline"></ion-icon>Configurar Cuenta</a>
+                <a href="./notificaciones.html"><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a>
+                <a href="./inicio.html"><ion-icon name="power-outline"></ion-icon>Cerrar Sesion</a>
             </div>
             <div class="container-container">
                 <div class="titulo">
                     <h3>Favoritos</h3>
                 </div>
-                <div class="info-perfil">
-                    <div class="paquete">
-                        <img src="./img/cascada-santa-helena.jpg" alt="Cascada santa helena">
-                        <div>
-
+                <div class="contenedor-tarjetas">
+                    <div class="tarjeta">
+                        <!-- imagen de la tarjeta -->
+                        <div class="tarjeta-imagen">
+                            <img src="./img/cascada-santa-helena.jpg" alt="Cascada santa helena">
+                        </div>
+                        <!-- contenido de la tarjeta  -->
+                        <div class="tarjeta-contenido">
+                            <h3>Santa Rosa de Cabal</h3>
+                            <p class="actividad">Termales</p>
+                            <p class="precio">$50.000</p>
+                            <div class="tarjeta-botones">
+                                <button class="btn-comprar">Ir a comprar</button>
+                                <button class="btn-eliminar">Eliminar</button>
+                            </div>
                         </div>
                     </div>
-                    
+                    <div class="tarjeta">
+                        <!-- imagen de la tarjeta -->
+                        <div class="tarjeta-imagen">
+                            <img src="./img/jardin-botaanico-de-la.jpg" alt="">
+                        </div>
+                        <!-- contenido de la tarjeta  -->
+                        <div class="tarjeta-contenido">
+                            <h3>Jardin Botanico UTP</h3>
+                            <p class="actividad">Pereira</p>
+                            <p class="precio">$50.000</p>
+                            <div class="tarjeta-botones">
+                                <button class="btn-comprar">Ir a comprar</button>
+                                <button class="btn-eliminar">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <!-- imagen de la tarjeta -->
+                        <div class="tarjeta-imagen">
+                            <img src="./img/ucumari.jpg" alt="">
+                        </div>
+                        <!-- contenido de la tarjeta  -->
+                        <div class="tarjeta-contenido">
+                            <h3>Parque Ucumari</h3>
+                            <p class="actividad">Pereira</p>
+                            <p class="precio">$50.000</p>
+                            <div class="tarjeta-botones">
+                                <button class="btn-comprar">Ir a comprar</button>
+                                <button class="btn-eliminar">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <!-- imagen de la tarjeta -->
+                        <div class="tarjeta-imagen">
+                            <img src="./img/en-la-divisa-de-don-juan.jpg" alt="la divisa de don juan">
+                        </div>
+                        <!-- contenido de la tarjeta  -->
+                        <div class="tarjeta-contenido">
+                            <h3>La Divisa de Don Juan</h3>
+                            <p class="actividad">Pereira</p>
+                            <p class="precio">$50.000</p>
+                            <div class="tarjeta-botones">
+                                <button class="btn-comprar">Ir a comprar</button>
+                                <button class="btn-eliminar">Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
