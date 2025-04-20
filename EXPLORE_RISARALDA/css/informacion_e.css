@@ -1,6 +1,6 @@
 /* estilos generales */
 body{
-    background-color: #f1faf5;
+    background-color: #F1F8E9;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -15,15 +15,27 @@ header{
     height: 8vh;
     display: flex;
     justify-content: space-between;
-    background-color: #2E7D32;
-    border: 2px solid #333;
+    background-color: #a5d6a7;
     align-items: center;  
-    color: white; 
+    color: #333;
 }
 
-h1{
-    margin-left: 20px;
+#logo{
+    width: 6vh;
+    height: 6vh;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
 }
+
+/* h1{
+    margin-left: 20px;
+} */
 
 /* estilos de la navegacion */
 nav{
@@ -37,7 +49,7 @@ nav{
     border-radius: 40%;
     cursor: pointer;
     background: white;
-    color: black;
+    color: #333;
 }
 
 
@@ -45,27 +57,26 @@ nav{
 .boton-modal label{
     padding: 5px 10px;
     background-color: white;
-    color: black;
-    cursor: pointer;
+    color: #333;
     transition: all 300ms ease;
-    border: 1px solid black;
+    border: 1px solid #333;
     border-radius: 4px;
 }
-
 .boton-modal{
     display: flex;
+    
 }
-
 .boton-modal label:hover{
-    background-color: lightgrey;
+    background-color: #F1F8E9;
+    cursor: pointer;
 }
 
-
-/* Ventana modal */
+/* ------------------------------------Ventana modal---------------- */
 #btn-modal{
-    display: none;
+    display: none; /* Ocultar */
 
 }
+/* Estilos para la ventana emergente de la creación de paquetes*/
 .container-modal{
     width: 100%;
     height: 100vh;
@@ -86,17 +97,17 @@ nav{
 /* estilos de la ventana modal */
 .content-modal{
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     padding: 20px;
-    background-color: #f1faf5;
-    border: 2px solid black;
+    background-color: #F1F8E9;
+    border: 2px solid #333;
     border-radius: 5%;
 }
 
 /* estilos del titulo de crear paquetes */
 .content-modal h2{
     margin-bottom: 15px;
-    color: black;
+    color: #333;
     justify-content: center;
     text-align: center;
 }
@@ -109,26 +120,28 @@ nav{
 /* estilos para el contenedor donde esta el nombre */
 #casilla1-nombre{
     display: flex;
-    color: black;
+    color: #333;
     gap: 15px;
     align-items: center;
+    justify-content: space-evenly;
 }
 /* Estilos para el input donde ingresan el nombre */
 #nombrePaquete{
     height: 1.7rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 /* estilos para el contenedor donde esta la actividad */
 #casilla2-actividad{
     display: flex;
-    color: black;
+    color: #333;
     gap: 15px;
     align-items: center;
+    justify-content: space-evenly;
 }
 /* Estilos para el input donde ingresan la actividad*/
 #actividadPaquete{
     height: 1.7rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 /* estilos para el contenedor donde esta el precio */
 #casilla3-precio{
@@ -136,11 +149,12 @@ nav{
     color: black;
     gap: 15px;
     align-items: center;
+    justify-content: space-evenly;
 }
 /* Estilos para el input donde ingresan el precio*/
 #precioPaquete{
     height: 1.7rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 /* estilos para el contenedor donde esta la ubicacion */
 #casilla4-ubicacion{
@@ -148,11 +162,12 @@ nav{
     color: black;
     gap: 15px;
     align-items: center;
+    justify-content: space-evenly;
 }
 /* Estilos para el input donde ingresan el precio*/
 #ubicacionPaquete{
     height: 1.7rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 /* estilos para el contenedor donde estan los terminos */
 #casilla5-terminos{
@@ -160,11 +175,12 @@ nav{
     color: black;
     gap: 15px;
     align-items: center;
+    justify-content: space-evenly;
 }
 /* Estilos para el input donde ingresan los terminos*/
 #terminosPaquete{
     height: 1.7rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #casilla6-pago{
@@ -172,11 +188,12 @@ nav{
     color: black;
     gap: 10px;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #linkPaquete{
     height: 1.7rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #casilla7-fotos{
@@ -192,8 +209,8 @@ nav{
 /* Estilos para la imagen1 */
 #imagen1{
     display: flex;
-    width: 4rem;
-    height: 5rem;
+    width: 5rem;
+    height: 6rem;
     border: 2px dashed black;
     justify-content: center;
     align-items: center;
@@ -202,8 +219,8 @@ nav{
 /* Estilos para la imagen1 */
 #imagen2{
     display: flex;
-    width: 4rem;
-    height: 5rem;
+    width: 5rem;
+    height: 6rem;
     border: 2px dashed black;
     justify-content: center;
     align-items: center;
@@ -212,8 +229,8 @@ nav{
 /* Estilos para la imagen1 */
 #imagen3{
     display: flex;
-    width: 4rem;
-    height: 5rem;
+    width: 5rem;
+    height: 6rem;
     border: 2px dashed black;
     justify-content: center;
     align-items: center;
@@ -269,21 +286,18 @@ nav{
     box-shadow: 0 0 10px white;
 } */
 
-
 /* estilos del icono de empresa */
 #iconoEmpresa{
     font-size: 25px;
-    color: black;
+    color: #333;
     text-decoration: none;
-    color: white;
 }
 
 /* estilos del icono de notificación */
 #iconoNoti{
     font-size: 25px;
-    color: black;
+    color: #333;
     text-decoration: none;
-    color: white;
 }
 
 /*---------------------------------------------------- Main --------------------------------------------------------------*/
@@ -299,94 +313,88 @@ main{
     text-align: center;
     margin: 0;
     display: block;
-    gap: 20px;
     background: white;
 }
 
 /* estilos del contenedor del titulo ajustes*/
 #titulo-ajustes{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 }
 
 /* estilos del titulo (parrafo) */
 #ajustes{
     display: flex;
-    margin-left: 1cm;
-    font-size: 0.7cm;
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
 /*Estilos de la sección en la que nos encontramos en este momento (Datos de empresa)*/
 #datosEmpresa{
     width: 100%;
     height: 3rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     display: flex;
     gap: 10px;
     cursor: pointer;
-    background: #2E7D32;
-    color: white;
-    margin-top: 4rem;
+    background: #a5d6a7;
+    color: #333;
 }
 /* estilos para su respectivo texto (datos de empresa) */
 #datosEmpresa a{
     text-decoration: none;
-    color: white;
+    color: #333;
+}
+#icono-datosEmpresa{
+    margin-left: 20px;
 }
 
 /* estilos para la opción de mis paquetes */
 #misPaquetes{
     width: 100%;
     height: 3rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     display: flex;
     gap: 10px;
     cursor: pointer;
-    color: black; 
-    margin-top: 15px;
+    color: #333;  
 }
 /* estilos para su respectivo texto (mis paquetes) */
 #misPaquetes a{
     text-decoration: none;
-    color: black;   
+    color: #333;   
 }
-
 #misPaquetes:hover{
-    background-color: #2E7D32;
-    color: white;
+    background-color: #a5d6a7;
 }
-
-#misPaquetes a:hover{
-    color: white;
+#icono-paquetes{
+    margin-left: 20px;
 }
 
 /* estilos para la opción de Configurar Cuenta */
 #configurarCuenta{
     width: 100%;
     height: 3rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     display: flex;
     gap: 10px;
     cursor: pointer;
-    color: black;
-    margin-top: 15px;
+    color: #333;
 }
 /* estilos para su respectivo texto (Configurar cuenta) */
 #configurarCuenta a{
     text-decoration: none;
-    color: black;
+    color: #333;
 }
 #configurarCuenta:hover{
-    background-color: #2E7D32;
-    color: white;
+    background-color: #a5d6a7;
 }
-
-#configurarCuenta a:hover{
-    color: white;
+#icono-configuracion{
+    margin-left: 20px;
 }
 
 /* estilos para la opción de Cerrar sesión */
@@ -398,48 +406,49 @@ main{
     display: flex;
     gap: 10px;
     cursor: pointer;
-    color: black;
-    margin-top: 15.5rem;
+    color: #333;
+    margin-top: 21rem;
+    font-weight: 450;
 }
 /* estilos para su respectivo texto (Cerrar Sesión) */
 #cerrarSesion a{
     text-decoration: none;
-    color: black;
+    color: #333;
 }
 #cerrarSesion:hover{
-    background-color: #9f3627;
-    color: white;
-}
-
-#cerrarSesion a:hover{
-    color: white;
+    background-color: #d78072;
+    font-weight: 600;
 }
 
 /*--------------------------------------------------Contenido-------------------------------------*/
 
 /* estilos para el contenedor general del contenido */
 .contenido{
-    width: 77%;
+    width: 60%;
     padding: 4rem;
     height: auto;
     color: #333;
+    margin-top: -5vh;
+    display: block;
 }
 
 /* estilos del contenedor donde van los espacios de informacion de empresa */
 #info-empresa{
     width: 100%;
     height: 60vh;
-    border:  3px solid black;
-    border-radius: 1%;
-    padding: 20px;
+    border:  1px solid #333;
+    border-radius: 6px;
+    padding: 25px;
     background: white;
+    font-weight: 400;
 }
 
+/*----------------------------------------------------------------------*/
 /* seccion de nombre y direccion */
 #nombre-direccion{
     display: flex;
     width: 100%;
-    gap: 20rem;
+    gap: 15rem;
 }
 /* estilos del contenedor donde esta el nombre y su espacio correspondiente */
 #nombre{
@@ -463,11 +472,13 @@ main{
     height: 1.4rem;
     border-bottom: 2px solid black; 
 }
+
+/*-------------------------------------------------------------------*/
 /* seccion de RUT y Contacto */
 #rut-contacto{
     display: flex;
     width: 100%;
-    gap: 20rem;
+    gap: 15rem;
     margin-top: 3rem;
 }
 /* estilos del contenedor donde estan el RUT y su espacio correspondiente */
@@ -492,11 +503,13 @@ main{
     height: 1.4rem;
     border-bottom: 2px solid black; 
 }
+
+/*----------------------------------------------------------------*/
 /* seccion del correo y la ID del dueño */
 #correo-id{
     display: flex;
     width: 100%;
-    gap: 20rem;
+    gap: 15rem;
     margin-top: 3rem;
 }
 /* estilos del contenedor donde estan el correo y su espacio correspondiente */
@@ -522,6 +535,8 @@ main{
     border-bottom: 2px solid black; 
 }
 
+/*------------------ Botón para editar---------------------------------*/
+
 /* Estilos del contenedor donde esta el boton de editar*/
 #editar{
     width: 100%;
@@ -530,22 +545,25 @@ main{
     justify-content: end;
     margin-top: 3rem;   
 }
+
 /* Estilos del boton de editar */
 #boton-editar{
-    width: 3rem;
-    height: 3rem;
-    border: 1px solid black;
-    background: #f1faf5;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid #333;
+    background: #a5d6a7;
     border-radius: 10%;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
 }
+
 /* Estilos del icono al interior del boton */
 #boton-editar i{
     display: flex;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 
