@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis paquetes</title>
-    <link rel="stylesheet" href="./EXPLORE_RISARALDA/css/paquetes_empresa.css">
+    <link rel="stylesheet" href="css/paquetes_empresa.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+
+        <!-- logo de la pagina -->
+        <div id="logo"> LOGO </div>
+
         <!-- nombre de la pagina -->
         <h1> ExploreRisaralda </h1>
+        
         <nav>
-            <!-- boton de buscar -->
-            <button id="buscar"> <i class="bi bi-search"></i> </button>
-            
             <!-- boton de crear paquetes -->
             <div class="boton-modal"> 
                 <label for="btn-modal">
@@ -55,7 +60,12 @@
                             <input type="text" id="terminosPaquete">
                         </div>
 
-                        <div id="casilla6-fotos">
+                        <div id="casilla6-pago">
+                            <p> Link para pagos: </p>
+                            <input type="text" id="linkPaquete">
+                        </div>
+
+                        <div id="casilla7-fotos">
                             <p> Adjuntar Imagenes: </p>
                             <div id="imagenes">
                                 <div id="imagen1"> <i class="bi bi-file-earmark-image"></i> </div>
@@ -74,6 +84,8 @@
 
             <!-- <button id="crearpaquetes"> <i id="icono-mas" class="bi bi-plus"></i> Crear paquetes </button> -->
             
+            <!-- boton de buscar -->
+            <button id="buscar"> <i class="bi bi-search"></i> </button>
             <!-- notificaciones -->
             <a href="#"><i id="iconoNoti" class="bi bi-bell"> </i></a>
             <!-- icono de empresa -->
@@ -88,8 +100,7 @@
             
             <!-- Primera parte - titulo de ajustes y boton de cerrar -->
             <div id="titulo-ajustes"> 
-                <h3 id="ajustes"> Ajustes </h3> 
-                <a href="#"> <i id="icono-cerrar" class="bi bi-file-excel"></i> </a> 
+                <h3 id="ajustes"> Ajustes </h3>  
             </div>
             <hr>
             
@@ -100,44 +111,45 @@
             <div id="cerrarSesion"> <i id="icono-cerrarSesion" class="bi bi-power"></i> <a href="#"> Cerrar sesión </a> </div>
         </div>
         
+        <!-- sección donde se encuentra el contenido principal -->
         <div class="contenido"> 
             <h2> Paquetes </h2>
 
             <div id="primerosPaquetes">
                 <div id="paquete1">
-                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <img src="./img/Dosquebradas_risal.jpg">
                     <p> La divisa de Don Juan </p>
                 </div>
 
                 <div id="paquete2">
-                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <img src="./img/Dosquebradas_risal.jpg">
                     <p> Tambo el privilegio </p>
                 </div>
 
                 <div id="paquete3">
-                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <img src="./img/Dosquebradas_risal.jpg">
                     <p> PaisaAdventure</p>
                 </div>
 
                 <div id="paquete4">
-                    <img src="./EXPLORE_RISARALDA/img/Dosquebradas_risal.jpg">
+                    <img src="./img/Dosquebradas_risal.jpg">
                     <p> Universidad Tec </p>
                 </div>
             </div>
 
             <div id="segundosPaquetes">
                 <div id="paquete5">
-                    <img src="./EXPLORE_RISARALDA/img/aventura-starosa.jpg">
+                    <img src="./img/aventura-starosa.jpg">
                     <p> Los farallones </p>
                 </div>
 
                 <div id="paquete6">
-                    <img src="./EXPLORE_RISARALDA/img/ecohotel1.png">
+                    <img src="./img/ecohotel1.png">
                     <p> Casa de la cultura </p>
                 </div>
 
                 <div id="paquete7">
-                    <img src="./EXPLORE_RISARALDA/img/la_virginia.jpg">
+                    <img src="./img/la_virginia.jpg">
                     <p> Valle del cocora </p>
                 </div>
             </div>
