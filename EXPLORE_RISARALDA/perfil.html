@@ -19,6 +19,22 @@
                 <div class="nav nav-title">
                     <h1>ExploreRisaralda</h1>
                 </div>
+                <div class="hamburger-menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="fullscreen-menu" id="fullscreen-menu">
+                    <div class="close-icon">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                    <div class="menu-content">
+                        <input type="text" placeholder="Buscar..." class="menu-search">
+                        <a href="./pereira.html">Municipios</a>
+                        <a href="./paquetes.html">Paquetes</a>
+                        <a><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a>
+                        <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
+                        <a><ion-icon class="profile-icon" name="person-outline"></ion-icon>Perfil</a>
+                    </div>
+                </div>
                 <div class="nav nav-icons">
                     <div class="noti-container">
                         <a><ion-icon name="notifications-outline" class="noti-icon"></ion-icon></a>
@@ -32,8 +48,8 @@
                                     </div>
                                 </div>
                                 <div class="settings-icon"> 
-                                    <ion-icon name="settings-outline"></ion-icon>
-                                </div>
+                                    <a href="./notificaciones.html"><ion-icon name="settings-outline"></ion-icon>
+                                    </div></a>
                             </div>
                             <div class="leidos">
                                 <div class="tarjeta-noti">
@@ -52,11 +68,11 @@
 
                     <!-- menu despegable -->
                     <div class="menu-container">
-                        <a><ion-icon class="profile-icon" name="person-outline"></ion-icon></a>
+                        <a><ion-icon class="profile-icon" name="person-outline" id="p-icon"></ion-icon></a>
                         <div class="dropdown-menu">
-                            <a class="a-perfil" href="">Perfil</a>
-                            <a class="a-perfil" href="">Iniciar Sesion</a>
-                            <a class="a-perfil" href="">Registrarse</a>
+                            <a class="a-perfil" href="./perfil.html">Perfil</a>
+                            <a href="./login.html" class="a-perfil" >Iniciar Sesion</a>
+                            <a href="./registro.html" class="a-perfil">Registrarse</a>
                         </div>
                     </div>
                 </div>
@@ -70,8 +86,8 @@
                 <input class="buscar" type="text" placeholder="Buscar...">
             </div>
             <nav class="nav-menu">
-                <a href="">Municipios</a>
-                <a href="">Paquetes</a>
+                <a href="./pereira.html">Municipios</a>
+                <a href="./paquetes.html">Paquetes</a>
             </nav>
         </div>
     </header>

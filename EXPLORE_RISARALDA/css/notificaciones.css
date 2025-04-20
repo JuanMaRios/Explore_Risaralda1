@@ -275,7 +275,16 @@ header{
 }
 
 /* checkbox */
+
+.toggle{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 10px;
+    align-items: center;
+}
+
 .switch{
+    margin-top: 10px;
     position: relative;
     display: inline-block;
     width: 40px;
@@ -314,6 +323,7 @@ input[type='checkbox']:checked + .switch{
     position: absolute;
     left: -99999px;
 }
+
 
 /* notificaciones desplegables */
 
@@ -470,3 +480,198 @@ input[type='checkbox']:checked + .switch{
     position: absolute;
     left: -99999px;
 }
+
+/* Responsive Header */
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav{
+        width: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .navigation-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: auto;
+        background-color: #A5D6A7;
+    }
+
+    .nav-logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    .nav-title {
+        flex: 1;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .nav-icons {
+        display: none; /* Hide other icons */
+    }
+
+    .menu-container {
+        display: none; /* Hide dropdown menu */
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        color: #2E7D32;
+        cursor: pointer;
+    }
+    .navigation-2 {
+        display: none; /* Hide the second navigation bar */
+    }
+}
+
+/* Fullscreen Menu */
+.fullscreen-menu {
+    display: none; /* Oculto por defecto */
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fullscreen-menu.active {
+    display: flex; /* Mostrar cuando esté activo */
+}
+
+.menu-content {
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.menu-content input.menu-search {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.menu-content a {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #A5D6A7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+    color: #FAFAFA;
+}
+
+/* Estilo para el icono de cerrar dentro del menú */
+.fullscreen-menu .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ea1010;
+    cursor: pointer;
+    z-index: 2100; /* Asegúrate de que esté por encima del contenido */
+}
+
+.fullscreen-menu .close-icon:hover {
+    color: #A5D6A7;
+}
+
+/* Responsive para el menú de la izquierda */
+@media (max-width: 768px) {
+    .perfil a{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; /* Centra los íconos */
+        width: auto; /* Ajusta el ancho al contenido */
+        padding: 10px;
+        background-color: #FAFAFA; /* Fondo opcional */
+        border-radius: 10px; /* Bordes redondeados */
+        height: auto; /* Ajusta la altura al contenido */
+        margin-top: 0;
+
+        /* Ocultar texto */
+        text-indent: -9999px; /* Mueve el texto fuera del área visible */
+        overflow: hidden; /* Oculta cualquier desbordamiento */
+        white-space: nowrap; /* Evita que el texto se envuelva */
+    }
+
+    .perfil a ion-icon {
+        font-size: 24px; /* Ajusta el tamaño del ícono */
+    }
+
+    .container-container {
+        flex: 1;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 20%; /* Asegura que respete el ancho de la parte izquierda */
+        margin-right: 30px;
+        width: calc(80% - 30px); /* Ajusta el ancho para que no se desborde */
+        box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+        box-sizing: border-box;
+        padding: 0 0px 0px 10px;
+    }
+
+    .titulo {
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    .titulo h3 {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+    }
+
+    .titulo p {
+        font-size: 14px; /* Ajusta el tamaño del subtítulo */
+    }
+
+    .contenedor-general1 {
+
+        padding: 10px; /* Añade padding interno */
+        border: none; /* Opcional: elimina el borde */
+    }
+
+    .contenedor {
+        flex-direction: column; /* Cambia a diseño vertical */
+        gap: 15px; /* Espaciado entre elementos */
+    }
+    .notificacion {
+        margin: 0 auto; /* Centra las notificaciones */
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    .info-notificacion h2 {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        justify-content: center;
+    }
+
+    .info-notificacion p {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+        justify-content: center;
+    }
+
+}
+
+
