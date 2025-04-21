@@ -1,0 +1,812 @@
+/* -------------Estilos generales para la pagina----------------- */
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Estilos generales para el header */
+header{
+    position: relative;
+    width:100%;
+    background-color: #A5D6A7;
+    text-align: center;
+    color:#2E7D32;
+    height: 100px;
+    z-index: 1000;
+}
+
+/* PARTE SUPEIOR DEL HEADER  */
+.navigation-1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 32px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.nav-logo img {
+    display: flex;
+    justify-content: flex-start;
+    height: 8vh;
+    width: auto;
+    
+}
+.nav-title{
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    
+}
+.nav{
+    width: 33%;
+}
+.nav-title a{
+    text-decoration: none;
+    color: #2E7D32;
+}
+.nav-icons {
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    
+}
+.nav-icons ion-icon{
+    color: #2E7D32;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+}
+.nav-icons ion-icon:hover{
+    transform: scale(1.2);
+    background-color: #2E7D32;
+    border-radius: 50%;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+/* PARTE INFERIOR DEL HEADER  */
+.navigation-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #A5D6A7;
+    height: 40px;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-container ion-icon {
+    position: absolute;
+    left: 10px; /* Ajusta según sea necesario */
+    color: #888;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.buscar {
+    padding-left: 35px; /* Espacio para el ícono */
+    padding-right: 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 30px;
+    background-color: #FAFAFA;
+}
+.nav-menu{
+    margin-left: 30px;
+}
+.nav-menu a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: 600;
+    font-size: 15px;
+    transition: font-size 0.3s ease;
+}
+.nav-menu a:hover{
+    font-size: 16px;
+}
+
+/* Menu Desplegable */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 200px;
+}
+.dropdown-menu .a-perfil{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+}
+.dropdown-menu .a-perfil:hover {
+    background-color: #2E7D32;
+    color: #FAFAFA;
+}
+.menu-container.active .dropdown-menu {
+    display: block;
+}
+
+/* notificaciones desplegables */
+.noti-container {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-noti {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 400px;
+    height: 300px;
+}
+.controladores{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.controladores-izquierda{
+    display: inline-flex;
+    justify-content: flex-start;
+}
+.controladores .settings-icon{
+    display: inline-flex;
+}
+.leidos{
+    display: flex;
+    flex-direction: column;
+}
+.tarjeta-noti{
+    display: flex;
+    padding: 10px ;
+    margin: 0;
+}
+.tarjeta-noti:hover{
+    background-color: #ddd;
+}
+.img-noti{
+    background-image: url(../img/santarosa.jpg);
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 3px;
+}
+.info-noti h5{
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+}
+.info-noti p{
+    color: #888;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.btn-leidos{
+    position: relative;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc ;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-top: 95px;
+}
+.dropdown-noti .controladores, .dropdown-noti .leidos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+}
+.noti-container.active .dropdown-noti {
+    display: block;
+}
+
+/* checkbox  */
+.toggle{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 10px;
+    align-items: center;
+}
+.switch{
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd ;
+    border-radius: 40px;
+    cursor: pointer;
+    border: gray;
+    margin-right: 15px;
+}
+.switch::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    background-color: gray ;
+    left: 3px;
+    top: 3px;
+    transition: all 0.4s
+}
+
+/* el switch esta desactivo */
+
+input[type='checkbox']:checked + .switch::after{
+    transform: translateX(20px);
+    background-color: #ddd;
+}
+ /* ek switch esta activado  */
+input[type='checkbox']:checked + .switch{
+    background-color:#2E7D32;
+}
+.offscreen{
+    position: absolute;
+    left: -99999px;
+}
+
+/* ---------------------Responsive Header--------------------- */
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav{
+        width: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .navigation-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: auto;
+        background-color: #A5D6A7;
+    }
+
+    .nav-logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    .nav-title {
+        flex: 1;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .nav-icons {
+        display: none; /* Hide other icons */
+    }
+
+    .menu-container {
+        display: none; /* Hide dropdown menu */
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        color: #2E7D32;
+        cursor: pointer;
+    }
+    .navigation-2 {
+        display: none; /* Hide the second navigation bar */
+    }
+}
+
+/* Fullscreen Menu */
+.fullscreen-menu {
+    display: none; /* Oculto por defecto */
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fullscreen-menu.active {
+    display: flex; /* Mostrar cuando esté activo */
+}
+
+.menu-content {
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.menu-content input.menu-search {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.menu-content a {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #A5D6A7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+    color: #FAFAFA;
+}
+
+/* Estilo para el icono de cerrar dentro del menú */
+.fullscreen-menu .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ea1010;
+    cursor: pointer;
+    z-index: 2100; /* Asegúrate de que esté por encima del contenido */
+}
+
+.fullscreen-menu .close-icon:hover {
+    color: #A5D6A7;
+}
+
+/*----------------------------Main---------------------------------*/
+
+main{
+    width: 100%;
+}
+
+.paquete_fotos{
+    display: flex;
+    background-color: #FAFAFA;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+/* Estilos Generales para las imagenes */
+img{
+    object-fit: cover; /*No pierda la resolucion y se acople al contenedor*/
+    width: 100%; /* Se usa para que ocupe el 100% del ancho */
+    height: 100%; /* Se usa para que ocupe el 100% del alto */
+}
+
+#image1{
+    width: 30vh;
+    height: 40vh;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+
+#image2{
+    width: 30vh;
+    height: 40vh;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+
+#image3{
+    width: 30vh;
+    height: 40vh;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+
+@media (width < 700px){
+    .paquete_fotos{
+        flex-direction: column;
+    }
+}
+
+/* -------------Seccion de la pagina donde esta la información detallada del paquete*/
+.info{
+    display: flex;
+    background-color: #F1F8E9;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh;
+}
+
+/* Contenedor donde estan los detalles del paquete */
+#details{
+    width: 40%;
+    border: 1px solid #333;
+    background-color: white;
+    color: #333;
+    padding-bottom: 2vh;
+    overflow: hidden;
+}
+#details h3{
+    margin-left: 2vh;
+}
+
+#nombre-precio{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+#descuento{
+    background: #c5f0be;
+}
+
+#calificacion{
+    display: flex;
+    padding-left: 2vh;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 3px;
+}
+#calificacion i{
+    color: #ead010;
+}
+
+#contenido{
+    display: flex;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    gap: 2vh;
+    padding-left: 2vh;
+    margin-top: 2vh;
+}
+#comida{
+    background: lightgray;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+}
+#transporte{
+    background: lightgray;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+}
+#hospedaje{
+    background: lightgray;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* Estilos para la fecha en la que se hara uso del paquete */
+.horario{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+/* Estilos del boton para pagar */
+.boton-pagar{
+    display: flex;
+    justify-content: end;
+    padding-right: 2vh;
+    
+    margin-top: 2vh;
+    text-align: center;
+}
+#pagar{
+    
+    background-color: #2E7D32;
+    width: 5rem;
+    height: 1.5rem;
+    padding: 2px;
+    border-radius: 4px;
+}
+#pagar a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+#pagar:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 15px #c5f0be;
+}
+
+/* Estilos para el mapa de la Ubicación */
+.map{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query para pantallas más pequeñas que 1280px */
+@media (width < 1279px){
+    .info{
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .map{
+        width: 80%; /* O un porcentaje que se ajuste mejor en pantallas medianas */
+        margin: 1rem auto; /* Centra el contenedor */
+    }
+}
+
+/* Media query para pantallas más pequeñas que 1280px */
+@media (max-width: 1279px) {
+    #details {
+      width: 80%; /* porcentaje que se ajuste mejor en pantallas medianas */
+      margin: 1rem auto; /* Centra el contenedor */
+    }
+  
+    .horario {
+      flex-direction: column; /* Apila los elementos del horario */
+      gap: 1vh; /* Añade un poco de espacio entre los elementos apilados */
+    }
+  
+    .boton-pagar {
+      justify-content: center; /* Centra el botón en pantallas más pequeñas */
+    }
+  }
+  
+  /* Media query para pantallas aún más pequeñas (móviles) */
+  @media (max-width: 767px) {
+    #details {
+      width: 95%; /* Ocupa casi todo el ancho en móviles */
+    }
+  
+    #nombre-precio {
+      flex-direction: column; /* Apila nombre y precio */
+      align-items: flex-start; /* Alinea a la izquierda */
+      gap: 0.5vh;
+    }
+  
+    #contenido {
+      font-size: 18px; /* Reduce el tamaño de los iconos */
+      gap: 1vh;
+    }
+  
+    #comida,
+    #transporte,
+    #hospedaje {
+      width: 1.5rem; /* Reduce el tamaño de los contenedores de los iconos */
+      height: 1.5rem;
+      font-size: 1rem; /* Reduce el tamaño de los iconos dentro */
+    }
+  
+    #calificacion {
+      font-size: 18px; /* Reduce el tamaño de la calificación */
+    }
+  
+    .horario input[type="date"],
+    .horario input[type="datetime"],
+    .horario input[type="number"] {
+      width: 100%; /* Los inputs del horario ocupan todo el ancho */
+    }
+  
+    #pagar {
+      width: 6rem; /* Aumenta un poco el ancho del botón en móviles */
+    }
+  
+    #pagar a {
+      font-size: 16px;
+    }
+}
+
+/* Estilos para la sección donde se encuentran los comentarios */
+.reseñas{
+    text-align: center;
+    width: 100%;
+    color: #333;
+    padding-bottom: 3vh;
+
+}
+
+.comentarios-paquete{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+#comentario{
+    border: 1px solid black;
+    background-color: white;
+    width: 40%;
+    align-items: center;
+    padding: 2vh;
+}
+
+#perfil-calificacion{
+    display: flex;
+    gap: 3vh;
+}
+
+#foto-perfil{
+    width: 8vh;
+    height: 8vh;
+}
+
+#foto-perfil img{
+    object-fit: cover; /*No pierda la resolucion y se acople al contenedor*/
+    border-radius: 50%;
+}
+
+#nombre-califi{
+    font-weight: 600;
+    justify-content: start;
+}
+
+#estrellas{
+    color: #ead010;
+    font-size: 20px;
+}
+
+@media (width < 650px){
+    .comentarios-paquete{
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+}
+
+/* -------------------Estilos para los paquetes recomendados--------------- */
+.recomendados{
+    display: flex;
+    background-color: #F1F8E9;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh;
+}
+
+#paquete-recomendado{
+    width: 20%;
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+#recomendado1{
+    width: 100%;
+    height: 40vh;
+}
+
+@media (width < 1100px){
+    .recomendados{
+        flex-direction: column ;
+        gap: 4vh;
+    }
+
+    #paquete-recomendado{
+        width: 60%;
+        margin: 1rem auto;
+    }
+}
+
+/*----------------------------------------- FOOTER ----------------------*/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+.footer-left {
+    max-width: 300px;
+}
+  
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+  
+.description {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+  
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+  
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+  
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-links li {
+    margin-bottom: 8px;
+}
+  
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+}
+  
+.footer-links a:hover {
+    text-decoration: underline;
+}
+  
+.footer-bottom {
+    border-top: 1px solid white;
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
+.social-icons a {
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
