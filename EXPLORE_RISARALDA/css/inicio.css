@@ -453,7 +453,7 @@ input[type='checkbox']:checked + .switch{
 
 
 .contenido{
-    background-image: url('/EXPLORE_RISARALDA/img/fondo\ inicio.jpg');
+    background-image: url(../img/fondo\ inicio.jpg);
     height: 75vh;
     background-size: cover;
     background-position: center;
@@ -855,7 +855,7 @@ transition: 400ms ease-in-out;
 .espacio_ofer {
     display: flex;
     flex-direction: column; /* Apilar en pantallas pequeñas */
-    background-color: #f4f4f4;
+    background-color: #F1F8E9;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -1043,7 +1043,7 @@ transition: 400ms ease-in-out;
     border: 1px solid black;
     justify-content: center;
     text-align: center;
-    background-color: white;
+    background-color: #F1F8E9;
 }
 
 #recomendado1 img{
