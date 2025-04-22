@@ -92,6 +92,7 @@ header {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color:#333;
 }
 
 .social-login img {
@@ -101,7 +102,7 @@ header {
 
 .texto-bienve {
     text-align: center;
-    color: #555;
+    color: #333;
     margin-bottom: 10px;
     font-size: 1.2em;
 }
@@ -143,7 +144,7 @@ header {
 }
 
 .campo-obli {
-    color: #777;
+    color: #333;
     font-size: 0.8em;
     margin-bottom: 15px;
     text-align: right;
@@ -161,15 +162,15 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.boton-regis:hover {
+/* .boton-regis:hover {
     background-color: #1e7e34;
-}
+} */
 
 .solicitud {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
-    color: #555;
+    color: #333;
 }
 
 .solicitud a {
