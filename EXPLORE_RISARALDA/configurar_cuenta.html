@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuracion-ExploreRisaralda</title>
+    <link rel="stylesheet" href="./css/configurar_cuenta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Header superior -->
+        <div class="navigation-1">
+                <div class="nav nav-logo">
+                    <a href="./inicio.html"><img src="./img/logo-removebg-preview (1).png" alt="Logo"></a>
+                </div>
+                <div class="nav nav-title">
+                    <a href="./inicio.html"><h1>ExploreRisaralda</h1></a>
+                </div>
+                <div class="hamburger-menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="fullscreen-menu" id="fullscreen-menu">
+                    <div class="close-icon">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                    <div class="menu-content">
+                        <input type="text" placeholder="Buscar..." class="menu-search">
+                        <a href="./pereira.html">Municipios</a>
+                        <a href="./paquetes.html">Paquetes</a>
+                        <a><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a>
+                        <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
+                        <a><ion-icon class="profile-icon" name="person-outline"></ion-icon>Perfil</a>
+                    </div>
+                </div>
+                <div class="nav nav-icons">
+                    <div class="noti-container">
+                        <a><ion-icon name="notifications-outline" class="noti-icon"></ion-icon></a>
+                        <div class="dropdown-noti">
+                            <div class="controladores">
+                                <div class="controladores-izquierda">
+                                    <ion-icon name="notifications-outline"></ion-icon>
+                                    <div class="toggle">
+                                        <input type="checkbox" id="toggle" class="offscreen" />
+                                        <label for="toggle" class="switch"></label>
+                                    </div>
+                                </div>
+                                <div class="settings-icon"> 
+                                    <a href="./notificaciones.html"><ion-icon name="settings-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                            <div class="leidos">
+                                <div class="tarjeta-noti">
+                                    <div class="img-noti"></div>
+                                    <div class="info-noti">
+                                        <h5>Disfruta el nuevo paquete en Termales de Santa Rosa</h5>
+                                        <p>hace 3 dias</p>
+                                    </div>
+                                </div>
+                                <button class="btn-leidos">Marcar como leído</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon></a>
+
+                    <!-- menu despegable -->
+                    <div class="menu-container">
+                        <a><ion-icon class="profile-icon" name="person-outline" id="p-icon"></ion-icon></a>
+                        <div class="dropdown-menu">
+                            <a class="a-perfil" href="./perfil.html">Perfil</a>
+                            <a href="./login.html" class="a-perfil" >Iniciar Sesion</a>
+                            <a href="./registro.html" class="a-perfil">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- Header inferior -->
+        <div class="navigation-2">
+            <div class="input-container">
+                <ion-icon name="search-outline"></ion-icon>
+                <input class="buscar" type="text" placeholder="Buscar...">
+            </div>
+            <nav class="nav-menu">
+                <a href="./pereira.html">Municipios</a>
+                <a href="./paquetes.html">Paquetes</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-perfil">
+            <div class="perfil">
+                <a href="./perfil.html"><ion-icon name="person-outline"></ion-icon>Datos personales</a>
+                <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
+                <a href="./configurar_cuenta.html"><ion-icon name="settings-outline"></ion-icon>Configurar Cuenta</a>
+                <a href="./notificaciones.html"><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a>
+                <a href="./inicio.html"><ion-icon name="power-outline"></ion-icon>Cerrar Sesion</a>
+            </div>
+            <div class="container-container">
+                <div class="titulo">
+                    <h3>Cambiar Contraseña</h3>
+                </div>
+                <div class="container">
+                    <label for="actual">Contraseña actual</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su contraseña actual"> 
+
+                    <label for="actual">Contraseña actual</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su contraseña actual"> 
+
+                    <div class="botones">
+                        <button class="btn-cambiar">Cambiar contraseña</button>
+                        <button class="btn-eliminar">Eliminar cuenta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="imagen"></div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/header.js"></script>
+    <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
+    <script  nomodule  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " > </script>
+</body>
+</html>

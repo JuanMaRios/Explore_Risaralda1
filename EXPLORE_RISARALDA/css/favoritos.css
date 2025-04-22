@@ -8,15 +8,12 @@
 header{
     position: relative;
     width:100%;
-    background-color: #A5D6A7;
+    background-color: #B3C38E;
     text-align: center;
     color:#2E7D32;
     height: 100px;
     z-index: 1000;
-}
 
-main{
-    margin-top: 20px;
 }
 
 /* PARTE SUPEIOR DEL HEADER  */
@@ -26,7 +23,7 @@ main{
     align-items: center;
     justify-content:space-between;
     padding: 0 32px;
-    height: 60px;
+    height: 70px;
     background-color: #FAFAFA;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -39,17 +36,13 @@ main{
     
 }
 
-.nav-title{
+.nav-title a{
     font-size: 16px;
     font-weight: 500;
     flex: 1;
     text-align: center;
-    
-}
-
-.nav-title a{
     text-decoration: none;
-    color:#2E7D32;
+    color: #2E7D32;
 }
 
 .nav{
@@ -103,7 +96,7 @@ main{
     margin-left: 30px;
 }
 
-.buscar {
+.input-container input {
     padding-left: 35px; /* Espacio para el ícono */
     padding-right: 10px;
     height: 30px;
@@ -168,8 +161,148 @@ main{
     color: #FAFAFA;
 }
 
+
 .menu-container.active .dropdown-menu {
     display: block;
+}
+
+/* opciones de perfil */
+
+.container-perfil{
+    display: flex;
+    background-color: #F1F8E9;
+}
+
+
+.perfil{
+    width: 20%;
+    height:100vh;
+    background-color:#FAFAFA ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: calc(100vh - 110px);
+}
+
+.perfil a{
+    margin: 0px;
+    text-decoration: none;
+    color: #2E7D32;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.1s ease;
+}
+
+.perfil a:hover{
+    color: white;
+    background-color: #2E7D32;
+}
+
+.perfil ion-icon{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+/* parte derecha del perfil */
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container-container{
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.container-container .titulo h3{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* estilos generales para la tajeta */
+.tarjeta{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* imagen de la tarjeta */
+.tarjeta-imagen img{
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* contenido derecho de la tarjeta */
+.tarjeta-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjeta-contenido h3{
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.tarjeta-contenido .actividad{
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.tarjeta-contenido .precio{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tarjeta-botones{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-botones button{
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar{
+    background-color: #2E7D32;
+    color: #FAFAFA;
+}
+
+.btn-comprar:hover {
+    background-color: #1B5E20;
+}
+
+.btn-eliminar{
+    background-color: #d32f2f;
+    color: #FAFAFA;
+}
+
+.btn-eliminar:hover {
+    background-color: #B71C1C;
 }
 
 /* notificaciones desplegables */
@@ -328,177 +461,6 @@ input[type='checkbox']:checked + .switch{
     left: -99999px;
 }
 
-
-/* filtro de paquetes */
-.container-paquetes{
-    width: 55%;
-    margin: 0 auto;
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 10px;
-    color: #333;
-    background-color: #FAFAFA;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-
-.container-paquetes h2{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.filtros-paquetes{
-    display: flex;
-    gap: 15px;
-}
-
-.filtros-paquetes select{
-    height: 35px;
-    width: 35%;
-    margin-right: 15px;
-    border-radius: 12px;
-    padding: 0 15px;
-    font-size: 14px;
-    color: #5C4747;
-}
-
-.filtros-paquetes button{
-    position: relative;
-    height: 35px;
-    width: 15%;
-    border-radius: 12px;
-    border: none;
-    background-color:#A5D6A7 ;
-    color: #333;
-    font-weight: 500;
-    font-size: 14px;
-    margin-left: auto;
-}
-
-
-/* creacion de paquetes */
-.contenedor-general{
-    display: flex;
-    flex-direction: column;
-    background-color: #F1F8E9;
-    padding-top: 20px;
-    margin-bottom: 30px;
-}
-
-.contenedor-paquetes{
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-}
-
-.info-paquete h2{
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 55px;
-    color: #333;
-}
-
-.section-title{
-    margin-left: 50px;
-    font-size: 18px;
-    color: #333;
-    font-weight: 500;
-    margin-bottom: 40px;
-}
-
-.paquete{
-    width: 18%;
-    box-sizing: border-box;
-    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
-} 
-
-.paquete .imagen{
-    background-image: url(../img/termales-santa-rosa-cabal_0.jpg);
-    box-sizing: border-box;
-    background-size: cover;
-    width: 100%;
-    border-radius: 12px 12px 0px 0px;
-    height: 200px;
-    
-}
-
-.info-paquete{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-top: none;
-    width: 100%;
-    margin: 0px;
-    border-radius: 0px 0px 12px 12px;
-    padding: 0px;
-    background-color: white;
-    color:#5C4747 ;
-}
-
-.info-paquete h2{
-    color: #333;
-    margin: 0;
-    padding: 5px 20px;
-}
-
-.info-paquete h3{
-    padding: 0px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    margin-top: 5px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.precio{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 0px;
-}
-
-.precio h2{
-    color: #333;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.precio .descuento{
-    background-color:#A5D6A7;
-    padding: 8px;
-    border-radius: 3px;
-    color:#333;
-    font-weight: 700;
-}
-
-.corazon{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0px 15px;
-}
-
-.corazon ion-icon{
-    margin-left: 15px;
-    font-size: 30px;
-    color: #333;
-}
-
-.corazon .agregar-carrito{
-    margin-right: 15px;
-    background-color:#A5D6A7 ;
-    border: 1px solid #2E7D32;
-    border-radius: 3px;
-    padding: 10px 15px;
-    color: #333;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
 /* Responsive Header */
 .hamburger-menu {
     display: none;
@@ -615,144 +577,68 @@ input[type='checkbox']:checked + .switch{
     color: #A5D6A7;
 }
 
-/* Estilo responsivo para paquetes */
+/* Responsive para el menú de la izquierda */
 @media (max-width: 768px) {
-    .contenedor-paquetes {
+    .perfil a{
         display: flex;
-        flex-direction: column; /* Cambia a diseño vertical */
-        gap: 20px; /* Espaciado entre paquetes */
-        align-content: center;
-    }
-
-    .paquete {
-        width: 90%; /* Ocupa todo el ancho */
-        box-sizing: border-box;
-        
-    }
-
-    .paquete .imagen {
-        height: 250px; /* Ajusta la altura de la imagen */
-        border-radius: 12px 12px 0 0;
-    }
-
-    .info-paquete {
+        flex-direction: column; 
+        align-items: center; /* Centra los íconos */
+        width: auto; /* Ajusta el ancho al contenido */
         padding: 10px;
+        background-color: #FAFAFA; /* Fondo opcional */
+        border-radius: 10px; /* Bordes redondeados */
+        height: auto; /* Ajusta la altura al contenido */
+        margin-top: 0;
+
+        /* Ocultar texto */
+        text-indent: -9999px; /* Mueve el texto fuera del área visible */
+        overflow: hidden; /* Oculta cualquier desbordamiento */
+        white-space: nowrap; /* Evita que el texto se envuelva */
     }
 
-    .info-paquete h2 {
-        font-size: 18px;
+    .perfil a ion-icon {
+        font-size: 24px; /* Ajusta el tamaño del ícono */
     }
 
-    .info-paquete h3 {
-        font-size: 14px;
+    .perfil{
+        position: sticky;
+        height: auto;
     }
 
-    .precio h2 {
-        font-size: 16px;
-    }
-
-    .precio .descuento {
-        font-size: 14px;
-    }
-}
-
-/* Responsive para container-paquetes */
-@media (max-width: 768px) {
-    .container-paquetes {
-        width: 90%; /* Ocupa casi todo el ancho de la pantalla */
-        margin: 0 auto;
+    .container-container {
+        margin: 0;
         padding: 10px;
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-
-    .container-paquetes h2 {
-        font-size: 18px;
-        text-align: center; /* Centra el título */
-    }
-
-    .filtros-paquetes {
-        flex-direction: column; /* Cambia a diseño vertical */
-        gap: 10px; /* Espaciado entre los elementos */
-        align-items: stretch; /* Asegura que los elementos ocupen todo el ancho */
-    }
-    .filtros-paquetes select,
-    .filtros-paquetes button {
-        width: 100%; /* Ocupa todo el ancho */
-        font-size: 14px;
-    }
-
-    .filtros-paquetes button {
+        width: 80%; /* Ocupa todo el ancho disponible */
+        margin-top: 20px;
         margin-left: 0; /* Elimina el margen izquierdo */
+        margin-right: 0; /* Elimina el margen derecho */
+        box-sizing: border-box; /* Asegura que padding y border estén incluidos en el ancho */
     }
-}
 
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 40px;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer-left {
-    max-width: 300px;
-  }
-  
-  .logo img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  .description {
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-  
-  .footer-links {
-    display: flex;
-    gap: 40px;
-  }
-  
-  .footer-links h4 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin-bottom: 8px;
-  }
-  
-  .footer-links a {
-    color: #cccccc;
-    text-decoration: none;
-  }
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid white;
-    margin-top: 30px;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .social-icons a {
-    margin-left: 10px;
-    font-size: 18px;
-    color: white;
-    text-decoration:none;
+    .contenedor-tarjetas {
+        flex-direction: column; /* Cambia a una sola columna */
+        gap: 10px; /* Reduce el espacio entre tarjetas */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tarjeta {
+        flex-direction: column; /* Cambia la disposición de la tarjeta a vertical */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .tarjeta-imagen img {
+        width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+        height: auto; /* Ajusta la altura proporcionalmente */
+    }
+
+    .tarjeta-contenido {
+        width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+    }
+
+    .tarjeta-botones {
+        justify-content: space-between; /* Espacia los botones */
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    }
+
 }
