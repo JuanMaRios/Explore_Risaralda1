@@ -4,56 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="icon" href="./img/logo_sin_fondo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <!-- primera parte del header -->
-        <div class="barra-superior">
-            <a href="#"><h1 class="logo">ExploreRisaralda</h1></a>
-            <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
-            <nav class="nav-icons nav visible" id="nav">
-                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-                <input type="text" placeholder="Search...">
-                <div class="btns"> <i class="bi bi-search"></i> </div>
-                <a href="/EXPLORE_RISARALDA/pereira.html">Municipios</a>
-                <a href="#">Paquetes</a>          
-                <a href=""><i class="bi bi-bell"></i></a>
-                <i class="bi bi-heart"></i>
-                <a><i class="bi bi-cart"></i></a>
-                <a href="/EXPLORE_RISARALDA/login.html"><i class="bi bi-person-circle"></i></a>
+        <!-- Header superior -->
+        <div class="navigation-1">
+                <div class="nav nav-logo">
+                <a href="./inicio.html"><img src="./img/logo_sin_fondo.png" alt="Logo"></a>    
+                </div>
+                <div class="nav nav-title">
+                    <a href="./inicio.html"><h1>ExploreRisaralda</h1></a>
+                </div>
+                <div class="hamburger-menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="fullscreen-menu" id="fullscreen-menu">
+                    <div class="close-icon">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                    <div class="menu-content">
+                        <input type="text" placeholder="Buscar..." class="menu-search">
+                        <a href="./dosquebradas.html">Municipios</a>
+                        <a >Paquetes</a>
+                        <a><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a>
+                        <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
+                        <a><ion-icon class="profile-icon" name="person-outline"></ion-icon>Perfil</a>
+                    </div>
+                </div>
+                <div class="nav nav-icons">
+                    <div class="noti-container">
+                        <a><ion-icon name="notifications-outline" class="noti-icon"></ion-icon></a>
+                        <div class="dropdown-noti">
+                            <div class="controladores">
+                                <div class="controladores-izquierda">
+                                    <ion-icon name="notifications-outline"></ion-icon>
+                                    <div class="toggle">
+                                        <input type="checkbox" id="toggle" class="offscreen" />
+                                        <label for="toggle" class="switch"></label>
+                                    </div>
+                                </div>
+                                <div class="settings-icon"> 
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="leidos">
+                                <div class="tarjeta-noti">
+                                    <div class="img-noti"></div>
+                                    <div class="info-noti">
+                                        <h5>Disfruta el nuevo paquete en Termales de Santa Rosa</h5>
+                                        <p>hace 3 dias</p>
+                                    </div>
+                                </div>
+                                <button class="btn-leidos">Marcar como leído</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon></a>
+
+                    <!-- menu despegable -->
+                    <div class="menu-container">
+                        <a><ion-icon class="profile-icon" name="person-outline" id="p-icon"></ion-icon></a>
+                        <div class="dropdown-menu">
+                            <a class="a-perfil" href="./perfil.html">Perfil</a>
+                            <a class="a-perfil" >Iniciar Sesion</a>
+                            <a class="a-perfil" >Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- Header inferior -->
+        <div class="navigation-2">
+            <div class="input-container">
+                <ion-icon name="search-outline"></ion-icon>
+                <input class="buscar" type="text" placeholder="Buscar...">
+            </div>
+            <nav class="nav-menu">
+                <a href="./dosquebradas.html">Municipios</a>
+                <a href="">Paquetes</a>
             </nav>
         </div>
-        <!-- Segunda parte del header -->
-          
     </header>
 
 
 
-    <button class="ir-arriba" id="scrollBtn"><i class="bi bi-arrow-up"></i></button>
+    <!-- <button class="ir-arriba" id="scrollBtn"><i class="bi bi-arrow-up"></i></button> -->
 <main>
         <div class="contenido">
             <div class="inicio">
                 <div class="titulo">
-                    <h2>Bienvenido a ExploreRisaralda</h2>   
-                    <p>Explora los mejores destinos turísticos de Risaralda. 
-                        <br>Descubre la belleza natural, la cultura y la gastronomía de esta región colombiana </p>
-                    <a href="/EXPLORE_RISARALDA/login.html" ><button class="join-button">UNETE AHORA</button></a>
+                    <h2>ExploreRisaralda</h2>   <br>
+                    <p>Explora los mejores destinos turísticos de Risaralda.
+                        <br> 
+                    Descubre la belleza natural, la cultura y la gastronomía de esta región colombiana </p>
+                    <br>
+                    <a href="/EXPLORE_RISARALDA/login.html" ><button class="join-button">Únete</button></a>
                     
                 </div>    
             </div>
    
         </div>
-        <!-- <div class="busqueda">
-            <input type="text" placeholder="¿Qué deseas buscar?">
-            <button class="search-button">Buscar</button>
-        </div> -->
+        <div class="informacion_text">
+            <h1>Risaralda</h1>
+            <br>
+            <p>Diviertete viajando en Risaralda y crea nuevas experiencias</p>
+        </div> 
         <section class="conteiner_general">
-            <!-- Botones de carrucel -->
-            <div class="conteiner">
+            
+            <div class="conteiner"> 
+                 
                 
-                <section class="secion1">
                     <div class="slider">
                         <input type="radio" name="slider" id="slider1" checked>
                         <input type="radio" name="slider" id="slider2">
@@ -85,11 +153,12 @@
                             <label for="slider13"></label>
                             <label for="slider14"></label>
                         </div>
-                        <h1 class="titulo_muni">Risaralda</h1>
+                        
+                        
                         <div class="content">                                     
                             <div class="primerslide">
                                 <div class="card">
-                                    <img src="/EXPLORE_RISARALDA/img/DOSQUEBRADAS.jpg" alt="Dosquebradas">
+                                    <img src="./img/DOSQUEBRADAS.jpg" alt="Dosquebradas">
                                     <div class="conteni_ima">
                                         <h1>Dosquebradas</h1>
                                         <a href="/EXPLORE_RISARALDA/dosquebradas.html"><button class="explore-button" id="open1">Explorar</button></a>
@@ -98,7 +167,7 @@
                             </div>
                             <div class="segundoslide">
                                 <div class="card">
-                                    <img src="/EXPLORE_RISARALDA/img/aventura-starosa.jpg" alt="Pereira">
+                                    <img src="./img/aventura-starosa.jpg" alt="Pereira">
                                     <div class="conteni_ima">
                                         <h1>Santa Rosa</h1>
                                         <a href="/EXPLORE_RISARALDA/santarosa.html"><button class="explore-button" id="open1">Explorar</button></a>
@@ -107,37 +176,37 @@
                             </div>
                             <div class="tercerslide">
                                 <div class="card">
-                                    <img src="/EXPLORE_RISARALDA/img/vista_pereira1.jpg" alt="La Celia">
+                                    <img src="./img/vista_pereira1.jpg" alt="La Celia">
                                     <div class="conteni_ima">
                                         <h1>Pereira</h1>
-                                        <a href="/EXPLORE_RISARALDA/pereira.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./pereira.html"><button class="explore-button" id="open1">Explorar</button></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="cuartaslide">
                                 <div class="card">
-                                    <img src="/EXPLORE_RISARALDA/img/belen.jpeg" alt="Belén de Umbría">
+                                    <img src="./img/vista_belen1.jpg" alt="Belén de Umbría">
                                     <div class="conteni_ima">
                                         <h1>Belén de Umbría</h1>
-                                        <a href="/EXPLORE_RISARALDA/belen.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./belen.html"><button class="explore-button" id="open1">Explorar</button></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="quintaslide">
                                 <div class="card">
-                                    <img src="/EXPLORE_RISARALDA/img/apia.jpeg" alt="Apia">
+                                    <img src="./img/vista_apia2.jpg" alt="Apia">
                                     <div class="conteni_ima">
                                         <h1>Apia</h1>
-                                        <a href="/EXPLORE_RISARALDA/apia.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./apia.html"><button class="explore-button" id="open1">Explorar</button></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="sextoslide">
                                 <div class="card">
-                                    <img src="./img/guatica.jpg"width="600px" height="600px" alt="foto de perfil">
+                                    <img src="./img/vista_guatica1.jpg"width="600px" height="600px" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">Guatica</h1>
-                                        <a href="/EXPLORE_RISARALDA/guatica.html"><button class="explore-button" id="open1">Explorar</button></a>                                    
+                                        <a href="./guatica.html"><button class="explore-button" id="open1">Explorar</button></a>                                    
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +215,7 @@
                                     <img src="./img/La-Celia.jpg" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">La celia</h1>
-                                        <a href="/EXPLORE_RISARALDA/la_celia.html"><button class="explore-button" id="open1">Explorar</button></a>    
+                                        <a href="./la_celia.html"><button class="explore-button" id="open1">Explorar</button></a>    
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +224,7 @@
                                     <img src="./img/la_virginia.jpg" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">La virginia</h1>
-                                        <a href="/EXPLORE_RISARALDA/la_virginia.html"><button class="explore-button" id="open1">Explorar</button></a>    
+                                        <a href="./la_virginia.html"><button class="explore-button" id="open1">Explorar</button></a>    
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +233,7 @@
                                     <img src="./img/Marsella RISARALDA.jpeg"width="600px" height="600px" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">Marsella</h1>
-                                        <a href="/EXPLORE_RISARALDA/marsella.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./marsella.html"><button class="explore-button" id="open1">Explorar</button></a>
                                     </div>
                                 </div>
                             </div>  
@@ -173,7 +242,7 @@
                                     <img src="./img/mistrato-1.jpg"width="600px" height="600px" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">Mistrato</h1>
-                                        <a href="/EXPLORE_RISARALDA/mistrato.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./mistrato.html"><button class="explore-button" id="open1">Explorar</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +251,7 @@
                                     <img src="./img/pueblo.jpg"width="600px" height="600px" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">Pueblo Rico</h1>
-                                        <a href="/EXPLORE_RISARALDA/pueblo_rico.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./pueblo_rico.html"><button class="explore-button" id="open1">Explorar</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -191,16 +260,16 @@
                                     <img src="./img/quinchia.jpg"width="600px" height="600px" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">Quinchia</h1>
-                                        <a href="/EXPLORE_RISARALDA/quinchia.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./quinchia.html"><button class="explore-button" id="open1">Explorar</button></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="treceslide">
                                 <div class="card">
-                                    <img src="./img/santuario.jpg"width="600px" height="600px" alt="foto de perfil">
+                                    <img src="./img/vista_santuario1.jpg"width="600px" height="600px" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">Santuario</h1>
-                                        <button type="button" class="explore-button" id="open13">Descubre más</button>
+                                        <a href="./santuario.html"><button class="explore-button" id="open1">Explorar</button></a>
                                         
                                     </div>
                                 </div>
@@ -210,7 +279,7 @@
                                     <img src="./img/vista_balboa1.jpg"width="600px" height="600px" alt="foto de perfil">
                                     <div class="conteni_ima">
                                         <h1 class="text-ima">Balboa</h1>
-                                        <a href="/EXPLORE_RISARALDA/balboa.html"><button class="explore-button" id="open1">Explorar</button></a>
+                                        <a href="./balboa.html"><button class="explore-button" id="open1">Explorar</button></a>
                                         
                                        
                                     </div>
@@ -218,109 +287,72 @@
                             </div>
                         </div>    
                     </div>
-                </section>
             </div>
         </section>
-        <h1 class="destacados1">Tenemos para ofrecer</h1>
+        <div class="tittle1">Servicios que ofrecemos</div>
         <section class="espacio_ofer">
-            <div class="destaca1">
-                
-                <br>
-                <div class="desta1">
-                    <img width="200" height="200" src="https://img.icons8.com/ios-filled/50/discount--v1.png" alt="discount--v1"/>
-                    <p>Contamos con las mejores ofertas </p>
-                </div>
             
-                
-                <div class="desta1">
-                    <img width="48" height="48" src="https://img.icons8.com/color/48/trekking-skin-type-3.png" alt="trekking-skin-type-3"/>
-                    <p>Las mejores experiencias </p>
+            <div class="destaca1">
+                <div class="ofertas1">
+                    <div class="logo_ofer1">
+                    </div>
+                    <div class="escrito">
+                       <h1>Ofertas</h1> <br>
+                       <p>Tenemos las mejores ofertas para ti</p>
+                    </div>
                 </div>
-                
-                <div class="desta1">
-                    <img width="64" height="64" src="https://img.icons8.com/wired/64/map.png" alt="map"/>
-                    <p>Estamos cerca de ti</p>
+                <div class="ofertas2">
+                    <div class="logo_ofer2">
+                    </div>
+                    <div class="escrito2">
+                        <h1>Actividades</h1> <br>
+                        <p>Diferentes actividades para compartir con tus personas favoritas</p>
+                     </div>
+                </div>
+                <div class="ofertas3">
+                    <div class="logo_ofer3">
+                    </div>
+                    <div class="escrito3">
+                        <h1>Cerca de ti</h1> <br>
+                        <p>Podras ver que hay para divertirte desde donde estes</p>
+                     </div>
+
                 </div>
                 
             </div>
             
         </section>
         <!-- Seccion destacados -->
-        <h1 class="seccion-header1">Paquetes destacados</h1>
-        
-        <section class="testimonios1">
-            <!-- <div class="seccion-header">
-                <h2 class="titulo">testimonios</h2>
-            </div> -->
-            <button class="pre-btn1"><i class="bi bi-chevron-compact-left"></i></button>
-            <button class="next-btn1"><i class="bi bi-chevron-compact-right"></i></button>
-            <div class="contenedor1">
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira1.jpg" alt="foto-testimonio">
-                        </div>
-                        <p>Alto del Nudo</p>
-                        
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira4.jpg " alt="foto-testimonio">
-                        </div>
-                        <p>Ukumari</p>
-                        
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa1.jpg" alt="foto-testimonio">     
-                        </div>
-                        <p>Termales</p>
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira3.jpg" alt="foto-testimonio">
-                        </div>
-                        <p>Finca Cafetera</p>
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa2.jpg" alt="foto-testimonio">
-                        </div>
-                        <p>Eco hotel</p>
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira1.jpg" alt="foto-testimonio">
-                        </div>
-                        <p>Alto del Nudo</p>
-                        
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira4.jpg " alt="foto-testimonio">
-                        </div>
-                        <p>Ukumari</p>
-                        
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa1.jpg" alt="foto-testimonio">     
-                        </div>
-                        <p>Termales</p>
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_pereira3.jpg" alt="foto-testimonio">
-                        </div>
-                        <p>Finca Cafetera</p>
-                    </div>
-                    <div class="testimonios-item1">
-                        <div class="info-testimonios1">
-                            <img src="/EXPLORE_RISARALDA/img/actividad_santarosa2.jpg" alt="foto-testimonio">
-                        </div>
-                        <p>Eco hotel</p>
-                    </div>
+       
+        <div class="informacion_text">
+            <h1>Destinos Populares</h1>
+            <br>
+            <p>Los mejores destinos turisticos del pais, los más populares de Risaralda</p>
+        </div>
+       
+            <div class="recomendados">
+                <div id="paquete-recomendado">
+                    <div id="recomendado1"> <img src="img/actividad_pereira4.jpg" alt="pereira"> </div>
+                    <p> Bioparque Ukumari </p>
+                </div>
+    
+                <div id="paquete-recomendado">
+                    <div id="recomendado1"> <img src="img/actividad_balboa1.jpg" alt="pereira"> </div>
+                    <p> Senderismo </p>
+                </div>
+    
+                <div id="paquete-recomendado">
+                    <div id="recomendado1"> <img src="img/actividad_santarosa2.jpg" alt="pereira"> </div>
+                    <p> Finca Cafetera </p>
+                </div>
+    
+                <div id="paquete-recomendado">
+                    <div id="recomendado1"> <img src="img/actividad_santarosa1.jpg" alt="pereira"> </div>
+                    <p> Termales Santa Rosa</p>
+                </div>
+    
             </div>
-        </section>
+        
         
         <!-- Seccion testimonios -->
          <h2 class="seccion-header">Testimonios</h2>
@@ -333,7 +365,7 @@
             <div class="contenedor">
                     <div class="testimonios-item">
                         <div class="info-testimonios">
-                            <img src="/EXPLORE_RISARALDA/img/aventura-starosa.jpg" alt="foto-testimonio">
+                            <img src="/EXPLORE_RISARALDA/img/pexels-pixabay-415829.jpg" alt="foto-testimonio">
                             <div class="text-box">
                                 <h3 class="name">Jhon Doe</h3>
                                 <span class="job">Usuario</span>
@@ -350,7 +382,7 @@
                     </div>
                     <div class="testimonios-item">
                         <div class="info-testimonios">
-                            <img src="/EXPLORE_RISARALDA/img/aventura-starosa.jpg" alt="foto-testimonio">
+                            <img src="/EXPLORE_RISARALDA/img/pexels-pixabay-415829.jpg" alt="foto-testimonio">
                             <div class="text-box">
                                 <h3 class="name">Jhon Doe</h3>
                                 <span class="job">Usuario</span>
@@ -367,7 +399,7 @@
                     </div>
                     <div class="testimonios-item">
                         <div class="info-testimonios">
-                            <img src="/EXPLORE_RISARALDA/img/aventura-starosa.jpg" alt="foto-testimonio">
+                            <img src="/EXPLORE_RISARALDA/img/pexels-pixabay-415829.jpg" alt="foto-testimonio">
                             <div class="text-box">
                                 <h3 class="name">Jhon Doe</h3>
                                 <span class="job">Usuario</span>
@@ -377,7 +409,7 @@
                     </div>
                     <div class="testimonios-item">
                         <div class="info-testimonios">
-                            <img src="/EXPLORE_RISARALDA/img/aventura-starosa.jpg" alt="foto-testimonio">
+                            <img src="/EXPLORE_RISARALDA/img/pexels-pixabay-415829.jpg" alt="foto-testimonio">
                             <div class="text-box">
                                 <h3 class="name">Jhon Doe</h3>
                                 <span class="job">Usuario</span>
@@ -387,7 +419,7 @@
                     </div>
                     <div class="testimonios-item">
                         <div class="info-testimonios">
-                            <img src="/EXPLORE_RISARALDA/img/aventura-starosa.jpg" alt="foto-testimonio">
+                            <img src="/EXPLORE_RISARALDA/img/pexels-pixabay-415829.jpg" alt="foto-testimonio">
                             <div class="text-box">
                                 <h3 class="name">Jhon Doe</h3>
                                 <span class="job">Usuario</span>
@@ -397,49 +429,54 @@
                     </div>
             </div>
         </section>
-        <section class="contacto" id="contacto">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes alguna pregunta o comentario? ¡No dudes en contactarnos!</p>
-    
-            <div class="formulario-contacto">
-                <form action="procesar_formulario.php" method="POST">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre:" required>
-    
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su correo:" required>
-    
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5"   required></textarea>
-    
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </div>
-    
-            <div class="informacion-contacto">
-                
-                <div class = "social">
-                    <a href="#"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                   
-                </div>
-           </div>
-    
-           
-    
-           </div>  
-        </section>
+        
     </main>
-    <footer class="footer"> &copy; ExploreRisaralda 
-        || 2025 todos los derechos reservados || 
-        Luisa Fernanda Jimenez Coy - Sebastian Castellanos - Juan Manuel Rios </footer>
-    <script type="text/javascript"  src="js/main_1.js"></script>  
-   
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="logo"> <img src="img/LOGO_Mejorado.jpeg" alt="LOGO"></div>
+            <p class="description">Recorre con nosotros la bella región cafetera de Risaralda.</p>
+            <p class="year">ExploreRisaralda, 2025.</p>
+          </div>
+      
+          <div class="footer-links">
+            <div>
+              <h4>Compañia</h4>
+              <ul>
+                <li><a href="#">Acerca de nosotros </a></li>
+              </ul>
+            </div>
+            <div>
+              <h4> Recursos </h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="#">Terminos de servicio </a></li>
+                <li><a href="#">Politicas y privacidad </a></li>
+                <li><a href="#">Politica de cookies </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 ExploreRisaralda || todos los derechos reservados.</p>
+          <div class="social-icons">
+            <a href="#"><i class="icon"> i </i></a>
+            <a href="#"><i class="icon"> f </i></a>
+            <a href="#"><i class="icon"> @ </i></a>
+          </div>
+        </div>
+      </footer>
 
 
 
-
+<script tipo="módulo" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomódulo src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script type="text/javascript"  src="js/inicio.js"></script> 
 </body>
 </html> 

@@ -3,179 +3,235 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url('/EXPLORE_RISARALDA/img/pexels-samandgos-709552.jpg');
-    background-repeat: no-repeat;
+    overflow-x: hidden;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-image:url(../img/pexels-samandgos-709552.jpg);
+    background-position: center;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    display: flex;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: 'Montserrat';
     
 }
-
-header{
-    position:fixed;
-    top:0;
-    left: 0;
+header {
+    position: sticky;
+    top: 0;
     width: 100%;
-    padding: 20px;
-    background-color: #B3C38E;
-    backdrop-filter: blur(2.5px);
-    display: flex;
-    justify-content: center;
+    background-color: #FAFAFA;
+    color: #2E7D32;
+    height: auto;
     z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
-/* estilos encabezado */
-.encabezado{
+
+.navigation-1 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    display: flex;
     align-items: center;
 }
-.encabezado h1{
-    color:#5c4747;
-    font-size: 50px;
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
 }
 
-.partes_header{
-    display: flex;
-    gap:30px;
-}
-.partes_header a{
-    color:#5c4747;
+.nav-logo a {
     text-decoration: none;
+    color: #45a049;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.conteiner-registro {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 90%;
+    max-width: 900px;
+    margin:30px auto;
+    position: relative;
+    bottom:25px;
+    height: 700px;
+}
 
-}
-/* seccion login */
-.login-container {
-    display: flex;
-    top:100px;
-    background-color: rgba(255, 255, 255, 0.85); 
-    border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 750px;
-    height: 613px;
-}
-.login-forma{
-    width:700px;
-}
-
-.login-forma h2 {
-    text-align: left;
-    margin-bottom: 25px;
+.form-registro h2 {
+    text-align: center;
     color: #333;
-    
+    margin-bottom: 20px;
 }
 
-.inicial {
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-login a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-login img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.texto-bienve {
+    text-align: center;
+    color: #555;
     margin-bottom: 10px;
-    display: flex; 
-    align-items: center; 
+    font-size: 1.2em;
 }
 
-.inicial label[for="email"] {
-    color: #555;
-    font-size: 0.9em;
-    margin-right: 15px; 
-    width: 20%; 
+.grupo {
+    margin-bottom: 10px;
 }
-.inicial label[for="password"] {
-    color: #555;
-    font-size: 0.9em;
-    margin-right: 20px; 
-    width: 19%; 
+
+.grupo label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+   
 }
-.inicial label[for="text"] {
-    color: #555;
-    font-size: 0.9em;
-    margin-right: 15px; 
-    width: 20%; 
-}
-.inicial label[for="text"] {
-    color: #555;
-    font-size: 0.9em;
-    margin-right: 20px; 
-    width: 19%; 
-}
-.inicial input[type="text"],
-.inicial input[type="email"],
-.inicial input[type="password"] {
-    width: 80%;
+
+.grupo input[type="text"],
+.grupo input[type="email"],
+.grupo input[type="password"] {
+    width: calc(100% - 12px);
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
     font-size: 1em;
-    flex-grow: 1; 
 }
 
-.required {
-    color: #ff0000;
+.grupo.checkbox-grupo {
+    display: flex;
+    align-items: center;
+}
+
+.grupo.checkbox-grupo input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.grupo.checkbox-grupo label {
+    font-weight: normal;
+}
+
+.campo-obli {
+    color: #777;
     font-size: 0.8em;
-    float: right;
-    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: right;
 }
 
-.boton_inicio{
-    background-color: #4CAF50; 
+.boton-regis {
+    background-color: #2E7D32; /* Example green color */
+    color: white;
     padding: 12px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     width: 100%;
     font-size: 1.1em;
     transition: background-color 0.3s ease;
 }
 
-.boton_inicio:hover {
-    background-color: #e7f6e8;
+.boton-regis:hover {
+    background-color: #1e7e34;
 }
 
-.opciones {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-    font-size: 0.9em;
-    color: #777;
-}
-
-.opciones label {
-    display: flex;
-    align-items: center;
-}
-
-.opciones input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-.opciones a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.opciones a:hover {
-    text-decoration: underline;
-}
-
-.registro {
+.solicitud {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
-    color: #777;
+    color: #555;
 }
 
-.registro a {
-    color: #007bff;
+.solicitud a {
+    color: #2E7D32;
     text-decoration: none;
 }
 
-.registro a:hover {
+.solicitud a:hover {
     text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px){
+    .nav-logo a {
+        text-decoration: none;
+        color: #45a049;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .conteiner-registro {
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .form-registro h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .social-login {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .social-login a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .texto-bienve {
+        font-size: 0.85em;
+        margin-bottom: 20px;
+    }
+
+    .grupo label {
+        font-size: 0.9em;
+    }
+
+    .grupo input[type="text"],
+    .grupo input[type="email"],
+    .grupo input[type="password"] {
+        padding: 8px;
+        font-size: 0.95em;
+    }
+
+    .boton-regis {
+        padding: 10px 12px;
+        font-size: 1em;
+    }
+
+    .solicitud {
+        font-size: 0.85em;
+        margin-top: 15px;
+    }
 }
