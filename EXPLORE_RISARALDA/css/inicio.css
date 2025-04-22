@@ -450,11 +450,9 @@ input[type='checkbox']:checked + .switch{
 }
 
 
-
-
 .contenido{
     background-image: url(../img/fondo\ inicio.jpg);
-    height: 75vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -489,7 +487,7 @@ input[type='checkbox']:checked + .switch{
     color: rgb(255, 255, 255);
     padding: 15px 30px;
     border: none;
-    border-radius: 25px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 1.2rem; 
     text-decoration: none;
@@ -504,8 +502,8 @@ input[type='checkbox']:checked + .switch{
     align-items: left;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    background-color: #ffffff2d;
+    padding: 20px 20px 20px 50px ;
+    background-color: #ffffff25;
     width: 100%;
     height: 400px;
     top:100px;
@@ -606,11 +604,13 @@ input[type='checkbox']:checked + .switch{
 
 .informacion_text {
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     text-align: center; 
     padding: 20px;
+    
 }
 
 .informacion_text h1 {
@@ -828,13 +828,14 @@ transition: 400ms ease-in-out;
 .explore-button{
     width:150px;
     height: 50px;
-    border-radius: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
     font-size: 20px;
     background-color: #25d366;
     cursor: pointer;
 }
 .explore-button:hover{
-    background-color: #183139;
+    background-color: #A5D6A7;
 }
 
 
@@ -859,7 +860,7 @@ transition: 400ms ease-in-out;
 .espacio_ofer {
     display: flex;
     flex-direction: column; /* Apilar en pantallas pequeñas */
-    background-color: #F1F8E9;
+    background-color: #ffffff;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -883,7 +884,7 @@ transition: 400ms ease-in-out;
     background-color: #ffffffaf;
     width: 100%; /* Ocupar todo el ancho */
     border-radius: 10px;
-    box-shadow: -5px -5px 10px -5px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.56);
     margin-bottom: 20px;
     display: flex;
     flex-direction: row; /* Disposición horizontal */
@@ -1007,22 +1008,23 @@ transition: 400ms ease-in-out;
     .ofertas1,
     .ofertas2,
     .ofertas3 {
-        width: 290px; /* Volver al ancho original */
+        width: 300px; /* Volver al ancho original */
+        height: 180px;
         margin-bottom: 0;
     }
 
     .logo_ofer1,
     .logo_ofer2,
     .logo_ofer3 {
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
         margin-right: 20px;
     }
 
     .escrito h1,
     .escrito2 h1,
     .escrito3 h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .escrito p,
@@ -1050,10 +1052,11 @@ transition: 400ms ease-in-out;
 
 #paquete-recomendado{
     width: 20%;
-    border: 1px solid black;
+    border: 1px solid #888;
     justify-content: center;
     text-align: center;
     background-color: white;
+    border-radius: 5px;
 }
 
 #recomendado1 img{

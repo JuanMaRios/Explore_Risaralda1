@@ -125,7 +125,7 @@ nav{
     color: #333;
     gap: 15px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* Estilos para el input donde ingresan el nombre */
 #nombrePaquete{
@@ -138,7 +138,7 @@ nav{
     color: #333;
     gap: 15px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* Estilos para el input donde ingresan la actividad*/
 #actividadPaquete{
@@ -151,7 +151,7 @@ nav{
     color: #333;
     gap: 15px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* Estilos para el input donde ingresan el precio*/
 #precioPaquete{
@@ -164,7 +164,7 @@ nav{
     color: #333;
     gap: 15px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* Estilos para el input donde ingresan el precio*/
 #ubicacionPaquete{
@@ -177,7 +177,7 @@ nav{
     color: #333;
     gap: 15px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* Estilos para el input donde ingresan los terminos*/
 #terminosPaquete{
@@ -190,7 +190,7 @@ nav{
     color: #333;
     gap: 10px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #linkPaquete{

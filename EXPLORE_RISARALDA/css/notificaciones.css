@@ -5,6 +5,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body{
+    background-color: #F1F8E9;
+}
+
 header{
     position: fixed;
     width:100%;
