@@ -6,82 +6,64 @@
     <title>Registro empresa</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/registro_empre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="encabezado">
-            <h1>ExploreRisaralda</h1>
-            <nav class="partes_header">
-                <a href="#">Inicio</a>
-                <a href="#">Municipios</a>
-                <a href="#">Paquetes</a>
-                <a href="#"><i class="bi bi-bell"></i></a>    
-                <a href="#"><i class="bi bi-heart"></i></a>
-                <a href="#"><i class="bi bi-cart"></i></a>
-                <a href="#"><i class="bi bi-person-circle"></i></a>
-            </nav>
+        <!-- Header superior -->
+        <div class="navigation-1">
+                <div class="nav nav-logo">
+                    <a href="./inicio.html"><img src="./img/logo_sin_fondo.png" alt="Logo"></a>  
+                    <a href="./inicio.html"><h1>ExploreRisaralda</h1></a>  
+                </div>
+                
         </div>
+
     </header>
     <!-- Seccion Registrp -->
-    <div class="login-container">
-        <div class="login-forma">
-            <h2>Registra tu empresa</h2>
-            <hr>
-            <h3>Bienvenidos a ExploreRisaralda. Registrate para obtener beneficios</h3>
+    <div class="conteiner-registro">
+        <div class="form-registro">
+            <h2>Regístra tu emprendimiento</h2>
             <br>
-            <form action="#" method="post">  
-                <div class="inicial">
-                    <label for="text">Nombre:</label>
-                    <input type="text" id="text" name="text" required>                   
+            <p class="texto-bienve">Bienvenidos a ExploreRisaralda. Regístrate para obtener beneficios.</p>
+            <form action="#" method="post">
+                <div class="grupo">
+                    <label for="nombre">Nombre de la empresa:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
-                <div class="inicial">
-                    <label for="text">Apellidos:</label>
-                    <input type="text" id="text" name="text" required>                   
-                </div>  
-                <div class="inicial">
-                    <label for="text">Nombre de la empresa:</label>
-                    <input type="text" id="text" name="text" required>                   
-                </div>   
-                <div class="inicial">
-                    <label for="text">RUT:</label>
-                    <input type="text" id="text" name="text" required>                   
-                </div>          
-                <div class="inicial">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>                   
+                <div class="grupo">
+                    <label for="apellidos">RUT:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
                 </div>
-                
-                                
-                <div class="inicial">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" required>
+                <div class="grupo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="inicial">
-                    <label for="password">Confirmación</label>
-                    <input type="password" id="password" name="password" required>
+                <div class="grupo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
                 </div>
-                <span class="required">*Campos Obligatorios</span> 
-                <div class="opciones">
-                    <label>
-                        <input type="checkbox" name="remember">Acepta terminos y condiciones
-                    </label>
-                    
+                <div class="grupo">
+                    <label for="confirmacion">Confirmación:</label>
+                    <input type="password" id="confirmacion" name="confirmacion" required>
                 </div>
-                <div class="opciones">
-                    <label>
-                        <input type="checkbox" name="remember"> Acepta recibir notificaciones respectivas a la pagina
-                    </label>
-                    
+                <div class="grupo checkbox-grupo">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepta términos y condiciones</label>
                 </div>
-                <button type="submit" class="boton_inicio">Ingresar</button>
-                
-                <div class="registro">
-                    ¿Ya tienes una cuenta? <a href="/EXPLORE_RISARALDA/login.html">Ingresa Aqui</a>
+                <div class="grupo checkbox-grupo">
+                    <input type="checkbox" id="notificaciones" name="notificaciones">
+                    <label for="notificaciones">Acepta recibir notificaciones respectivas a la página</label>
                 </div>
+                <p class="campo-obli">*Campos obligatorios</p>
+                <button type="submit" class="boton-regis">Ingresar</button>
             </form>
+            <p class="solicitud">¿Eres una empresa? <a href="#">Regístrate Aquí</a></p>
         </div>
     </div>
-
+   
 
 
 

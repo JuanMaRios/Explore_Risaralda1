@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F8E9;
+    font-family: 'Montserrat';
+}
+
+header{
+    position: relative;
+    width:100%;
+    background-color: #A5D6A7;
+    text-align: center;
+    color:#2E7D32;
+    height: 100px;
+    z-index: 1000;
+}
+
+/* PARTE SUPEIOR DEL HEADER  */
+
+.navigation-1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 32px;
+    height: 60px;
+    background-color: #FAFAFA;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-logo img {
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    width: auto;
+    
+}
+
+.nav-title{
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    
+}
+.nav-title a{
+    text-decoration: none;
+    color:#2E7D32
+}
+
+.nav{
+    width: 33%;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    
+}
+
+.nav-icons ion-icon{
+    color: #2E7D32;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nav-icons ion-icon:hover{
+    transform: scale(1.2);
+    background-color: #2E7D32;
+    border-radius: 50%;
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+/* PARTE INFERIOR DEL HEADER  */
+
+.navigation-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #A5D6A7;
+    height: 40px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container ion-icon {
+    position: absolute;
+    left: 10px; /* Ajusta según sea necesario */
+    color: #888;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.buscar {
+    padding-left: 35px; /* Espacio para el ícono */
+    padding-right: 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 30px;
+    background-color: #FAFAFA;
+}
+
+.nav-menu{
+    margin-left: 30px;
+}
+
+.nav-menu a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: 600;
+    font-size: 15px;
+    transition: font-size 0.3s ease;
+}
+
+.nav-menu a:hover{
+    font-size: 16px;
+}
+
+/* Menu Desplegable */
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 200px;
+}
+
+.dropdown-menu .a-perfil{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.dropdown-menu .a-perfil:hover {
+    background-color: #2E7D32;
+    color: #FAFAFA;
+}
+
+.menu-container.active .dropdown-menu {
+    display: block;
+}
+
+/* notificaciones desplegables */
+
+.noti-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-noti {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 400px;
+    height: 300px;
+}
+
+.controladores{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.controladores-izquierda{
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.controladores .settings-icon{
+    display: inline-flex;
+}
+
+.leidos{
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-noti{
+    display: flex;
+    padding: 10px ;
+    margin: 0;
+}
+
+.tarjeta-noti:hover{
+    background-color: #ddd;
+}
+
+.img-noti{
+    background-image: url(../img/santarosa.jpg);
+    width: 100px;
+    height: 70px;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.info-noti h5{
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.info-noti p{
+    color: #888;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.btn-leidos{
+    position: relative;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc ;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-top: 95px;
+}
+
+.dropdown-noti .controladores, .dropdown-noti .leidos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2E7D32;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.noti-container.active .dropdown-noti {
+    display: block;
+}
+
+/* checkbox  */
+
+.toggle{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.switch{
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd ;
+    border-radius: 40px;
+    cursor: pointer;
+    border: gray;
+    margin-right: 15px;
+}
+
+.switch::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    background-color: gray ;
+    left: 3px;
+    top: 3px;
+    transition: all 0.4s
+}
+
+/* el switch esta desactivo */
+
+
+input[type='checkbox']:checked + .switch::after{
+    transform: translateX(20px);
+    background-color: #ddd;
+}
+
+ /* ek switch esta activado  */
+input[type='checkbox']:checked + .switch{
+    background-color:#2E7D32;
+}
+
+.offscreen{
+    position: absolute;
+    left: -99999px;
+}
+/* Responsive Header */
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav{
+        width: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .navigation-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: auto;
+        background-color: #A5D6A7;
+    }
+
+    .nav-logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    .nav-title {
+        flex: 1;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .nav-icons {
+        display: none; /* Hide other icons */
+    }
+
+    .menu-container {
+        display: none; /* Hide dropdown menu */
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        color: #2E7D32;
+        cursor: pointer;
+    }
+    .navigation-2 {
+        display: none; /* Hide the second navigation bar */
+    }
+}
+
+/* Fullscreen Menu */
+.fullscreen-menu {
+    display: none; /* Oculto por defecto */
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fullscreen-menu.active {
+    display: flex; /* Mostrar cuando esté activo */
+}
+
+.menu-content {
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.menu-content input.menu-search {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.menu-content a {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #A5D6A7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-content a:hover {
+    color: #FAFAFA;
+}
+
+/* Estilo para el icono de cerrar dentro del menú */
+.fullscreen-menu .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ea1010;
+    cursor: pointer;
+    z-index: 2100; /* Asegúrate de que esté por encima del contenido */
+}
+
+.fullscreen-menu .close-icon:hover {
+    color: #A5D6A7;
+}
+
+.titulo{
+    background-color: #F1F8E9;
+    display: flex;
+    position: relative;
+    top:150px; 
+}
+
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    width: calc(100vw - 15px);
+    height: 100vh;
+}
+    
+.div1 {
+    grid-column: span 5 / span 5;
+    background-color: #33333300;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    display: flex;
+    font-size: 48px;
+}
+
+.div2 { 
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+    background-color: #a5d6a700;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 45vw;
+    
+    
+}
+.div2 img{
+    width: 600px;
+    height:600px;
+    bottom:100px;
+    display: flex;
+    position: relative;
+    left:150px;
+    bottom:50px;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-color: #A5D6A7;
+    width: 35vw;
+    border: 10px;
+    position: relative;   
+    right: 150px;
+    border: 1px solid black;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+    background-color: #A5D6A7;
+    width: 35vw;
+    border: 1px solid black;
+    position: relative;
+    right: 150px;
+
+}
+   
+
+
+
+

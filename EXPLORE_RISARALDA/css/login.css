@@ -1,121 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body {
+        overflow-x: hidden;
+        width:100%;
+        margin:0;
+        padding:0;
+        background-image:url(../img/pexels-samandgos-709552.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        min-height: 100vh;
+        font-family: 'Montserrat';
+        
+    }
 
-body {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url('/EXPLORE_RISARALDA/img/pexels-samandgos-709552.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    display: flex;
-    
-}
+    header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: #FAFAFA;
+        color: #2E7D32;
+        height: auto;
+        z-index: 1000;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
 
-header{
-    position:fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background-color:#B3C38E;
-    backdrop-filter: blur(1.5px);
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
-}
-/* estilos encabezado */
-.encabezado{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-.encabezado h1{
-    color: #5c4747;
-    font-size: 50px;
-}
-/* estilos partes header */
-.partes_header{
-    display: flex;
-    gap:30px;
-}
-.partes_header a{
-    color:#5c4747;
-    text-decoration: none;
+    .navigation-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
 
-}
+    .nav-logo {
+        display: flex;
+        align-items: center;
+    }
 
-/* Registro */
+    .nav-logo img {
+        height: 40px;
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .nav-logo a {
+        text-decoration: none;
+        color: #45a049;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
 .login-container {
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.755);
+    border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 750px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 30px auto;
+    box-sizing: border-box;
 }
 
 .login-forma h2 {
     text-align: left;
-    margin-bottom: 25px;
     color: #333;
-    
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 .inicial {
     margin-bottom: 15px;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.inicial label[for="email"] {
-    color: #555;
-    font-size: 0.9em;
-    margin-right: 15px; 
-    width: 20%; 
-}
+.inicial label[for="email"],
 .inicial label[for="password"] {
     color: #555;
-    font-size: 0.9em;
-    margin-right: 20px; 
-    width: 19%; 
+    font-size: 0.9rem;
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
 }
-
 
 .inicial input[type="email"],
 .inicial input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1em;
-    flex-grow: 1; 
+    font-size: 1rem;
 }
 
 .required {
-    color: #ff0000;
-    font-size: 0.8em;
-    float: right;
+    color: #333;
+    font-size: 0.8rem;
+    text-align: right;
     margin-top: 5px;
 }
 
-.boton_inicio{
-    background-color: #4CAF50; 
-    padding: 12px 15px;
+.boton_inicio {
+    background-color: #A5D6A7;
+    padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .boton_inicio:hover {
@@ -126,14 +131,19 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
-    font-size: 0.9em;
-    color: #777;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .opciones label {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .opciones input[type="checkbox"] {
@@ -141,8 +151,11 @@ header{
 }
 
 .opciones a {
-    color: #007bff;
+    color: #333;
     text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
 }
 
 .opciones a:hover {
@@ -151,17 +164,126 @@ header{
 
 .registro {
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
+    margin-top: 25px;
+    font-size: 0.9rem;
     color: #777;
 }
 
 .registro a {
-    color: #007bff;
+    color: #1a5b1d;
     text-decoration: none;
 }
 
 .registro a:hover {
     text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .navigation-1 {
+        padding: 10px 30px;
+        height: 60px;
+    }
+
+    .nav-logo img {
+        height: 50px;
+    }
+
+    .nav-logo a {
+        font-size: 1.5rem;
+    }
+
+    .login-container {
+        max-width: 600px;
+        padding: 30px;
+        margin: 50px auto;
+        border-radius: 20px;
+    }
+
+    .login-forma h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .inicial {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .inicial label[for="email"],
+    .inicial label[for="password"] {
+        width: 30%;
+        margin-right: 10px;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .inicial input[type="email"],
+    .inicial input[type="password"] {
+        width: 70%;
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+    .opciones {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .registro {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+}
+
+/* Media query para pantallas grandes (escritorios - 992px y superior) */
+@media (min-width: 992px) {
+    .navigation-1 {
+        height: 70px;
+        padding: 10px 40px;
+    }
+
+    .nav-logo img {
+        height: 60px;
+    }
+
+    .nav-logo a {
+        font-size: 1.8rem;
+    }
+
+    .login-container {
+        max-width: 700px;
+        padding: 40px;
+        margin: 70px auto;
+    }
+
+    .login-forma h2 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    .inicial label[for="email"],
+    .inicial label[for="password"] {
+        font-size: 1.1rem;
+    }
+
+    .inicial input[type="email"],
+    .inicial input[type="password"] {
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .opciones {
+        font-size: 1.1rem;
+        margin-top: 25px;
+    }
+
+    .registro {
+        font-size: 1.1rem;
+        margin-top: 35px;
+    }
 }
 
