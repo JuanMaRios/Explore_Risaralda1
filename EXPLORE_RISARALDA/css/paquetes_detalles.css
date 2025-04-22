@@ -425,21 +425,21 @@ img{
 }
 
 #image1{
-    width: 30vh;
+    width: 50vh;
     height: 40vh;
     border: 2px solid #333;
     border-radius: 4px;
 }
 
 #image2{
-    width: 30vh;
+    width: 50vh;
     height: 40vh;
     border: 2px solid #333;
     border-radius: 4px;
 }
 
 #image3{
-    width: 30vh;
+    width: 50vh;
     height: 40vh;
     border: 2px solid #333;
     border-radius: 4px;
@@ -806,7 +806,4 @@ img{
     color: white;
     text-decoration: none;
 }
-
-
-
 

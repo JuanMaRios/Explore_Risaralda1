@@ -20,18 +20,26 @@ header{
     color: #333;
 }
 
-#logo{
-    width: 6vh;
-    height: 6vh;
-    border: 1px solid #333;
-    border-radius: 50%;
-    background-color: white;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
+#title{
+    text-decoration: none;
+    color: #2E7D32;
 }
+
+#logo{
+    display: flex;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+#logo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 
 /* h1{
     margin-left: 20px;
@@ -57,10 +65,11 @@ nav{
 .boton-modal label{
     padding: 5px 10px;
     background-color: white;
-    color: #333;
+    color: #2E7D32;
     transition: all 300ms ease;
     border: 1px solid #333;
     border-radius: 4px;
+    font-weight: 600;
 }
 .boton-modal{
     display: flex;
@@ -289,14 +298,14 @@ nav{
 /* estilos del icono de empresa */
 #iconoEmpresa{
     font-size: 25px;
-    color: #333;
+    color: #2E7D32;
     text-decoration: none;
 }
 
 /* estilos del icono de notificación */
 #iconoNoti{
     font-size: 25px;
-    color: #333;
+    color: #2E7D32;
     text-decoration: none;
 }
 
@@ -309,7 +318,7 @@ main{
 /* Contenedor de opciones de navegación */
 .menu_opciones{
     width: 23%;
-    height: 85vh;
+    height: auto;
     text-align: center;
     margin: 0;
     display: block;
@@ -341,6 +350,7 @@ main{
     cursor: pointer;
     background: #a5d6a7;
     color: #333;
+    font-weight: 600;
 }
 /* estilos para su respectivo texto (datos de empresa) */
 #datosEmpresa a{
@@ -369,6 +379,7 @@ main{
 }
 #misPaquetes:hover{
     background-color: #a5d6a7;
+    font-weight: 600;
 }
 #icono-paquetes{
     margin-left: 20px;
@@ -392,6 +403,7 @@ main{
 }
 #configurarCuenta:hover{
     background-color: #a5d6a7;
+    font-weight: 600;
 }
 #icono-configuracion{
     margin-left: 20px;
@@ -401,19 +413,22 @@ main{
 #cerrarSesion{
     width: 100%;
     height: 3rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     display: flex;
     gap: 10px;
     cursor: pointer;
     color: #333;
-    margin-top: 21rem;
     font-weight: 450;
+    margin-top: 50vh;
 }
 /* estilos para su respectivo texto (Cerrar Sesión) */
 #cerrarSesion a{
     text-decoration: none;
     color: #333;
+}
+#icono-cerrarSesion{
+    margin-left: 20px;
 }
 #cerrarSesion:hover{
     background-color: #d78072;
@@ -429,18 +444,19 @@ main{
     height: auto;
     color: #333;
     margin-top: -5vh;
-    display: block;
+    
 }
 
 /* estilos del contenedor donde van los espacios de informacion de empresa */
 #info-empresa{
     width: 100%;
-    height: 60vh;
+    height: auto;
     border:  1px solid #333;
     border-radius: 6px;
     padding: 25px;
     background: white;
     font-weight: 400;
+    overflow: hidden;
 }
 
 /*----------------------------------------------------------------------*/
@@ -471,6 +487,19 @@ main{
     width: 18rem;
     height: 1.4rem;
     border-bottom: 2px solid black; 
+}
+
+@media (width < 1320px){
+    #nombre-direccion{
+        gap: 4rem;
+        justify-content: center;
+    }
+}
+
+@media (width < 1040px){
+    #nombre-direccion{
+        flex-direction: column;
+    }
 }
 
 /*-------------------------------------------------------------------*/
@@ -504,6 +533,19 @@ main{
     border-bottom: 2px solid black; 
 }
 
+@media (width < 1320px){
+    #rut-contacto{
+        gap: 4rem;
+        justify-content: center;
+    }
+}
+
+@media (width < 1040px){
+    #rut-contacto{
+        flex-direction: column;
+    }
+}
+
 /*----------------------------------------------------------------*/
 /* seccion del correo y la ID del dueño */
 #correo-id{
@@ -533,6 +575,19 @@ main{
     width: 18rem;
     height: 1.4rem;
     border-bottom: 2px solid black; 
+}
+
+@media (width < 1320px){
+    #correo-id{
+        gap: 4rem;
+        justify-content: center;
+    }
+}
+
+@media (width < 1040px){
+    #correo-id{
+        flex-direction: column;
+    }
 }
 
 /*------------------ Botón para editar---------------------------------*/
@@ -566,5 +621,70 @@ main{
     font-weight: 400;
 }
 
+/* Responsive del main y menu de opciones */
+@media (width < 860px){
+    main{
+        flex-direction: column;
+    }
+    .menu_opciones{
+        width: 100%;
+    }
+    #titulo-ajustes{
+        justify-content: center;
+    }
+    #datosEmpresa{
+        justify-content: center;
+    }
+    #misPaquetes{
+        justify-content: center;
+    }
+    #configurarCuenta{
+        justify-content: center;
+    }
+    #cerrarSesion{
+        justify-content: center;
+        margin-top: 0;
+    }
+    .contenido{
+        margin: 1rem auto;
+    }
+    .contenido h2{
+        text-align: center;
+    }
+    #info-empresa{
+        width: 85%;
+    }
+}
 
+@media (width < 1040px){
+    #cerrarSesion{
+        margin-top: 0;
+    }
+}
+/* Responsive del header */
+@media (width < 630px){
+    header{
+        flex-direction: column;
+        height: 12vh;
+    }
+    #logo{
+        justify-content: center;
+    }
+    nav{
+        padding-bottom: 1vh;
+    }
+}
+
+/* Responsive de el contenido*/
+@media (width < 1040px){
+    #nombre-direccion{
+        align-items: center;
+    }
+    #rut-contacto{
+        align-items: center;
+    }
+    #correo-id{
+        align-items: center;
+    }
+}
 
