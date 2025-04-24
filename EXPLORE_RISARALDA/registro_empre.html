@@ -12,17 +12,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Header superior -->
-        <div class="navigation-1">
-                <div class="nav nav-logo">
-                    <a href="./inicio.html"><img src="./img/logo_sin_fondo.png" alt="Logo"></a>  
-                    <a href="./inicio.html"><h1>ExploreRisaralda</h1></a>  
-                </div>
-                
+    <div class="navigation-1">
+        <div class="nav nav-logo">
+        <a href="./inicio.html"><img src="./img/logo_sin_fondo.png" alt="Logo"></a>    
         </div>
-
-    </header>
+        <div class="nav nav-title">
+            <a href="./inicio.html"><h1>ExploreRisaralda</h1></a>
+        </div>
+        <div class="hamburger-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="fullscreen-menu" id="fullscreen-menu">
+            <div class="close-icon">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <div class="menu-content">
+                <input type="text" placeholder="Buscar..." class="menu-search">
+                <a href="./dosquebradas.html">Municipios</a>
+                <a href="./paquetes.html">Paquetes</a>
+                <a><ion-icon name="notifications-outline"></ion-icon>Notificaciones</a>
+                <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon>Favoritos</a>
+                <a href="./perfil.html"><ion-icon class="profile-icon" name="person-outline"></ion-icon>Perfil</a>
+            </div>
+        </div>
+        <div class="nav nav-icons">
+            <div class="noti-container">
+                <a><ion-icon name="notifications-outline" class="noti-icon"></ion-icon></a>
+                <div class="dropdown-noti">
+                    <div class="controladores">
+                        <div class="controladores-izquierda">
+                            <ion-icon name="notifications-outline"></ion-icon>
+                            <div class="toggle">
+                                <input type="checkbox" id="toggle" class="offscreen" />
+                                <label for="toggle" class="switch"></label>
+                            </div>
+                        </div>
+                        <div class="settings-icon"> 
+                            <a href="./configurar_cuenta.html"><ion-icon name="settings-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="leidos">
+                        <div class="tarjeta-noti">
+                            <div class="img-noti"></div>
+                            <div class="info-noti">
+                                <h5>Disfruta el nuevo paquete en Termales de Santa Rosa</h5>
+                                <p>hace 3 dias</p>
+                            </div>
+                        </div>
+                        <button class="btn-leidos">Marcar como leído</button>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="./favoritos.html"><ion-icon name="heart-outline"></ion-icon></a>
+            <div class="menu-container">
+                <a><ion-icon class="profile-icon" name="person-outline" id="p-icon"></ion-icon></a>
+                <div class="dropdown-menu">
+                    <a class="a-perfil" href="./perfil.html">Perfil</a>
+                    <a class="a-perfil" href="./login.html">Iniciar Sesion</a>
+                    <a class="a-perfil" href="./registro.html">Registrarse</a>
+                </div>
+            </div>
+        </div>
+</div>
     <!-- Seccion Registrp -->
     <div class="conteiner-registro">
         <div class="form-registro">
@@ -35,7 +87,7 @@
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div class="grupo">
-                    <label for="apellidos">RUT:</label>
+                    <label for="apellidos">NIT:</label>
                     <input type="text" id="apellidos" name="apellidos" required>
                 </div>
                 <div class="grupo">
@@ -64,5 +116,9 @@
             <p class="solicitud">¿Ya tienes empresa? <a href="./info_empresa.html">Ingresa Aquí</a></p>
         </div>
     </div>
+
+    <script tipo="módulo" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomódulo src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript"  src="js/inicio.js"></script> 
 </body>
 </html>
