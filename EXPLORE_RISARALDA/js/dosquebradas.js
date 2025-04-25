@@ -90,3 +90,14 @@ botonDesple2.addEventListener('click', (event) => {
         mainDesplegable2.style.display = 'none';
     }
 });
+
+
+const municipioSelect = document.getElementById("municipio");
+
+municipioSelect.addEventListener("change", function () {
+  const municipio = this.value;
+  if (municipio) {
+    // Si los archivos están en la raíz del sitio
+    window.location.href = `${municipio}.html`;
+  }
+});
