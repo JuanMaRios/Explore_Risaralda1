@@ -4,6 +4,17 @@
         box-sizing: border-box;
     }
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    header{
+        position: relative;
+        width:100%;
+        background-color: #A5D6A7;
+        text-align: center;
+        color:#2E7D32;
+        height: 100px;
+        z-index: 1000;
+    }
+    
     body {
         overflow-x: hidden;
         width:100%;
@@ -16,26 +27,14 @@
         box-sizing: border-box;
         min-height: 100vh;
         font-family: 'Montserrat';
-        
     }
-
-    header{
-        position: relative;
-        width:100%;
-        background-color: #A5D6A7;
-        text-align: center;
-        color:#2E7D32;
-        height: 100px;
-        z-index: 1000;
-    }
-    
     /* PARTE SUPEIOR DEL HEADER  */
     
     .navigation-1{
         display: flex;
         align-items: center;
         justify-content:space-between;
-        padding: 0 32px;
+        padding-right: 10px;
         height: 60px;
         background-color: #FAFAFA;
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -459,7 +458,7 @@
         padding: 40px;
         width: 90%;
         max-width: 600px;
-        margin:30px auto;
+        margin:0px auto;
         position: relative;
         bottom:25px;
         height: 400px;

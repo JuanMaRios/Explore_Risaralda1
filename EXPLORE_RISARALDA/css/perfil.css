@@ -529,7 +529,7 @@ input[type='checkbox']:checked + .switch{
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: #ea1010;
+    color: rgb(200, 50, 50);
     cursor: pointer;
     z-index: 2100; /* Asegúrate de que esté por encima del contenido */
 }

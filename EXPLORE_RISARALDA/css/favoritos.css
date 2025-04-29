@@ -297,12 +297,12 @@ header{
 }
 
 .btn-eliminar{
-    background-color: #ea10348f;
+    background-color: rgb(200, 50, 50);
     color: #FAFAFA;
 }
 
 .btn-eliminar:hover {
-    background-color: #ea1010a8;
+    background-color: rgb(135, 33, 33);
 }
 
 /* notificaciones desplegables */

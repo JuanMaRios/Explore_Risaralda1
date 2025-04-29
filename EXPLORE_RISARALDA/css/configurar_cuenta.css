@@ -275,12 +275,12 @@ label{
 }
 
 .btn-eliminar{
-    background-color: #d32f2f;
+    background-color: rgb(200, 50, 50);
     color: #FAFAFA;
 }
 
 .btn-eliminar:hover {
-    background-color: #B71C1C;
+    background-color: rgb(135, 33, 33);
 }
 
 .imagen {

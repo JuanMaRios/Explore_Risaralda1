@@ -334,7 +334,7 @@ input[type='checkbox']:checked + .switch{
     width: 55%;
     margin: 0 auto;
     padding: 15px;
-    font-size: 15px;
+    font-size: 16px;
     border-radius: 10px;
     color: #333;
     background-color: #FAFAFA;
@@ -361,6 +361,7 @@ input[type='checkbox']:checked + .switch{
     padding: 0 15px;
     font-size: 14px;
     color: #5C4747;
+    border: 1px solid #ccc;
 }
 
 .filtros-paquetes button{
@@ -371,7 +372,7 @@ input[type='checkbox']:checked + .switch{
     border: none;
     background-color:#A5D6A7 ;
     color: #333;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     margin-left: auto;
 }
@@ -414,6 +415,7 @@ input[type='checkbox']:checked + .switch{
     width: 18%;
     box-sizing: border-box;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
 } 
 
 .paquete .imagen{
@@ -469,10 +471,10 @@ input[type='checkbox']:checked + .switch{
 }
 
 .precio .descuento{
-    background-color:#A5D6A7;
+    background-color:#2E7D32;
     padding: 8px;
-    border-radius: 3px;
-    color:#333;
+    border-radius: 3px 0px 0px 3px;
+    color:white;
     font-weight: 700;
 }
 
