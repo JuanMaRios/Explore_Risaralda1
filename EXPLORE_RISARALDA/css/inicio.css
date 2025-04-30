@@ -614,7 +614,8 @@ input[type='checkbox']:checked + .switch{
 }
 
 .informacion_text h1 {
-    font-size: 24px; 
+    font-size: 18px; 
+    font-weight: 600;
     margin-bottom: 10px;
     position: static; 
     left: auto; 
@@ -623,7 +624,8 @@ input[type='checkbox']:checked + .switch{
 }
 
 .informacion_text p {
-    font-size: 16px; 
+    font-size: 15px; 
+    font-weight: 500;
     line-height: 1.4; 
     position: static; 
     left: auto; 
@@ -843,19 +845,8 @@ transition: 400ms ease-in-out;
 
 /* seccion ofrecer */
 
-.tittle1 {
-    display: flex;
-    position: relative;
-    margin: 20px auto;
-    background-color: #F1F8E9;
-    z-index: 1;
-    font-size: 20px; /* Tamaño inicial reducido */
-    justify-content: center;
-    font-weight: 800;
-    padding: 10px 20px;
-    border-radius: 8px;
-    color:#333;
-}
+
+
 
 .espacio_ofer {
     display: flex;
@@ -1119,7 +1110,7 @@ transition: 400ms ease-in-out;
 
 .testimonios-item{
     flex: 0 0 auto;
-    width: 30%;
+    width: 20%;
     background-color:whitesmoke;
     border-radius: 30px;
     height: auto;
@@ -1180,7 +1171,7 @@ transition: 400ms ease-in-out;
 
 .pre-btn, .next-btn, .pre-btn1,.next-btn1{
     position: absolute;
-    top: 60%;
+    top: 45%;
     transform: translateY(-60%);
     background: #333;
     color: #fff;
