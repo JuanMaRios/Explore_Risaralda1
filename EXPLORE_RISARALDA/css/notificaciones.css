@@ -206,6 +206,11 @@ header{
     margin-left: 20px;
 }
 
+.perfil .menu-item{
+    background-color: #2E7D32; /* Fondo verde */
+    color: #FAFAFA; /* Texto blanco */
+}
+
 /* parte derecha del perfil */
 .container-container{
     flex: 1;
@@ -514,7 +519,7 @@ input[type='checkbox']:checked + .switch{
         width: auto;
     }
 
-    .nav-title {
+    .nav-title a{
         flex: 1;
         font-size: 12px;
         font-weight: bold;
@@ -537,6 +542,10 @@ input[type='checkbox']:checked + .switch{
     }
     .navigation-2 {
         display: none; /* Hide the second navigation bar */
+    }
+
+    .icon-perfil{
+        display: none;
     }
 }
 
@@ -578,7 +587,7 @@ input[type='checkbox']:checked + .switch{
     display: block;
     margin: 10px 0;
     font-size: 20px;
-    color: #A5D6A7;
+    color: #FAFAFA;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -598,12 +607,13 @@ input[type='checkbox']:checked + .switch{
     z-index: 2100; /* Asegúrate de que esté por encima del contenido */
 }
 
-.fullscreen-menu .close-icon:hover {
-    color: #A5D6A7;
-}
-
 /* Responsive para el menú de la izquierda */
 @media (max-width: 768px) {
+    .perfil{
+        margin-top: 0;
+        top: 71px;
+    }
+
     .perfil a{
         display: flex;
         flex-direction: column; 

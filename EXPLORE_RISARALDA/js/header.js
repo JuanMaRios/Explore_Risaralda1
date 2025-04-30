@@ -46,4 +46,3 @@ closeIcon.addEventListener("click", () => {
 });
 
 
-

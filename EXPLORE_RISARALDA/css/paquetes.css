@@ -529,7 +529,7 @@ input[type='checkbox']:checked + .switch{
         width: auto;
     }
 
-    .nav-title {
+    .nav-title a{
         flex: 1;
         font-size: 12px;
         font-weight: bold;
@@ -552,6 +552,10 @@ input[type='checkbox']:checked + .switch{
     }
     .navigation-2 {
         display: none; /* Hide the second navigation bar */
+    }
+
+    .icon-perfil{
+        display: none;
     }
 }
 
@@ -593,7 +597,7 @@ input[type='checkbox']:checked + .switch{
     display: block;
     margin: 10px 0;
     font-size: 20px;
-    color: #A5D6A7;
+    color: #FAFAFA;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -757,4 +761,48 @@ input[type='checkbox']:checked + .switch{
     font-size: 18px;
     color: white;
     text-decoration:none;
+}
+
+/* responsive del footer */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .footer-left {
+        margin-bottom: 20px; /* Espaciado entre secciones */
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column; /* Apila las secciones de enlaces */
+        gap: 20px; /* Espaciado entre las secciones */
+    }
+
+    .footer-links div {
+        text-align: center; /* Centra los títulos y enlaces */
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .social-icons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center; /* Centra los íconos sociales */
+        gap: 10px; /* Espaciado entre íconos */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Ajusta el tamaño de los íconos */
+    }
 }

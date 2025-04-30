@@ -23,7 +23,7 @@ header{
     align-items: center;
     justify-content:space-between;
     padding: 0 32px;
-    height: 70px;
+    height: 60px;
     background-color: #FAFAFA;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -180,7 +180,6 @@ header{
     background-color:#FAFAFA ;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
 }
 
 .perfil a{
@@ -199,6 +198,11 @@ header{
 .perfil ion-icon{
     margin-right: 15px;
     margin-left: 20px;
+}
+
+.perfil .menu-item{
+    background-color: #2E7D32; /* Fondo verde */
+    color: #FAFAFA; /* Texto blanco */
 }
 
 /* parte derecha del perfil */
@@ -246,7 +250,7 @@ label{
 .info-perfil input{
     font-size: 14px;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #888;
     cursor:not-allowed; /*indica que el texto no es editable*/
     background-color: #FAFAFA;
     margin-bottom: 20px;
@@ -264,6 +268,7 @@ label{
     background-size: cover;
     background-position: center;
     clip-path: polygon(74% 0, 100% 0, 100% 60%, 100% 100%, 71% 100%, 33% 58%, 47% 0);
+    height: calc(100vh - 100px);
 }
 
 /* notificaciones desplegables */
@@ -450,7 +455,7 @@ input[type='checkbox']:checked + .switch{
         width: auto;
     }
 
-    .nav-title {
+    .nav-title a{
         flex: 1;
         font-size: 12px;
         font-weight: bold;
@@ -473,6 +478,10 @@ input[type='checkbox']:checked + .switch{
     }
     .navigation-2 {
         display: none; /* Hide the second navigation bar */
+    }
+
+    .icon-perfil{
+        display: none;
     }
 }
 
@@ -514,7 +523,7 @@ input[type='checkbox']:checked + .switch{
     display: block;
     margin: 10px 0;
     font-size: 20px;
-    color: #A5D6A7;
+    color: #FAFAFA;
     text-decoration: none;
     transition: color 0.3s ease;
 }
