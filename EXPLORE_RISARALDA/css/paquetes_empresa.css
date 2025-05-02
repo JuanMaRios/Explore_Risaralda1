@@ -353,7 +353,7 @@ main{
     color: #333;
 }
 #datosEmpresa:hover{
-    background-color: #a5d6a7;
+    background-color: #2E7D32;
     
 }
 #icono-datosEmpresa{
@@ -370,7 +370,7 @@ main{
     gap: 10px;
     cursor: pointer;
     color: #333;
-    background: #a5d6a7;
+    background: #2E7D32;
     font-size: 16px;
     font-weight: 500;
 }
@@ -402,7 +402,7 @@ main{
     color: #333;
 }
 #configurarCuenta:hover{
-    background-color: #a5d6a7;
+    background-color: #2E7D32;
     
 }
 #icono-configuracion{
