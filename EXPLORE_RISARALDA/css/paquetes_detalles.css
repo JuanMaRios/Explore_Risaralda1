@@ -3,7 +3,6 @@ body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
 }
 /* Estilos generales para el header */
@@ -35,11 +34,10 @@ header{
     
 }
 .nav-title{
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     flex: 1;
-    text-align: center;
-    
+    text-align: center;  
 }
 .nav{
     width: 33%;
@@ -546,7 +544,6 @@ img{
     text-align: center;
 }
 #pagar{
-    
     background-color: #2E7D32;
     width: 5rem;
     height: 1.5rem;
@@ -562,6 +559,7 @@ img{
 #pagar:hover{
     transform: scale(1.07);
     box-shadow: 0 0 15px #c5f0be;
+    cursor: pointer;
 }
 
 /* Estilos para el mapa de la Ubicación */
@@ -651,7 +649,8 @@ img{
     width: 100%;
     color: #333;
     padding-bottom: 3vh;
-
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .comentarios-paquete{
@@ -665,6 +664,8 @@ img{
     width: 40%;
     align-items: center;
     padding: 2vh;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 #perfil-calificacion{

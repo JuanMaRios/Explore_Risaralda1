@@ -4,7 +4,6 @@ body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
 }
 /*---------------------------------------------------------------------------------*/
@@ -23,6 +22,8 @@ header{
 #title{
     text-decoration: none;
     color: #2E7D32;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #logo{
@@ -329,7 +330,8 @@ main{
 #ajustes{
     display: flex;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /*Estilos de la sección en la que nos encontramos en este momento (Datos de empresa)*/
@@ -342,6 +344,8 @@ main{
     gap: 10px;
     cursor: pointer;
     color: #333;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (datos de empresa) */
 #datosEmpresa a{
@@ -350,7 +354,7 @@ main{
 }
 #datosEmpresa:hover{
     background-color: #a5d6a7;
-    font-weight: 600;
+    
 }
 #icono-datosEmpresa{
     margin-left: 20px;
@@ -367,7 +371,8 @@ main{
     cursor: pointer;
     color: #333;
     background: #a5d6a7;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (mis paquetes) */
 #misPaquetes a{
@@ -388,6 +393,8 @@ main{
     gap: 10px;
     cursor: pointer;
     color: #333;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (Configurar cuenta) */
 #configurarCuenta a{
@@ -396,7 +403,7 @@ main{
 }
 #configurarCuenta:hover{
     background-color: #a5d6a7;
-    font-weight: 600;
+    
 }
 #icono-configuracion{
     margin-left: 20px;
@@ -413,7 +420,8 @@ main{
     cursor: pointer;
     color: #333;
     margin-top: 50vh;
-    font-weight: 450;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (Cerrar Sesión) */
 #cerrarSesion a{
@@ -422,7 +430,7 @@ main{
 }
 #cerrarSesion:hover{
     background-color: #d78072;
-    font-weight: 600;
+    
 }
 #icono-cerrarSesion{
     margin-left: 20px;
@@ -436,7 +444,7 @@ main{
     height: auto;
     color: #333;
     display: block;
-    font-weight: 400;
+    
 }
 
 img{

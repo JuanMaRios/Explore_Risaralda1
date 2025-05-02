@@ -4,7 +4,6 @@ body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
 }
 /*---------------------------------------------------------------------------------*/
@@ -23,6 +22,8 @@ header{
 #title{
     text-decoration: none;
     color: #2E7D32;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #logo{
@@ -322,14 +323,16 @@ main{
 #titulo-ajustes{
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: center;  
 }
 
 /* estilos del titulo (parrafo) */
 #ajustes{
     display: flex;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /*Estilos de la sección en la que nos encontramos en este momento (Datos de empresa)*/
@@ -342,15 +345,18 @@ main{
     gap: 10px;
     cursor: pointer;
     color: #333;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (datos de empresa) */
 #datosEmpresa a{
     text-decoration: none;
     color: #333;
+    
 }
 #datosEmpresa:hover{
     background-color: #a5d6a7;
-    font-weight: 600;
+    
 }
 #icono-datosEmpresa{
     margin-left: 20px;
@@ -365,7 +371,9 @@ main{
     display: flex;
     gap: 10px;
     cursor: pointer;
-    color: #333;  
+    color: #333; 
+    font-size: 16px;
+    font-weight: 500; 
 }
 /* estilos para su respectivo texto (mis paquetes) */
 #misPaquetes a{
@@ -374,7 +382,7 @@ main{
 }
 #misPaquetes:hover{
     background-color: #a5d6a7;
-    font-weight: 600;
+    
 }
 #icono-paquetes{
     margin-left: 20px;
@@ -391,7 +399,8 @@ main{
     cursor: pointer;
     background: #a5d6a7;
     color: #333;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (Configurar cuenta) */
 #configurarCuenta a{
@@ -413,8 +422,9 @@ main{
     gap: 10px;
     cursor: pointer;
     color: #333;
-    font-weight: 450;
     margin-top: 50vh;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (Cerrar Sesión) */
 #cerrarSesion a{
@@ -426,7 +436,6 @@ main{
 }
 #cerrarSesion:hover{
     background-color: #d78072;
-    font-weight: 600;
 }
 
 /*-------------------------------Contenido---------------------------------*/
@@ -435,10 +444,11 @@ main{
     width: 77%;
     padding: 4rem;
     height: auto;
+    color: #333;
 }
 
 #contraseña-actual{
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 #contraseña1{
@@ -446,6 +456,8 @@ main{
     height: 2rem;
     border-radius: 6px;
     overflow: hidden;
+    border: none;
+    border-bottom: 2px solid black;
 }
 
 #contraseña2{
@@ -453,7 +465,10 @@ main{
     height: 2rem;
     border-radius: 6px;
     overflow: hidden;
+    border: none;
+    border-bottom: 2px solid black;
 }
+
 
 #opciones{
     display: flex;
@@ -464,23 +479,27 @@ main{
 #cambiar-contraseña{
     border: 2px solid black;
     background: #a5d6a7;
-    color: white;
+    color: #333;
     padding: 10px;
+    border-radius: 5px;
 }
 #cambiar-contraseña:hover{
     background: green;
     cursor: pointer;
+    color: white;
 }
 
 #eliminar-cuenta{
     border: 2px solid black;
     background: #d78072;
-    color: white;
+    color: #333;
     padding: 10px;
+    border-radius: 5px;
 }
 #eliminar-cuenta:hover{
     background: #d46c5c;
     cursor: pointer;
+    color: white;
 }
 
 /* Responsive del header */

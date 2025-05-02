@@ -4,7 +4,6 @@ body{
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
 }
 /*---------------------------------------------------------------------------------*/
@@ -23,6 +22,8 @@ header{
 #title{
     text-decoration: none;
     color: #2E7D32;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #logo{
@@ -331,7 +332,8 @@ main{
 #ajustes{
     display: flex;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /*Estilos de la sección en la que nos encontramos en este momento (Datos de empresa)*/
@@ -345,7 +347,8 @@ main{
     cursor: pointer;
     background: #a5d6a7;
     color: #333;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (datos de empresa) */
 #datosEmpresa a{
@@ -365,7 +368,9 @@ main{
     display: flex;
     gap: 10px;
     cursor: pointer;
-    color: #333;  
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;  
 }
 /* estilos para su respectivo texto (mis paquetes) */
 #misPaquetes a{
@@ -374,7 +379,7 @@ main{
 }
 #misPaquetes:hover{
     background-color: #a5d6a7;
-    font-weight: 600;
+    
 }
 #icono-paquetes{
     margin-left: 20px;
@@ -390,6 +395,8 @@ main{
     gap: 10px;
     cursor: pointer;
     color: #333;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (Configurar cuenta) */
 #configurarCuenta a{
@@ -398,7 +405,7 @@ main{
 }
 #configurarCuenta:hover{
     background-color: #a5d6a7;
-    font-weight: 600;
+    
 }
 #icono-configuracion{
     margin-left: 20px;
@@ -414,8 +421,9 @@ main{
     gap: 10px;
     cursor: pointer;
     color: #333;
-    font-weight: 450;
     margin-top: 50vh;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos para su respectivo texto (Cerrar Sesión) */
 #cerrarSesion a{
@@ -427,7 +435,6 @@ main{
 }
 #cerrarSesion:hover{
     background-color: #d78072;
-    font-weight: 600;
 }
 
 /*--------------------------------------------------Contenido-------------------------------------*/
@@ -450,8 +457,9 @@ main{
     border-radius: 6px;
     padding: 25px;
     background: white;
-    font-weight: 400;
     overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /*----------------------------------------------------------------------*/
@@ -464,7 +472,8 @@ main{
 /* estilos del contenedor donde esta el nombre y su espacio correspondiente */
 #nombre{
     display: block;
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos del espacio donde aparece el nombre de la entidad */
 #espacio-nombre{
@@ -475,7 +484,8 @@ main{
 /* estilos del contenedor donde estan la direccion y su espacio correspondiente */
 #direccion{
     display: block;
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos del espacio donde aparece la direccion */
 #espacio-direccion{
@@ -508,7 +518,8 @@ main{
 /* estilos del contenedor donde estan el RUT y su espacio correspondiente */
 #rut{
     display: block;
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos del espacio donde aparece el RUT */
 #espacio-rut{
@@ -519,7 +530,8 @@ main{
 /* estilos del contenedor donde estan el contacto y su espacio correspondiente */
 #contacto{
     display: block;
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos del espacio donde aparece el contacto */
 #espacio-contacto{
@@ -552,7 +564,8 @@ main{
 /* estilos del contenedor donde estan el correo y su espacio correspondiente */
 #correo{
     display: block;
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos del espacio donde aparece el correo */
 #espacio-correo{
@@ -563,7 +576,8 @@ main{
 /* estilos del contenedor donde estan la ID del dueño y su espacio correspondiente */
 #id-dueño{
     display: block;
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
 }
 /* estilos del espacio donde aparece la identificación del dueño */
 #espacio-id{
